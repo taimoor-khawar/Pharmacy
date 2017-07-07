@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.soft.pharmacy.dao.LoginDAO;
+import com.soft.pharmacy.model.Department;
 
 @Controller
 public class ConnectionController {
@@ -15,7 +16,8 @@ public class ConnectionController {
 	
 	@RequestMapping(value="/login")  
     public ModelAndView loginpage(){ 
-		System.out.println("Value="+dao.save());
+		Department department = new Department(0,"","Taimoor","abc");
+		System.out.println(dao.save(department));
 		return new ModelAndView("Login");
     }
 
