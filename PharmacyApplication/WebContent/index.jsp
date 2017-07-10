@@ -19,8 +19,7 @@
   <%if(Message != null && Message != ""){ %>
   	<h4 align="center" style="margin-top: 10px;color: red;"><%=Message %></h4>
   <%} %>
-  <h2 align="center" style="margin-top: 50px;">College Education File System</h2>
-  <h4 align="center" style="margin-top: 20px;"><b>Here is your VU ID</b></h4>
+  <h2 align="center" style="margin-top: 50px;">Pharmacy Management System</h2>
   <div align="center" style="margin-top: 20px;">
   		<a href="./login" style="font-size: 22px;font-weight: bold;"><span class="glyphicon glyphicon-log-in" style="padding-right: 5px;"></span>Login</a>  
   		<a href="./Register" style="font-size: 22px;font-weight: bold;"><span class="glyphicon glyphicon-user" style="padding-right: 5px;"></span>Register</a>
