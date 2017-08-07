@@ -26,9 +26,16 @@ public class LoginController {
 		return new ModelAndView("Login");
     }
 	
+	@RequestMapping(value="/test")  
+    public ModelAndView testpage(){ 
+		 
+		return new ModelAndView("test");
+    }
+	
+	
 	@RequestMapping(value="/mainlogin",method = RequestMethod.POST)  
-    public ModelAndView showmain(@RequestParam(value="Username",defaultValue="") String Username,
-    		@RequestParam(value="Password",defaultValue="")String Password,
+    public ModelAndView showmain(@RequestParam(value="username",defaultValue="") String Username,
+    		@RequestParam(value="password",defaultValue="")String Password,
     		final HttpServletRequest request) throws SQLException, Exception{ 
 		 if(Username==null)Username="";
 		 if(Password==null)Password="";
