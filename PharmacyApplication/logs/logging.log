@@ -1,392 +1,611 @@
-2017-08-04 16:24:04,483 DEBUG [http-bio-8787-exec-2] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/PharmacyApplication/resources/vendor/morrisjs/morris.css]
-2017-08-04 16:24:04,482 DEBUG [http-bio-8787-exec-1] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/PharmacyApplication/resources/vendor/bootstrap/js/bootstrap.min.js]
-2017-08-04 16:24:04,488 DEBUG [http-bio-8787-exec-1] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/bootstrap/js/bootstrap.min.js
-2017-08-04 16:24:04,480 DEBUG [http-bio-8787-exec-3] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/PharmacyApplication/resources/vendor/jquery/jquery.min.js]
-2017-08-04 16:24:04,489 DEBUG [http-bio-8787-exec-3] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/jquery/jquery.min.js
-2017-08-04 16:24:04,491 DEBUG [http-bio-8787-exec-3] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/jquery/jquery.min.js]
-2017-08-04 16:24:04,491 DEBUG [http-bio-8787-exec-3] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/jquery/jquery.min.js
-2017-08-04 16:24:04,491 DEBUG [http-bio-8787-exec-3] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/jquery/jquery.min.js]
-2017-08-04 16:24:04,479 DEBUG [http-bio-8787-exec-9] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/PharmacyApplication/resources/vendor/font-awesome/css/font-awesome.min.css]
-2017-08-04 16:24:04,471 DEBUG [http-bio-8787-exec-7] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/PharmacyApplication/resources/dist/css/sb-admin-2.css]
-2017-08-04 16:24:04,491 DEBUG [http-bio-8787-exec-9] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/font-awesome/css/font-awesome.min.css
-2017-08-04 16:24:04,491 DEBUG [http-bio-8787-exec-3] AbstractUrlHandlerMapping - Matching patterns for request [/resources/vendor/jquery/jquery.min.js] are [/resources/**]
-2017-08-04 16:24:04,492 DEBUG [http-bio-8787-exec-3] AbstractUrlHandlerMapping - URI Template variables for request [/resources/vendor/jquery/jquery.min.js] are {}
-2017-08-04 16:24:04,492 DEBUG [http-bio-8787-exec-3] AbstractUrlHandlerMapping - Mapping [/resources/vendor/jquery/jquery.min.js] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@b4ba9a] and 1 interceptor
-2017-08-04 16:24:04,488 DEBUG [http-bio-8787-exec-1] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/bootstrap/js/bootstrap.min.js]
-2017-08-04 16:24:04,487 DEBUG [http-bio-8787-exec-2] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/morrisjs/morris.css
-2017-08-04 16:24:04,487 DEBUG [http-bio-8787-exec-8] AbstractUrlHandlerMapping - Matching patterns for request [/resources/vendor/metisMenu/metisMenu.min.css] are [/resources/**]
-2017-08-04 16:24:04,492 DEBUG [http-bio-8787-exec-2] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/morrisjs/morris.css]
-2017-08-04 16:24:04,493 DEBUG [http-bio-8787-exec-2] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/morrisjs/morris.css
-2017-08-04 16:24:04,493 DEBUG [http-bio-8787-exec-2] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/morrisjs/morris.css]
-2017-08-04 16:24:04,493 DEBUG [http-bio-8787-exec-2] AbstractUrlHandlerMapping - Matching patterns for request [/resources/vendor/morrisjs/morris.css] are [/resources/**]
-2017-08-04 16:24:04,493 DEBUG [http-bio-8787-exec-2] AbstractUrlHandlerMapping - URI Template variables for request [/resources/vendor/morrisjs/morris.css] are {}
-2017-08-04 16:24:04,493 DEBUG [http-bio-8787-exec-2] AbstractUrlHandlerMapping - Mapping [/resources/vendor/morrisjs/morris.css] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@b4ba9a] and 1 interceptor
-2017-08-04 16:24:04,493 DEBUG [http-bio-8787-exec-2] DispatcherServlet - Last-Modified value for [/PharmacyApplication/resources/vendor/morrisjs/morris.css] is: -1
-2017-08-04 16:24:04,494 DEBUG [http-bio-8787-exec-2] ResourceHttpRequestHandler - Trying relative path [vendor/morrisjs/morris.css] against base location: ServletContext resource [/resources/]
-2017-08-04 16:24:04,494 DEBUG [http-bio-8787-exec-2] ResourceHttpRequestHandler - Found matching resource: ServletContext resource [/resources/vendor/morrisjs/morris.css]
-2017-08-04 16:24:04,494 DEBUG [http-bio-8787-exec-2] ResourceHttpRequestHandler - Determined media type 'text/css' for ServletContext resource [/resources/vendor/morrisjs/morris.css]
-2017-08-04 16:24:04,494 DEBUG [http-bio-8787-exec-2] ResourceHttpRequestHandler - Resource not modified - returning 304
-2017-08-04 16:24:04,495 DEBUG [http-bio-8787-exec-2] DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
-2017-08-04 16:24:04,495 DEBUG [http-bio-8787-exec-2] FrameworkServlet - Successfully completed request
-2017-08-04 16:24:04,500 DEBUG [http-bio-8787-exec-2] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/PharmacyApplication/resources/vendor/metisMenu/metisMenu.min.js]
-2017-08-04 16:24:04,501 DEBUG [http-bio-8787-exec-2] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/metisMenu/metisMenu.min.js
-2017-08-04 16:24:04,492 DEBUG [http-bio-8787-exec-1] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/bootstrap/js/bootstrap.min.js
-2017-08-04 16:24:04,492 DEBUG [http-bio-8787-exec-3] DispatcherServlet - Last-Modified value for [/PharmacyApplication/resources/vendor/jquery/jquery.min.js] is: -1
-2017-08-04 16:24:04,492 DEBUG [http-bio-8787-exec-9] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/font-awesome/css/font-awesome.min.css]
-2017-08-04 16:24:04,492 DEBUG [http-bio-8787-exec-7] AbstractHandlerMethodMapping - Looking up handler method for path /resources/dist/css/sb-admin-2.css
-2017-08-04 16:24:04,501 DEBUG [http-bio-8787-exec-9] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/font-awesome/css/font-awesome.min.css
-2017-08-04 16:24:04,502 DEBUG [http-bio-8787-exec-9] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/font-awesome/css/font-awesome.min.css]
-2017-08-04 16:24:04,502 DEBUG [http-bio-8787-exec-9] AbstractUrlHandlerMapping - Matching patterns for request [/resources/vendor/font-awesome/css/font-awesome.min.css] are [/resources/**]
-2017-08-04 16:24:04,501 DEBUG [http-bio-8787-exec-3] ResourceHttpRequestHandler - Trying relative path [vendor/jquery/jquery.min.js] against base location: ServletContext resource [/resources/]
-2017-08-04 16:24:04,503 DEBUG [http-bio-8787-exec-3] ResourceHttpRequestHandler - Found matching resource: ServletContext resource [/resources/vendor/jquery/jquery.min.js]
-2017-08-04 16:24:04,503 DEBUG [http-bio-8787-exec-3] ResourceHttpRequestHandler - Determined media type 'application/javascript' for ServletContext resource [/resources/vendor/jquery/jquery.min.js]
-2017-08-04 16:24:04,504 DEBUG [http-bio-8787-exec-3] ResourceHttpRequestHandler - Resource not modified - returning 304
-2017-08-04 16:24:04,504 DEBUG [http-bio-8787-exec-3] DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
-2017-08-04 16:24:04,504 DEBUG [http-bio-8787-exec-3] FrameworkServlet - Successfully completed request
-2017-08-04 16:24:04,501 DEBUG [http-bio-8787-exec-1] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/bootstrap/js/bootstrap.min.js]
-2017-08-04 16:24:04,506 DEBUG [http-bio-8787-exec-1] AbstractUrlHandlerMapping - Matching patterns for request [/resources/vendor/bootstrap/js/bootstrap.min.js] are [/resources/**]
-2017-08-04 16:24:04,506 DEBUG [http-bio-8787-exec-1] AbstractUrlHandlerMapping - URI Template variables for request [/resources/vendor/bootstrap/js/bootstrap.min.js] are {}
-2017-08-04 16:24:04,506 DEBUG [http-bio-8787-exec-1] AbstractUrlHandlerMapping - Mapping [/resources/vendor/bootstrap/js/bootstrap.min.js] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@b4ba9a] and 1 interceptor
-2017-08-04 16:24:04,506 DEBUG [http-bio-8787-exec-1] DispatcherServlet - Last-Modified value for [/PharmacyApplication/resources/vendor/bootstrap/js/bootstrap.min.js] is: -1
-2017-08-04 16:24:04,507 DEBUG [http-bio-8787-exec-1] ResourceHttpRequestHandler - Trying relative path [vendor/bootstrap/js/bootstrap.min.js] against base location: ServletContext resource [/resources/]
-2017-08-04 16:24:04,507 DEBUG [http-bio-8787-exec-1] ResourceHttpRequestHandler - Found matching resource: ServletContext resource [/resources/vendor/bootstrap/js/bootstrap.min.js]
-2017-08-04 16:24:04,508 DEBUG [http-bio-8787-exec-1] ResourceHttpRequestHandler - Determined media type 'application/javascript' for ServletContext resource [/resources/vendor/bootstrap/js/bootstrap.min.js]
-2017-08-04 16:24:04,509 DEBUG [http-bio-8787-exec-1] ResourceHttpRequestHandler - Resource not modified - returning 304
-2017-08-04 16:24:04,509 DEBUG [http-bio-8787-exec-1] DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
-2017-08-04 16:24:04,509 DEBUG [http-bio-8787-exec-1] FrameworkServlet - Successfully completed request
-2017-08-04 16:24:04,501 DEBUG [http-bio-8787-exec-2] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/metisMenu/metisMenu.min.js]
-2017-08-04 16:24:04,492 DEBUG [http-bio-8787-exec-8] AbstractUrlHandlerMapping - URI Template variables for request [/resources/vendor/metisMenu/metisMenu.min.css] are {}
-2017-08-04 16:24:04,510 DEBUG [http-bio-8787-exec-8] AbstractUrlHandlerMapping - Mapping [/resources/vendor/metisMenu/metisMenu.min.css] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@b4ba9a] and 1 interceptor
-2017-08-04 16:24:04,510 DEBUG [http-bio-8787-exec-3] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/PharmacyApplication/resources/vendor/raphael/raphael.min.js]
-2017-08-04 16:24:04,511 DEBUG [http-bio-8787-exec-3] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/raphael/raphael.min.js
-2017-08-04 16:24:04,503 DEBUG [http-bio-8787-exec-9] AbstractUrlHandlerMapping - URI Template variables for request [/resources/vendor/font-awesome/css/font-awesome.min.css] are {}
-2017-08-04 16:24:04,512 DEBUG [http-bio-8787-exec-9] AbstractUrlHandlerMapping - Mapping [/resources/vendor/font-awesome/css/font-awesome.min.css] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@b4ba9a] and 1 interceptor
-2017-08-04 16:24:04,502 DEBUG [http-bio-8787-exec-7] AbstractHandlerMethodMapping - Did not find handler method for [/resources/dist/css/sb-admin-2.css]
-2017-08-04 16:24:04,512 DEBUG [http-bio-8787-exec-9] DispatcherServlet - Last-Modified value for [/PharmacyApplication/resources/vendor/font-awesome/css/font-awesome.min.css] is: -1
-2017-08-04 16:24:04,511 DEBUG [http-bio-8787-exec-3] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/raphael/raphael.min.js]
-2017-08-04 16:24:04,511 DEBUG [http-bio-8787-exec-8] DispatcherServlet - Last-Modified value for [/PharmacyApplication/resources/vendor/metisMenu/metisMenu.min.css] is: -1
-2017-08-04 16:24:04,510 DEBUG [http-bio-8787-exec-2] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/metisMenu/metisMenu.min.js
-2017-08-04 16:24:04,512 DEBUG [http-bio-8787-exec-8] ResourceHttpRequestHandler - Trying relative path [vendor/metisMenu/metisMenu.min.css] against base location: ServletContext resource [/resources/]
-2017-08-04 16:24:04,512 DEBUG [http-bio-8787-exec-3] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/raphael/raphael.min.js
-2017-08-04 16:24:04,513 DEBUG [http-bio-8787-exec-3] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/raphael/raphael.min.js]
-2017-08-04 16:24:04,513 DEBUG [http-bio-8787-exec-3] AbstractUrlHandlerMapping - Matching patterns for request [/resources/vendor/raphael/raphael.min.js] are [/resources/**]
-2017-08-04 16:24:04,513 DEBUG [http-bio-8787-exec-3] AbstractUrlHandlerMapping - URI Template variables for request [/resources/vendor/raphael/raphael.min.js] are {}
-2017-08-04 16:24:04,513 DEBUG [http-bio-8787-exec-3] AbstractUrlHandlerMapping - Mapping [/resources/vendor/raphael/raphael.min.js] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@b4ba9a] and 1 interceptor
-2017-08-04 16:24:04,514 DEBUG [http-bio-8787-exec-3] DispatcherServlet - Last-Modified value for [/PharmacyApplication/resources/vendor/raphael/raphael.min.js] is: -1
-2017-08-04 16:24:04,514 DEBUG [http-bio-8787-exec-3] ResourceHttpRequestHandler - Trying relative path [vendor/raphael/raphael.min.js] against base location: ServletContext resource [/resources/]
-2017-08-04 16:24:04,514 DEBUG [http-bio-8787-exec-3] ResourceHttpRequestHandler - Found matching resource: ServletContext resource [/resources/vendor/raphael/raphael.min.js]
-2017-08-04 16:24:04,514 DEBUG [http-bio-8787-exec-3] ResourceHttpRequestHandler - Determined media type 'application/javascript' for ServletContext resource [/resources/vendor/raphael/raphael.min.js]
-2017-08-04 16:24:04,515 DEBUG [http-bio-8787-exec-3] ResourceHttpRequestHandler - Resource not modified - returning 304
-2017-08-04 16:24:04,515 DEBUG [http-bio-8787-exec-3] DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
-2017-08-04 16:24:04,516 DEBUG [http-bio-8787-exec-3] FrameworkServlet - Successfully completed request
-2017-08-04 16:24:04,512 DEBUG [http-bio-8787-exec-9] ResourceHttpRequestHandler - Trying relative path [vendor/font-awesome/css/font-awesome.min.css] against base location: ServletContext resource [/resources/]
-2017-08-04 16:24:04,516 DEBUG [http-bio-8787-exec-9] ResourceHttpRequestHandler - Found matching resource: ServletContext resource [/resources/vendor/font-awesome/css/font-awesome.min.css]
-2017-08-04 16:24:04,516 DEBUG [http-bio-8787-exec-9] ResourceHttpRequestHandler - Determined media type 'text/css' for ServletContext resource [/resources/vendor/font-awesome/css/font-awesome.min.css]
-2017-08-04 16:24:04,516 DEBUG [http-bio-8787-exec-9] ResourceHttpRequestHandler - Resource not modified - returning 304
-2017-08-04 16:24:04,517 DEBUG [http-bio-8787-exec-9] DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
-2017-08-04 16:24:04,517 DEBUG [http-bio-8787-exec-9] FrameworkServlet - Successfully completed request
-2017-08-04 16:24:04,512 DEBUG [http-bio-8787-exec-7] AbstractHandlerMethodMapping - Looking up handler method for path /resources/dist/css/sb-admin-2.css
-2017-08-04 16:24:04,517 DEBUG [http-bio-8787-exec-7] AbstractHandlerMethodMapping - Did not find handler method for [/resources/dist/css/sb-admin-2.css]
-2017-08-04 16:24:04,517 DEBUG [http-bio-8787-exec-1] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/PharmacyApplication/resources/vendor/morrisjs/morris.min.js]
-2017-08-04 16:24:04,513 DEBUG [http-bio-8787-exec-8] ResourceHttpRequestHandler - Found matching resource: ServletContext resource [/resources/vendor/metisMenu/metisMenu.min.css]
-2017-08-04 16:24:04,518 DEBUG [http-bio-8787-exec-8] ResourceHttpRequestHandler - Determined media type 'text/css' for ServletContext resource [/resources/vendor/metisMenu/metisMenu.min.css]
-2017-08-04 16:24:04,518 DEBUG [http-bio-8787-exec-8] ResourceHttpRequestHandler - Resource not modified - returning 304
-2017-08-04 16:24:04,518 DEBUG [http-bio-8787-exec-8] DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
-2017-08-04 16:24:04,518 DEBUG [http-bio-8787-exec-8] FrameworkServlet - Successfully completed request
-2017-08-04 16:24:04,512 DEBUG [http-bio-8787-exec-2] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/metisMenu/metisMenu.min.js]
-2017-08-04 16:24:04,518 DEBUG [http-bio-8787-exec-1] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/morrisjs/morris.min.js
-2017-08-04 16:24:04,518 DEBUG [http-bio-8787-exec-7] AbstractUrlHandlerMapping - Matching patterns for request [/resources/dist/css/sb-admin-2.css] are [/resources/**]
-2017-08-04 16:24:04,519 DEBUG [http-bio-8787-exec-7] AbstractUrlHandlerMapping - URI Template variables for request [/resources/dist/css/sb-admin-2.css] are {}
-2017-08-04 16:24:04,520 DEBUG [http-bio-8787-exec-7] AbstractUrlHandlerMapping - Mapping [/resources/dist/css/sb-admin-2.css] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@b4ba9a] and 1 interceptor
-2017-08-04 16:24:04,520 DEBUG [http-bio-8787-exec-7] DispatcherServlet - Last-Modified value for [/PharmacyApplication/resources/dist/css/sb-admin-2.css] is: -1
-2017-08-04 16:24:04,520 DEBUG [http-bio-8787-exec-7] ResourceHttpRequestHandler - Trying relative path [dist/css/sb-admin-2.css] against base location: ServletContext resource [/resources/]
-2017-08-04 16:24:04,520 DEBUG [http-bio-8787-exec-7] ResourceHttpRequestHandler - Found matching resource: ServletContext resource [/resources/dist/css/sb-admin-2.css]
-2017-08-04 16:24:04,520 DEBUG [http-bio-8787-exec-7] ResourceHttpRequestHandler - Determined media type 'text/css' for ServletContext resource [/resources/dist/css/sb-admin-2.css]
-2017-08-04 16:24:04,520 DEBUG [http-bio-8787-exec-7] ResourceHttpRequestHandler - Resource not modified - returning 304
-2017-08-04 16:24:04,521 DEBUG [http-bio-8787-exec-7] DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
-2017-08-04 16:24:04,521 DEBUG [http-bio-8787-exec-7] FrameworkServlet - Successfully completed request
-2017-08-04 16:24:04,519 DEBUG [http-bio-8787-exec-2] AbstractUrlHandlerMapping - Matching patterns for request [/resources/vendor/metisMenu/metisMenu.min.js] are [/resources/**]
-2017-08-04 16:24:04,521 DEBUG [http-bio-8787-exec-1] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/morrisjs/morris.min.js]
-2017-08-04 16:24:04,521 DEBUG [http-bio-8787-exec-1] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/morrisjs/morris.min.js
-2017-08-04 16:24:04,521 DEBUG [http-bio-8787-exec-2] AbstractUrlHandlerMapping - URI Template variables for request [/resources/vendor/metisMenu/metisMenu.min.js] are {}
-2017-08-04 16:24:04,521 DEBUG [http-bio-8787-exec-1] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/morrisjs/morris.min.js]
-2017-08-04 16:24:04,521 DEBUG [http-bio-8787-exec-2] AbstractUrlHandlerMapping - Mapping [/resources/vendor/metisMenu/metisMenu.min.js] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@b4ba9a] and 1 interceptor
-2017-08-04 16:24:04,521 DEBUG [http-bio-8787-exec-1] AbstractUrlHandlerMapping - Matching patterns for request [/resources/vendor/morrisjs/morris.min.js] are [/resources/**]
-2017-08-04 16:24:04,522 DEBUG [http-bio-8787-exec-2] DispatcherServlet - Last-Modified value for [/PharmacyApplication/resources/vendor/metisMenu/metisMenu.min.js] is: -1
-2017-08-04 16:24:04,522 DEBUG [http-bio-8787-exec-1] AbstractUrlHandlerMapping - URI Template variables for request [/resources/vendor/morrisjs/morris.min.js] are {}
-2017-08-04 16:24:04,522 DEBUG [http-bio-8787-exec-2] ResourceHttpRequestHandler - Trying relative path [vendor/metisMenu/metisMenu.min.js] against base location: ServletContext resource [/resources/]
-2017-08-04 16:24:04,522 DEBUG [http-bio-8787-exec-1] AbstractUrlHandlerMapping - Mapping [/resources/vendor/morrisjs/morris.min.js] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@b4ba9a] and 1 interceptor
-2017-08-04 16:24:04,522 DEBUG [http-bio-8787-exec-2] ResourceHttpRequestHandler - Found matching resource: ServletContext resource [/resources/vendor/metisMenu/metisMenu.min.js]
-2017-08-04 16:24:04,522 DEBUG [http-bio-8787-exec-1] DispatcherServlet - Last-Modified value for [/PharmacyApplication/resources/vendor/morrisjs/morris.min.js] is: -1
-2017-08-04 16:24:04,522 DEBUG [http-bio-8787-exec-2] ResourceHttpRequestHandler - Determined media type 'application/javascript' for ServletContext resource [/resources/vendor/metisMenu/metisMenu.min.js]
-2017-08-04 16:24:04,522 DEBUG [http-bio-8787-exec-1] ResourceHttpRequestHandler - Trying relative path [vendor/morrisjs/morris.min.js] against base location: ServletContext resource [/resources/]
-2017-08-04 16:24:04,523 DEBUG [http-bio-8787-exec-1] ResourceHttpRequestHandler - Found matching resource: ServletContext resource [/resources/vendor/morrisjs/morris.min.js]
-2017-08-04 16:24:04,523 DEBUG [http-bio-8787-exec-1] ResourceHttpRequestHandler - Determined media type 'application/javascript' for ServletContext resource [/resources/vendor/morrisjs/morris.min.js]
-2017-08-04 16:24:04,523 DEBUG [http-bio-8787-exec-1] ResourceHttpRequestHandler - Resource not modified - returning 304
-2017-08-04 16:24:04,523 DEBUG [http-bio-8787-exec-1] DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
-2017-08-04 16:24:04,523 DEBUG [http-bio-8787-exec-1] FrameworkServlet - Successfully completed request
-2017-08-04 16:24:04,524 DEBUG [http-bio-8787-exec-2] ResourceHttpRequestHandler - Resource not modified - returning 304
-2017-08-04 16:24:04,524 DEBUG [http-bio-8787-exec-2] DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
-2017-08-04 16:24:04,524 DEBUG [http-bio-8787-exec-2] FrameworkServlet - Successfully completed request
-2017-08-04 16:24:04,535 DEBUG [http-bio-8787-exec-9] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/PharmacyApplication/resources/data/morris-data.js]
-2017-08-04 16:24:04,535 DEBUG [http-bio-8787-exec-9] AbstractHandlerMethodMapping - Looking up handler method for path /resources/data/morris-data.js
-2017-08-04 16:24:04,535 DEBUG [http-bio-8787-exec-9] AbstractHandlerMethodMapping - Did not find handler method for [/resources/data/morris-data.js]
-2017-08-04 16:24:04,535 DEBUG [http-bio-8787-exec-9] AbstractHandlerMethodMapping - Looking up handler method for path /resources/data/morris-data.js
-2017-08-04 16:24:04,536 DEBUG [http-bio-8787-exec-9] AbstractHandlerMethodMapping - Did not find handler method for [/resources/data/morris-data.js]
-2017-08-04 16:24:04,536 DEBUG [http-bio-8787-exec-8] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/PharmacyApplication/resources/dist/js/sb-admin-2.js]
-2017-08-04 16:24:04,536 DEBUG [http-bio-8787-exec-9] AbstractUrlHandlerMapping - Matching patterns for request [/resources/data/morris-data.js] are [/resources/**]
-2017-08-04 16:24:04,536 DEBUG [http-bio-8787-exec-8] AbstractHandlerMethodMapping - Looking up handler method for path /resources/dist/js/sb-admin-2.js
-2017-08-04 16:24:04,536 DEBUG [http-bio-8787-exec-9] AbstractUrlHandlerMapping - URI Template variables for request [/resources/data/morris-data.js] are {}
-2017-08-04 16:24:04,536 DEBUG [http-bio-8787-exec-9] AbstractUrlHandlerMapping - Mapping [/resources/data/morris-data.js] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@b4ba9a] and 1 interceptor
-2017-08-04 16:24:04,536 DEBUG [http-bio-8787-exec-9] DispatcherServlet - Last-Modified value for [/PharmacyApplication/resources/data/morris-data.js] is: -1
-2017-08-04 16:24:04,537 DEBUG [http-bio-8787-exec-9] ResourceHttpRequestHandler - Trying relative path [data/morris-data.js] against base location: ServletContext resource [/resources/]
-2017-08-04 16:24:04,537 DEBUG [http-bio-8787-exec-8] AbstractHandlerMethodMapping - Did not find handler method for [/resources/dist/js/sb-admin-2.js]
-2017-08-04 16:24:04,537 DEBUG [http-bio-8787-exec-8] AbstractHandlerMethodMapping - Looking up handler method for path /resources/dist/js/sb-admin-2.js
-2017-08-04 16:24:04,537 DEBUG [http-bio-8787-exec-8] AbstractHandlerMethodMapping - Did not find handler method for [/resources/dist/js/sb-admin-2.js]
-2017-08-04 16:24:04,537 DEBUG [http-bio-8787-exec-8] AbstractUrlHandlerMapping - Matching patterns for request [/resources/dist/js/sb-admin-2.js] are [/resources/**]
-2017-08-04 16:24:04,537 DEBUG [http-bio-8787-exec-8] AbstractUrlHandlerMapping - URI Template variables for request [/resources/dist/js/sb-admin-2.js] are {}
-2017-08-04 16:24:04,537 DEBUG [http-bio-8787-exec-8] AbstractUrlHandlerMapping - Mapping [/resources/dist/js/sb-admin-2.js] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@b4ba9a] and 1 interceptor
-2017-08-04 16:24:04,538 DEBUG [http-bio-8787-exec-8] DispatcherServlet - Last-Modified value for [/PharmacyApplication/resources/dist/js/sb-admin-2.js] is: -1
-2017-08-04 16:24:04,538 DEBUG [http-bio-8787-exec-8] ResourceHttpRequestHandler - Trying relative path [dist/js/sb-admin-2.js] against base location: ServletContext resource [/resources/]
-2017-08-04 16:24:04,537 DEBUG [http-bio-8787-exec-9] ResourceHttpRequestHandler - Found matching resource: ServletContext resource [/resources/data/morris-data.js]
-2017-08-04 16:24:04,538 DEBUG [http-bio-8787-exec-8] ResourceHttpRequestHandler - Found matching resource: ServletContext resource [/resources/dist/js/sb-admin-2.js]
-2017-08-04 16:24:04,538 DEBUG [http-bio-8787-exec-9] ResourceHttpRequestHandler - Determined media type 'application/javascript' for ServletContext resource [/resources/data/morris-data.js]
-2017-08-04 16:24:04,540 DEBUG [http-bio-8787-exec-8] ResourceHttpRequestHandler - Determined media type 'application/javascript' for ServletContext resource [/resources/dist/js/sb-admin-2.js]
-2017-08-04 16:24:04,540 DEBUG [http-bio-8787-exec-9] ResourceHttpRequestHandler - Resource not modified - returning 304
-2017-08-04 16:24:04,541 DEBUG [http-bio-8787-exec-8] ResourceHttpRequestHandler - Resource not modified - returning 304
-2017-08-04 16:24:04,541 DEBUG [http-bio-8787-exec-8] DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
-2017-08-04 16:24:04,541 DEBUG [http-bio-8787-exec-9] DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
-2017-08-04 16:24:04,541 DEBUG [http-bio-8787-exec-8] FrameworkServlet - Successfully completed request
-2017-08-04 16:24:04,541 DEBUG [http-bio-8787-exec-9] FrameworkServlet - Successfully completed request
-2017-08-04 16:24:04,756 DEBUG [http-bio-8787-exec-9] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/PharmacyApplication/resources/vendor/font-awesome/fonts/fontawesome-webfont.woff2]
-2017-08-04 16:24:04,756 DEBUG [http-bio-8787-exec-9] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/font-awesome/fonts/fontawesome-webfont.woff2
-2017-08-04 16:24:04,757 DEBUG [http-bio-8787-exec-9] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/font-awesome/fonts/fontawesome-webfont.woff2]
-2017-08-04 16:24:04,757 DEBUG [http-bio-8787-exec-9] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/font-awesome/fonts/fontawesome-webfont.woff2
-2017-08-04 16:24:04,757 DEBUG [http-bio-8787-exec-9] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/font-awesome/fonts/fontawesome-webfont.woff2]
-2017-08-04 16:24:04,757 DEBUG [http-bio-8787-exec-9] AbstractUrlHandlerMapping - Matching patterns for request [/resources/vendor/font-awesome/fonts/fontawesome-webfont.woff2] are [/resources/**]
-2017-08-04 16:24:04,757 DEBUG [http-bio-8787-exec-9] AbstractUrlHandlerMapping - URI Template variables for request [/resources/vendor/font-awesome/fonts/fontawesome-webfont.woff2] are {}
-2017-08-04 16:24:04,757 DEBUG [http-bio-8787-exec-9] AbstractUrlHandlerMapping - Mapping [/resources/vendor/font-awesome/fonts/fontawesome-webfont.woff2] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@b4ba9a] and 1 interceptor
-2017-08-04 16:24:04,757 DEBUG [http-bio-8787-exec-9] DispatcherServlet - Last-Modified value for [/PharmacyApplication/resources/vendor/font-awesome/fonts/fontawesome-webfont.woff2] is: -1
-2017-08-04 16:24:04,757 DEBUG [http-bio-8787-exec-9] ResourceHttpRequestHandler - Trying relative path [vendor/font-awesome/fonts/fontawesome-webfont.woff2] against base location: ServletContext resource [/resources/]
-2017-08-04 16:24:04,758 DEBUG [http-bio-8787-exec-9] ResourceHttpRequestHandler - Found matching resource: ServletContext resource [/resources/vendor/font-awesome/fonts/fontawesome-webfont.woff2]
-2017-08-04 16:24:04,758 DEBUG [http-bio-8787-exec-9] ResourceHttpRequestHandler - No media type found for ServletContext resource [/resources/vendor/font-awesome/fonts/fontawesome-webfont.woff2] - not sending a content-type header
-2017-08-04 16:24:04,758 DEBUG [http-bio-8787-exec-9] ResourceHttpRequestHandler - Resource not modified - returning 304
-2017-08-04 16:24:04,758 DEBUG [http-bio-8787-exec-9] DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
-2017-08-04 16:24:04,758 DEBUG [http-bio-8787-exec-9] FrameworkServlet - Successfully completed request
-2017-08-04 16:26:54,973 DEBUG [http-bio-8787-exec-5] DispatcherServlet - DispatcherServlet with name 'spring' processing POST request for [/PharmacyApplication/mainlogin]
-2017-08-04 16:26:54,973 DEBUG [http-bio-8787-exec-5] AbstractHandlerMethodMapping - Looking up handler method for path /mainlogin
-2017-08-04 16:26:54,974 DEBUG [http-bio-8787-exec-5] AbstractHandlerMethodMapping - Returning handler method [public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.LoginController.showmain(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) throws java.sql.SQLException,java.lang.Exception]
-2017-08-04 16:26:54,974 DEBUG [http-bio-8787-exec-5] AbstractBeanFactory - Returning cached instance of singleton bean 'loginController'
-2017-08-04 16:26:54,974 DEBUG [http-bio-8787-exec-5] LoginDAOImpl -  SELECT *  FROM SS_TBLSYSUSERS  WHERE lower(SU_SYSLOGIN) = 'taimoor' and lower(SU_SYSPASSWORD) = 'taimoor'
-2017-08-04 16:26:54,975 DEBUG [http-bio-8787-exec-5] JdbcTemplate - Executing SQL query [ SELECT *  FROM SS_TBLSYSUSERS  WHERE lower(SU_SYSLOGIN) = 'taimoor' and lower(SU_SYSPASSWORD) = 'taimoor']
-2017-08-04 16:26:54,975 DEBUG [http-bio-8787-exec-5] DataSourceUtils - Fetching JDBC Connection from DataSource
-2017-08-04 16:26:54,975 DEBUG [http-bio-8787-exec-5] DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:sqlserver://HIIG-TKHAWAR;DatabaseName=PharmacyDB;integratedSecurity=true]
-2017-08-04 16:26:54,996 DEBUG [http-bio-8787-exec-5] LoginDAOImpl$1 - 1
-2017-08-04 16:26:54,997 DEBUG [http-bio-8787-exec-5] DataSourceUtils - Returning JDBC Connection to DataSource
-2017-08-04 16:26:54,997 DEBUG [http-bio-8787-exec-5] DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'dashboard'; URL [/WEB-INF/jsp/dashboard.jsp]] in DispatcherServlet with name 'spring'
-2017-08-04 16:26:54,997 DEBUG [http-bio-8787-exec-5] AbstractView - Added model object 'Message' of type [java.lang.String] to request in view with name 'dashboard'
-2017-08-04 16:26:54,997 DEBUG [http-bio-8787-exec-5] InternalResourceView - Forwarding to resource [/WEB-INF/jsp/dashboard.jsp] in InternalResourceView 'dashboard'
-2017-08-04 16:26:55,041 DEBUG [http-bio-8787-exec-5] FrameworkServlet - Successfully completed request
-2017-08-04 16:26:55,059 DEBUG [http-bio-8787-exec-5] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/PharmacyApplication/resources/vendor/bootstrap/css/bootstrap.min.css]
-2017-08-04 16:26:55,059 DEBUG [http-bio-8787-exec-10] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/PharmacyApplication/resources/vendor/metisMenu/metisMenu.min.css]
-2017-08-04 16:26:55,059 DEBUG [http-bio-8787-exec-5] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/bootstrap/css/bootstrap.min.css
-2017-08-04 16:26:55,060 DEBUG [http-bio-8787-exec-10] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/metisMenu/metisMenu.min.css
-2017-08-04 16:26:55,060 DEBUG [http-bio-8787-exec-5] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/bootstrap/css/bootstrap.min.css]
-2017-08-04 16:26:55,060 DEBUG [http-bio-8787-exec-5] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/bootstrap/css/bootstrap.min.css
-2017-08-04 16:26:55,060 DEBUG [http-bio-8787-exec-5] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/bootstrap/css/bootstrap.min.css]
-2017-08-04 16:26:55,060 DEBUG [http-bio-8787-exec-5] AbstractUrlHandlerMapping - Matching patterns for request [/resources/vendor/bootstrap/css/bootstrap.min.css] are [/resources/**]
-2017-08-04 16:26:55,061 DEBUG [http-bio-8787-exec-5] AbstractUrlHandlerMapping - URI Template variables for request [/resources/vendor/bootstrap/css/bootstrap.min.css] are {}
-2017-08-04 16:26:55,061 DEBUG [http-bio-8787-exec-5] AbstractUrlHandlerMapping - Mapping [/resources/vendor/bootstrap/css/bootstrap.min.css] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@b4ba9a] and 1 interceptor
-2017-08-04 16:26:55,060 DEBUG [http-bio-8787-exec-10] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/metisMenu/metisMenu.min.css]
-2017-08-04 16:26:55,061 DEBUG [http-bio-8787-exec-10] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/metisMenu/metisMenu.min.css
-2017-08-04 16:26:55,061 DEBUG [http-bio-8787-exec-5] DispatcherServlet - Last-Modified value for [/PharmacyApplication/resources/vendor/bootstrap/css/bootstrap.min.css] is: -1
-2017-08-04 16:26:55,062 DEBUG [http-bio-8787-exec-10] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/metisMenu/metisMenu.min.css]
-2017-08-04 16:26:55,062 DEBUG [http-bio-8787-exec-5] ResourceHttpRequestHandler - Trying relative path [vendor/bootstrap/css/bootstrap.min.css] against base location: ServletContext resource [/resources/]
-2017-08-04 16:26:55,062 DEBUG [http-bio-8787-exec-10] AbstractUrlHandlerMapping - Matching patterns for request [/resources/vendor/metisMenu/metisMenu.min.css] are [/resources/**]
-2017-08-04 16:26:55,062 DEBUG [http-bio-8787-exec-5] ResourceHttpRequestHandler - Found matching resource: ServletContext resource [/resources/vendor/bootstrap/css/bootstrap.min.css]
-2017-08-04 16:26:55,062 DEBUG [http-bio-8787-exec-10] AbstractUrlHandlerMapping - URI Template variables for request [/resources/vendor/metisMenu/metisMenu.min.css] are {}
-2017-08-04 16:26:55,062 DEBUG [http-bio-8787-exec-5] ResourceHttpRequestHandler - Determined media type 'text/css' for ServletContext resource [/resources/vendor/bootstrap/css/bootstrap.min.css]
-2017-08-04 16:26:55,062 DEBUG [http-bio-8787-exec-10] AbstractUrlHandlerMapping - Mapping [/resources/vendor/metisMenu/metisMenu.min.css] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@b4ba9a] and 1 interceptor
-2017-08-04 16:26:55,083 DEBUG [http-bio-8787-exec-10] DispatcherServlet - Last-Modified value for [/PharmacyApplication/resources/vendor/metisMenu/metisMenu.min.css] is: -1
-2017-08-04 16:26:55,083 DEBUG [http-bio-8787-exec-10] ResourceHttpRequestHandler - Trying relative path [vendor/metisMenu/metisMenu.min.css] against base location: ServletContext resource [/resources/]
-2017-08-04 16:26:55,083 DEBUG [http-bio-8787-exec-10] ResourceHttpRequestHandler - Found matching resource: ServletContext resource [/resources/vendor/metisMenu/metisMenu.min.css]
-2017-08-04 16:26:55,083 DEBUG [http-bio-8787-exec-10] ResourceHttpRequestHandler - Determined media type 'text/css' for ServletContext resource [/resources/vendor/metisMenu/metisMenu.min.css]
-2017-08-04 16:26:55,081 DEBUG [http-bio-8787-exec-1] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/PharmacyApplication/resources/vendor/font-awesome/css/font-awesome.min.css]
-2017-08-04 16:26:55,081 DEBUG [http-bio-8787-exec-3] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/PharmacyApplication/resources/vendor/jquery/jquery.min.js]
-2017-08-04 16:26:55,077 DEBUG [http-bio-8787-exec-7] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/PharmacyApplication/resources/vendor/morrisjs/morris.css]
-2017-08-04 16:26:55,075 DEBUG [http-bio-8787-exec-6] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/PharmacyApplication/resources/dist/css/sb-admin-2.css]
-2017-08-04 16:26:55,062 DEBUG [http-bio-8787-exec-5] ResourceHttpRequestHandler - Resource not modified - returning 304
-2017-08-04 16:26:55,084 DEBUG [http-bio-8787-exec-5] DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
-2017-08-04 16:26:55,084 DEBUG [http-bio-8787-exec-5] FrameworkServlet - Successfully completed request
-2017-08-04 16:26:55,084 DEBUG [http-bio-8787-exec-6] AbstractHandlerMethodMapping - Looking up handler method for path /resources/dist/css/sb-admin-2.css
-2017-08-04 16:26:55,085 DEBUG [http-bio-8787-exec-6] AbstractHandlerMethodMapping - Did not find handler method for [/resources/dist/css/sb-admin-2.css]
-2017-08-04 16:26:55,085 DEBUG [http-bio-8787-exec-6] AbstractHandlerMethodMapping - Looking up handler method for path /resources/dist/css/sb-admin-2.css
-2017-08-04 16:26:55,085 DEBUG [http-bio-8787-exec-6] AbstractHandlerMethodMapping - Did not find handler method for [/resources/dist/css/sb-admin-2.css]
-2017-08-04 16:26:55,086 DEBUG [http-bio-8787-exec-6] AbstractUrlHandlerMapping - Matching patterns for request [/resources/dist/css/sb-admin-2.css] are [/resources/**]
-2017-08-04 16:26:55,086 DEBUG [http-bio-8787-exec-6] AbstractUrlHandlerMapping - URI Template variables for request [/resources/dist/css/sb-admin-2.css] are {}
-2017-08-04 16:26:55,086 DEBUG [http-bio-8787-exec-6] AbstractUrlHandlerMapping - Mapping [/resources/dist/css/sb-admin-2.css] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@b4ba9a] and 1 interceptor
-2017-08-04 16:26:55,086 DEBUG [http-bio-8787-exec-6] DispatcherServlet - Last-Modified value for [/PharmacyApplication/resources/dist/css/sb-admin-2.css] is: -1
-2017-08-04 16:26:55,086 DEBUG [http-bio-8787-exec-6] ResourceHttpRequestHandler - Trying relative path [dist/css/sb-admin-2.css] against base location: ServletContext resource [/resources/]
-2017-08-04 16:26:55,086 DEBUG [http-bio-8787-exec-5] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/PharmacyApplication/resources/vendor/bootstrap/js/bootstrap.min.js]
-2017-08-04 16:26:55,086 DEBUG [http-bio-8787-exec-5] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/bootstrap/js/bootstrap.min.js
-2017-08-04 16:26:55,086 DEBUG [http-bio-8787-exec-6] ResourceHttpRequestHandler - Found matching resource: ServletContext resource [/resources/dist/css/sb-admin-2.css]
-2017-08-04 16:26:55,087 DEBUG [http-bio-8787-exec-6] ResourceHttpRequestHandler - Determined media type 'text/css' for ServletContext resource [/resources/dist/css/sb-admin-2.css]
-2017-08-04 16:26:55,087 DEBUG [http-bio-8787-exec-6] ResourceHttpRequestHandler - Resource not modified - returning 304
-2017-08-04 16:26:55,087 DEBUG [http-bio-8787-exec-6] DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
-2017-08-04 16:26:55,087 DEBUG [http-bio-8787-exec-6] FrameworkServlet - Successfully completed request
-2017-08-04 16:26:55,084 DEBUG [http-bio-8787-exec-7] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/morrisjs/morris.css
-2017-08-04 16:26:55,084 DEBUG [http-bio-8787-exec-3] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/jquery/jquery.min.js
-2017-08-04 16:26:55,083 DEBUG [http-bio-8787-exec-1] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/font-awesome/css/font-awesome.min.css
-2017-08-04 16:26:55,083 DEBUG [http-bio-8787-exec-10] ResourceHttpRequestHandler - Resource not modified - returning 304
-2017-08-04 16:26:55,089 DEBUG [http-bio-8787-exec-1] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/font-awesome/css/font-awesome.min.css]
-2017-08-04 16:26:55,088 DEBUG [http-bio-8787-exec-3] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/jquery/jquery.min.js]
-2017-08-04 16:26:55,088 DEBUG [http-bio-8787-exec-7] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/morrisjs/morris.css]
-2017-08-04 16:26:55,087 DEBUG [http-bio-8787-exec-5] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/bootstrap/js/bootstrap.min.js]
-2017-08-04 16:26:55,090 DEBUG [http-bio-8787-exec-7] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/morrisjs/morris.css
-2017-08-04 16:26:55,089 DEBUG [http-bio-8787-exec-3] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/jquery/jquery.min.js
-2017-08-04 16:26:55,089 DEBUG [http-bio-8787-exec-1] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/font-awesome/css/font-awesome.min.css
-2017-08-04 16:26:55,089 DEBUG [http-bio-8787-exec-10] DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
-2017-08-04 16:26:55,090 DEBUG [http-bio-8787-exec-10] FrameworkServlet - Successfully completed request
-2017-08-04 16:26:55,090 DEBUG [http-bio-8787-exec-1] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/font-awesome/css/font-awesome.min.css]
-2017-08-04 16:26:55,090 DEBUG [http-bio-8787-exec-3] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/jquery/jquery.min.js]
-2017-08-04 16:26:55,090 DEBUG [http-bio-8787-exec-7] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/morrisjs/morris.css]
-2017-08-04 16:26:55,090 DEBUG [http-bio-8787-exec-5] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/bootstrap/js/bootstrap.min.js
-2017-08-04 16:26:55,091 DEBUG [http-bio-8787-exec-7] AbstractUrlHandlerMapping - Matching patterns for request [/resources/vendor/morrisjs/morris.css] are [/resources/**]
-2017-08-04 16:26:55,091 DEBUG [http-bio-8787-exec-3] AbstractUrlHandlerMapping - Matching patterns for request [/resources/vendor/jquery/jquery.min.js] are [/resources/**]
-2017-08-04 16:26:55,091 DEBUG [http-bio-8787-exec-1] AbstractUrlHandlerMapping - Matching patterns for request [/resources/vendor/font-awesome/css/font-awesome.min.css] are [/resources/**]
-2017-08-04 16:26:55,091 DEBUG [http-bio-8787-exec-3] AbstractUrlHandlerMapping - URI Template variables for request [/resources/vendor/jquery/jquery.min.js] are {}
-2017-08-04 16:26:55,091 DEBUG [http-bio-8787-exec-7] AbstractUrlHandlerMapping - URI Template variables for request [/resources/vendor/morrisjs/morris.css] are {}
-2017-08-04 16:26:55,091 DEBUG [http-bio-8787-exec-5] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/bootstrap/js/bootstrap.min.js]
-2017-08-04 16:26:55,092 DEBUG [http-bio-8787-exec-7] AbstractUrlHandlerMapping - Mapping [/resources/vendor/morrisjs/morris.css] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@b4ba9a] and 1 interceptor
-2017-08-04 16:26:55,092 DEBUG [http-bio-8787-exec-3] AbstractUrlHandlerMapping - Mapping [/resources/vendor/jquery/jquery.min.js] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@b4ba9a] and 1 interceptor
-2017-08-04 16:26:55,092 DEBUG [http-bio-8787-exec-3] DispatcherServlet - Last-Modified value for [/PharmacyApplication/resources/vendor/jquery/jquery.min.js] is: -1
-2017-08-04 16:26:55,092 DEBUG [http-bio-8787-exec-3] ResourceHttpRequestHandler - Trying relative path [vendor/jquery/jquery.min.js] against base location: ServletContext resource [/resources/]
-2017-08-04 16:26:55,093 DEBUG [http-bio-8787-exec-7] DispatcherServlet - Last-Modified value for [/PharmacyApplication/resources/vendor/morrisjs/morris.css] is: -1
-2017-08-04 16:26:55,094 DEBUG [http-bio-8787-exec-7] ResourceHttpRequestHandler - Trying relative path [vendor/morrisjs/morris.css] against base location: ServletContext resource [/resources/]
-2017-08-04 16:26:55,092 DEBUG [http-bio-8787-exec-1] AbstractUrlHandlerMapping - URI Template variables for request [/resources/vendor/font-awesome/css/font-awesome.min.css] are {}
-2017-08-04 16:26:55,099 DEBUG [http-bio-8787-exec-7] ResourceHttpRequestHandler - Found matching resource: ServletContext resource [/resources/vendor/morrisjs/morris.css]
-2017-08-04 16:26:55,098 DEBUG [http-bio-8787-exec-10] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/PharmacyApplication/resources/vendor/raphael/raphael.min.js]
-2017-08-04 16:26:55,099 DEBUG [http-bio-8787-exec-10] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/raphael/raphael.min.js
-2017-08-04 16:26:55,098 DEBUG [http-bio-8787-exec-6] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/PharmacyApplication/resources/vendor/metisMenu/metisMenu.min.js]
-2017-08-04 16:26:55,093 DEBUG [http-bio-8787-exec-3] ResourceHttpRequestHandler - Found matching resource: ServletContext resource [/resources/vendor/jquery/jquery.min.js]
-2017-08-04 16:26:55,092 DEBUG [http-bio-8787-exec-5] AbstractUrlHandlerMapping - Matching patterns for request [/resources/vendor/bootstrap/js/bootstrap.min.js] are [/resources/**]
-2017-08-04 16:26:55,100 DEBUG [http-bio-8787-exec-3] ResourceHttpRequestHandler - Determined media type 'application/javascript' for ServletContext resource [/resources/vendor/jquery/jquery.min.js]
-2017-08-04 16:26:55,100 DEBUG [http-bio-8787-exec-6] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/metisMenu/metisMenu.min.js
-2017-08-04 16:26:55,100 DEBUG [http-bio-8787-exec-10] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/raphael/raphael.min.js]
-2017-08-04 16:26:55,100 DEBUG [http-bio-8787-exec-10] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/raphael/raphael.min.js
-2017-08-04 16:26:55,099 DEBUG [http-bio-8787-exec-7] ResourceHttpRequestHandler - Determined media type 'text/css' for ServletContext resource [/resources/vendor/morrisjs/morris.css]
-2017-08-04 16:26:55,101 DEBUG [http-bio-8787-exec-7] ResourceHttpRequestHandler - Resource not modified - returning 304
-2017-08-04 16:26:55,099 DEBUG [http-bio-8787-exec-1] AbstractUrlHandlerMapping - Mapping [/resources/vendor/font-awesome/css/font-awesome.min.css] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@b4ba9a] and 1 interceptor
-2017-08-04 16:26:55,101 DEBUG [http-bio-8787-exec-7] DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
-2017-08-04 16:26:55,101 DEBUG [http-bio-8787-exec-10] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/raphael/raphael.min.js]
-2017-08-04 16:26:55,101 DEBUG [http-bio-8787-exec-3] ResourceHttpRequestHandler - Resource not modified - returning 304
-2017-08-04 16:26:55,100 DEBUG [http-bio-8787-exec-6] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/metisMenu/metisMenu.min.js]
-2017-08-04 16:26:55,101 DEBUG [http-bio-8787-exec-6] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/metisMenu/metisMenu.min.js
-2017-08-04 16:26:55,102 DEBUG [http-bio-8787-exec-6] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/metisMenu/metisMenu.min.js]
-2017-08-04 16:26:55,100 DEBUG [http-bio-8787-exec-5] AbstractUrlHandlerMapping - URI Template variables for request [/resources/vendor/bootstrap/js/bootstrap.min.js] are {}
-2017-08-04 16:26:55,102 DEBUG [http-bio-8787-exec-6] AbstractUrlHandlerMapping - Matching patterns for request [/resources/vendor/metisMenu/metisMenu.min.js] are [/resources/**]
-2017-08-04 16:26:55,101 DEBUG [http-bio-8787-exec-3] DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
-2017-08-04 16:26:55,101 DEBUG [http-bio-8787-exec-10] AbstractUrlHandlerMapping - Matching patterns for request [/resources/vendor/raphael/raphael.min.js] are [/resources/**]
-2017-08-04 16:26:55,101 DEBUG [http-bio-8787-exec-7] FrameworkServlet - Successfully completed request
-2017-08-04 16:26:55,101 DEBUG [http-bio-8787-exec-1] DispatcherServlet - Last-Modified value for [/PharmacyApplication/resources/vendor/font-awesome/css/font-awesome.min.css] is: -1
-2017-08-04 16:26:55,102 DEBUG [http-bio-8787-exec-10] AbstractUrlHandlerMapping - URI Template variables for request [/resources/vendor/raphael/raphael.min.js] are {}
-2017-08-04 16:26:55,103 DEBUG [http-bio-8787-exec-10] AbstractUrlHandlerMapping - Mapping [/resources/vendor/raphael/raphael.min.js] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@b4ba9a] and 1 interceptor
-2017-08-04 16:26:55,102 DEBUG [http-bio-8787-exec-3] FrameworkServlet - Successfully completed request
-2017-08-04 16:26:55,102 DEBUG [http-bio-8787-exec-6] AbstractUrlHandlerMapping - URI Template variables for request [/resources/vendor/metisMenu/metisMenu.min.js] are {}
-2017-08-04 16:26:55,102 DEBUG [http-bio-8787-exec-5] AbstractUrlHandlerMapping - Mapping [/resources/vendor/bootstrap/js/bootstrap.min.js] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@b4ba9a] and 1 interceptor
-2017-08-04 16:26:55,107 DEBUG [http-bio-8787-exec-6] AbstractUrlHandlerMapping - Mapping [/resources/vendor/metisMenu/metisMenu.min.js] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@b4ba9a] and 1 interceptor
-2017-08-04 16:26:55,107 DEBUG [http-bio-8787-exec-6] DispatcherServlet - Last-Modified value for [/PharmacyApplication/resources/vendor/metisMenu/metisMenu.min.js] is: -1
-2017-08-04 16:26:55,107 DEBUG [http-bio-8787-exec-6] ResourceHttpRequestHandler - Trying relative path [vendor/metisMenu/metisMenu.min.js] against base location: ServletContext resource [/resources/]
-2017-08-04 16:26:55,106 DEBUG [http-bio-8787-exec-10] DispatcherServlet - Last-Modified value for [/PharmacyApplication/resources/vendor/raphael/raphael.min.js] is: -1
-2017-08-04 16:26:55,108 DEBUG [http-bio-8787-exec-10] ResourceHttpRequestHandler - Trying relative path [vendor/raphael/raphael.min.js] against base location: ServletContext resource [/resources/]
-2017-08-04 16:26:55,108 DEBUG [http-bio-8787-exec-10] ResourceHttpRequestHandler - Found matching resource: ServletContext resource [/resources/vendor/raphael/raphael.min.js]
-2017-08-04 16:26:55,108 DEBUG [http-bio-8787-exec-10] ResourceHttpRequestHandler - Determined media type 'application/javascript' for ServletContext resource [/resources/vendor/raphael/raphael.min.js]
-2017-08-04 16:26:55,104 DEBUG [http-bio-8787-exec-7] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/PharmacyApplication/resources/vendor/morrisjs/morris.min.js]
-2017-08-04 16:26:55,108 DEBUG [http-bio-8787-exec-7] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/morrisjs/morris.min.js
-2017-08-04 16:26:55,108 DEBUG [http-bio-8787-exec-7] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/morrisjs/morris.min.js]
-2017-08-04 16:26:55,109 DEBUG [http-bio-8787-exec-7] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/morrisjs/morris.min.js
-2017-08-04 16:26:55,109 DEBUG [http-bio-8787-exec-7] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/morrisjs/morris.min.js]
-2017-08-04 16:26:55,109 DEBUG [http-bio-8787-exec-7] AbstractUrlHandlerMapping - Matching patterns for request [/resources/vendor/morrisjs/morris.min.js] are [/resources/**]
-2017-08-04 16:26:55,109 DEBUG [http-bio-8787-exec-7] AbstractUrlHandlerMapping - URI Template variables for request [/resources/vendor/morrisjs/morris.min.js] are {}
-2017-08-04 16:26:55,109 DEBUG [http-bio-8787-exec-7] AbstractUrlHandlerMapping - Mapping [/resources/vendor/morrisjs/morris.min.js] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@b4ba9a] and 1 interceptor
-2017-08-04 16:26:55,110 DEBUG [http-bio-8787-exec-7] DispatcherServlet - Last-Modified value for [/PharmacyApplication/resources/vendor/morrisjs/morris.min.js] is: -1
-2017-08-04 16:26:55,111 DEBUG [http-bio-8787-exec-7] ResourceHttpRequestHandler - Trying relative path [vendor/morrisjs/morris.min.js] against base location: ServletContext resource [/resources/]
-2017-08-04 16:26:55,103 DEBUG [http-bio-8787-exec-1] ResourceHttpRequestHandler - Trying relative path [vendor/font-awesome/css/font-awesome.min.css] against base location: ServletContext resource [/resources/]
-2017-08-04 16:26:55,115 DEBUG [http-bio-8787-exec-7] ResourceHttpRequestHandler - Found matching resource: ServletContext resource [/resources/vendor/morrisjs/morris.min.js]
-2017-08-04 16:26:55,113 DEBUG [http-bio-8787-exec-3] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/PharmacyApplication/resources/data/morris-data.js]
-2017-08-04 16:26:55,108 DEBUG [http-bio-8787-exec-10] ResourceHttpRequestHandler - Resource not modified - returning 304
-2017-08-04 16:26:55,107 DEBUG [http-bio-8787-exec-6] ResourceHttpRequestHandler - Found matching resource: ServletContext resource [/resources/vendor/metisMenu/metisMenu.min.js]
-2017-08-04 16:26:55,107 DEBUG [http-bio-8787-exec-5] DispatcherServlet - Last-Modified value for [/PharmacyApplication/resources/vendor/bootstrap/js/bootstrap.min.js] is: -1
-2017-08-04 16:26:55,115 DEBUG [http-bio-8787-exec-6] ResourceHttpRequestHandler - Determined media type 'application/javascript' for ServletContext resource [/resources/vendor/metisMenu/metisMenu.min.js]
-2017-08-04 16:26:55,115 DEBUG [http-bio-8787-exec-10] DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
-2017-08-04 16:26:55,115 DEBUG [http-bio-8787-exec-3] AbstractHandlerMethodMapping - Looking up handler method for path /resources/data/morris-data.js
-2017-08-04 16:26:55,115 DEBUG [http-bio-8787-exec-7] ResourceHttpRequestHandler - Determined media type 'application/javascript' for ServletContext resource [/resources/vendor/morrisjs/morris.min.js]
-2017-08-04 16:26:55,115 DEBUG [http-bio-8787-exec-1] ResourceHttpRequestHandler - Found matching resource: ServletContext resource [/resources/vendor/font-awesome/css/font-awesome.min.css]
-2017-08-04 16:26:55,116 DEBUG [http-bio-8787-exec-7] ResourceHttpRequestHandler - Resource not modified - returning 304
-2017-08-04 16:26:55,116 DEBUG [http-bio-8787-exec-3] AbstractHandlerMethodMapping - Did not find handler method for [/resources/data/morris-data.js]
-2017-08-04 16:26:55,116 DEBUG [http-bio-8787-exec-10] FrameworkServlet - Successfully completed request
-2017-08-04 16:26:55,116 DEBUG [http-bio-8787-exec-6] ResourceHttpRequestHandler - Resource not modified - returning 304
-2017-08-04 16:26:55,117 DEBUG [http-bio-8787-exec-6] DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
-2017-08-04 16:26:55,117 DEBUG [http-bio-8787-exec-6] FrameworkServlet - Successfully completed request
-2017-08-04 16:26:55,116 DEBUG [http-bio-8787-exec-5] ResourceHttpRequestHandler - Trying relative path [vendor/bootstrap/js/bootstrap.min.js] against base location: ServletContext resource [/resources/]
-2017-08-04 16:26:55,116 DEBUG [http-bio-8787-exec-3] AbstractHandlerMethodMapping - Looking up handler method for path /resources/data/morris-data.js
-2017-08-04 16:26:55,117 DEBUG [http-bio-8787-exec-3] AbstractHandlerMethodMapping - Did not find handler method for [/resources/data/morris-data.js]
-2017-08-04 16:26:55,118 DEBUG [http-bio-8787-exec-3] AbstractUrlHandlerMapping - Matching patterns for request [/resources/data/morris-data.js] are [/resources/**]
-2017-08-04 16:26:55,118 DEBUG [http-bio-8787-exec-3] AbstractUrlHandlerMapping - URI Template variables for request [/resources/data/morris-data.js] are {}
-2017-08-04 16:26:55,116 DEBUG [http-bio-8787-exec-7] DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
-2017-08-04 16:26:55,116 DEBUG [http-bio-8787-exec-1] ResourceHttpRequestHandler - Determined media type 'text/css' for ServletContext resource [/resources/vendor/font-awesome/css/font-awesome.min.css]
-2017-08-04 16:26:55,124 DEBUG [http-bio-8787-exec-7] FrameworkServlet - Successfully completed request
-2017-08-04 16:26:55,122 DEBUG [http-bio-8787-exec-10] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/PharmacyApplication/resources/dist/js/sb-admin-2.js]
-2017-08-04 16:26:55,125 DEBUG [http-bio-8787-exec-10] AbstractHandlerMethodMapping - Looking up handler method for path /resources/dist/js/sb-admin-2.js
-2017-08-04 16:26:55,125 DEBUG [http-bio-8787-exec-10] AbstractHandlerMethodMapping - Did not find handler method for [/resources/dist/js/sb-admin-2.js]
-2017-08-04 16:26:55,125 DEBUG [http-bio-8787-exec-10] AbstractHandlerMethodMapping - Looking up handler method for path /resources/dist/js/sb-admin-2.js
-2017-08-04 16:26:55,118 DEBUG [http-bio-8787-exec-3] AbstractUrlHandlerMapping - Mapping [/resources/data/morris-data.js] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@b4ba9a] and 1 interceptor
-2017-08-04 16:26:55,117 DEBUG [http-bio-8787-exec-5] ResourceHttpRequestHandler - Found matching resource: ServletContext resource [/resources/vendor/bootstrap/js/bootstrap.min.js]
-2017-08-04 16:26:55,125 DEBUG [http-bio-8787-exec-3] DispatcherServlet - Last-Modified value for [/PharmacyApplication/resources/data/morris-data.js] is: -1
-2017-08-04 16:26:55,125 DEBUG [http-bio-8787-exec-3] ResourceHttpRequestHandler - Trying relative path [data/morris-data.js] against base location: ServletContext resource [/resources/]
-2017-08-04 16:26:55,126 DEBUG [http-bio-8787-exec-3] ResourceHttpRequestHandler - Found matching resource: ServletContext resource [/resources/data/morris-data.js]
-2017-08-04 16:26:55,126 DEBUG [http-bio-8787-exec-3] ResourceHttpRequestHandler - Determined media type 'application/javascript' for ServletContext resource [/resources/data/morris-data.js]
-2017-08-04 16:26:55,126 DEBUG [http-bio-8787-exec-3] ResourceHttpRequestHandler - Resource not modified - returning 304
-2017-08-04 16:26:55,128 DEBUG [http-bio-8787-exec-3] DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
-2017-08-04 16:26:55,125 DEBUG [http-bio-8787-exec-1] ResourceHttpRequestHandler - Resource not modified - returning 304
-2017-08-04 16:26:55,125 DEBUG [http-bio-8787-exec-10] AbstractHandlerMethodMapping - Did not find handler method for [/resources/dist/js/sb-admin-2.js]
-2017-08-04 16:26:55,128 DEBUG [http-bio-8787-exec-3] FrameworkServlet - Successfully completed request
-2017-08-04 16:26:55,125 DEBUG [http-bio-8787-exec-5] ResourceHttpRequestHandler - Determined media type 'application/javascript' for ServletContext resource [/resources/vendor/bootstrap/js/bootstrap.min.js]
-2017-08-04 16:26:55,129 DEBUG [http-bio-8787-exec-5] ResourceHttpRequestHandler - Resource not modified - returning 304
-2017-08-04 16:26:55,129 DEBUG [http-bio-8787-exec-5] DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
-2017-08-04 16:26:55,129 DEBUG [http-bio-8787-exec-5] FrameworkServlet - Successfully completed request
-2017-08-04 16:26:55,129 DEBUG [http-bio-8787-exec-10] AbstractUrlHandlerMapping - Matching patterns for request [/resources/dist/js/sb-admin-2.js] are [/resources/**]
-2017-08-04 16:26:55,129 DEBUG [http-bio-8787-exec-10] AbstractUrlHandlerMapping - URI Template variables for request [/resources/dist/js/sb-admin-2.js] are {}
-2017-08-04 16:26:55,130 DEBUG [http-bio-8787-exec-10] AbstractUrlHandlerMapping - Mapping [/resources/dist/js/sb-admin-2.js] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@b4ba9a] and 1 interceptor
-2017-08-04 16:26:55,130 DEBUG [http-bio-8787-exec-1] DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
-2017-08-04 16:26:55,133 DEBUG [http-bio-8787-exec-10] DispatcherServlet - Last-Modified value for [/PharmacyApplication/resources/dist/js/sb-admin-2.js] is: -1
-2017-08-04 16:26:55,133 DEBUG [http-bio-8787-exec-10] ResourceHttpRequestHandler - Trying relative path [dist/js/sb-admin-2.js] against base location: ServletContext resource [/resources/]
-2017-08-04 16:26:55,133 DEBUG [http-bio-8787-exec-10] ResourceHttpRequestHandler - Found matching resource: ServletContext resource [/resources/dist/js/sb-admin-2.js]
-2017-08-04 16:26:55,134 DEBUG [http-bio-8787-exec-10] ResourceHttpRequestHandler - Determined media type 'application/javascript' for ServletContext resource [/resources/dist/js/sb-admin-2.js]
-2017-08-04 16:26:55,134 DEBUG [http-bio-8787-exec-1] FrameworkServlet - Successfully completed request
-2017-08-04 16:26:55,134 DEBUG [http-bio-8787-exec-10] ResourceHttpRequestHandler - Resource not modified - returning 304
-2017-08-04 16:26:55,134 DEBUG [http-bio-8787-exec-10] DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
-2017-08-04 16:26:55,134 DEBUG [http-bio-8787-exec-10] FrameworkServlet - Successfully completed request
-2017-08-04 16:26:55,358 DEBUG [http-bio-8787-exec-10] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/PharmacyApplication/resources/vendor/font-awesome/fonts/fontawesome-webfont.woff2]
-2017-08-04 16:26:55,358 DEBUG [http-bio-8787-exec-10] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/font-awesome/fonts/fontawesome-webfont.woff2
-2017-08-04 16:26:55,358 DEBUG [http-bio-8787-exec-10] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/font-awesome/fonts/fontawesome-webfont.woff2]
-2017-08-04 16:26:55,359 DEBUG [http-bio-8787-exec-10] AbstractHandlerMethodMapping - Looking up handler method for path /resources/vendor/font-awesome/fonts/fontawesome-webfont.woff2
-2017-08-04 16:26:55,359 DEBUG [http-bio-8787-exec-10] AbstractHandlerMethodMapping - Did not find handler method for [/resources/vendor/font-awesome/fonts/fontawesome-webfont.woff2]
-2017-08-04 16:26:55,359 DEBUG [http-bio-8787-exec-10] AbstractUrlHandlerMapping - Matching patterns for request [/resources/vendor/font-awesome/fonts/fontawesome-webfont.woff2] are [/resources/**]
-2017-08-04 16:26:55,359 DEBUG [http-bio-8787-exec-10] AbstractUrlHandlerMapping - URI Template variables for request [/resources/vendor/font-awesome/fonts/fontawesome-webfont.woff2] are {}
-2017-08-04 16:26:55,359 DEBUG [http-bio-8787-exec-10] AbstractUrlHandlerMapping - Mapping [/resources/vendor/font-awesome/fonts/fontawesome-webfont.woff2] to HandlerExecutionChain with handler [org.springframework.web.servlet.resource.ResourceHttpRequestHandler@b4ba9a] and 1 interceptor
-2017-08-04 16:26:55,360 DEBUG [http-bio-8787-exec-10] DispatcherServlet - Last-Modified value for [/PharmacyApplication/resources/vendor/font-awesome/fonts/fontawesome-webfont.woff2] is: -1
-2017-08-04 16:26:55,360 DEBUG [http-bio-8787-exec-10] ResourceHttpRequestHandler - Trying relative path [vendor/font-awesome/fonts/fontawesome-webfont.woff2] against base location: ServletContext resource [/resources/]
-2017-08-04 16:26:55,360 DEBUG [http-bio-8787-exec-10] ResourceHttpRequestHandler - Found matching resource: ServletContext resource [/resources/vendor/font-awesome/fonts/fontawesome-webfont.woff2]
-2017-08-04 16:26:55,360 DEBUG [http-bio-8787-exec-10] ResourceHttpRequestHandler - No media type found for ServletContext resource [/resources/vendor/font-awesome/fonts/fontawesome-webfont.woff2] - not sending a content-type header
-2017-08-04 16:26:55,361 DEBUG [http-bio-8787-exec-10] ResourceHttpRequestHandler - Resource not modified - returning 304
-2017-08-04 16:26:55,361 DEBUG [http-bio-8787-exec-10] DispatcherServlet - Null ModelAndView returned to DispatcherServlet with name 'spring': assuming HandlerAdapter completed request handling
-2017-08-04 16:26:55,361 DEBUG [http-bio-8787-exec-10] FrameworkServlet - Successfully completed request
-2017-08-04 16:27:19,671 DEBUG [http-bio-8787-exec-4] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/PharmacyApplication/test]
-2017-08-04 16:27:19,671 DEBUG [http-bio-8787-exec-4] AbstractHandlerMethodMapping - Looking up handler method for path /test
-2017-08-04 16:27:19,671 DEBUG [http-bio-8787-exec-4] AbstractHandlerMethodMapping - Returning handler method [public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.LoginController.testpage()]
-2017-08-04 16:27:19,671 DEBUG [http-bio-8787-exec-4] AbstractBeanFactory - Returning cached instance of singleton bean 'loginController'
-2017-08-04 16:27:19,672 DEBUG [http-bio-8787-exec-4] DispatcherServlet - Last-Modified value for [/PharmacyApplication/test] is: -1
-2017-08-04 16:27:19,672 DEBUG [http-bio-8787-exec-4] DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'test'; URL [/WEB-INF/jsp/test.jsp]] in DispatcherServlet with name 'spring'
-2017-08-04 16:27:19,672 DEBUG [http-bio-8787-exec-4] InternalResourceView - Forwarding to resource [/WEB-INF/jsp/test.jsp] in InternalResourceView 'test'
-2017-08-04 16:27:19,674 DEBUG [http-bio-8787-exec-4] FrameworkServlet - Successfully completed request
+2017-08-11 16:03:10,397 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2017-08-11 16:03:10,397 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2017-08-11 16:03:10,397 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2017-08-11 16:03:10,397 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'org.springframework.aop.config.internalAutoProxyCreator' to allow for resolving potential circular references
+2017-08-11 16:03:10,397 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2017-08-11 16:03:10,397 DEBUG [localhost-startStop-1] AbstractApplicationContext - Unable to locate MessageSource with name 'messageSource': using default [org.springframework.context.support.DelegatingMessageSource@88b56c]
+2017-08-11 16:03:10,397 DEBUG [localhost-startStop-1] AbstractApplicationContext - Unable to locate ApplicationEventMulticaster with name 'applicationEventMulticaster': using default [org.springframework.context.event.SimpleApplicationEventMulticaster@13f0553]
+2017-08-11 16:03:10,397 DEBUG [localhost-startStop-1] UiApplicationContextUtils - Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.DelegatingThemeSource@1184753]
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] DefaultListableBeanFactory - Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3a4887: defining beans [mvcContentNegotiationManager,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0,org.springframework.format.support.FormattingConversionServiceFactoryBean#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0,mvcUriComponentsContributor,org.springframework.web.servlet.handler.MappedInterceptor#0,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0,org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping,org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter,org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,configController,customerController,loginController,productController,org.springframework.context.annotation.internalConfigurationAnnotationProcessor,org.springframework.context.annotation.internalAutowiredAnnotationProcessor,org.springframework.context.annotation.internalRequiredAnnotationProcessor,org.springframework.context.annotation.internalCommonAnnotationProcessor,LoginDAO,CustomerDAO,ConfigDAO,dataSource,viewResolver,org.springframework.aop.config.internalAutoProxyCreator,org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0,org.springframework.transaction.interceptor.TransactionInterceptor#0,org.springframework.transaction.config.internalTransactionAdvisor,transactionManager,org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0,org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#1,org.springframework.format.support.FormattingConversionServiceFactoryBean#1,org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1,org.springframework.web.servlet.handler.MappedInterceptor#1,org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#1,org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#1,org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#1,multipartResolver,org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor,org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor]; parent: org.springframework.beans.factory.support.DefaultListableBeanFactory@b816c3
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'mvcContentNegotiationManager'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'mvcContentNegotiationManager' to allow for resolving potential circular references
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Invoking afterPropertiesSet() on bean with name 'mvcContentNegotiationManager'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'org.springframework.transaction.config.internalTransactionAdvisor' to allow for resolving potential circular references
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0' to allow for resolving potential circular references
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] BeanFactoryAdvisorRetrievalHelper - Skipping currently created advisor 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'mvcContentNegotiationManager'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0' to allow for resolving potential circular references
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#132c2ad'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0' to allow for resolving potential circular references
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Invoking afterPropertiesSet() on bean with name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#132c2ad'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.handler.MappedInterceptor#0' to allow for resolving potential circular references
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#13c92ad'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#1'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#1'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#1' to allow for resolving potential circular references
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Invoking afterPropertiesSet() on bean with name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#1'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#1'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,413 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#13c92ad'
+2017-08-11 16:03:10,429 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.handler.MappedInterceptor#1' to allow for resolving potential circular references
+2017-08-11 16:03:10,429 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,429 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2017-08-11 16:03:10,429 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2017-08-11 16:03:10,429 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2017-08-11 16:03:10,429 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+2017-08-11 16:03:10,429 DEBUG [localhost-startStop-1] AbstractHandlerMethodMapping - Looking for request mappings in application context: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Aug 11 16:03:10 PKT 2017]; parent: Root WebApplicationContext
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/supplier/viewsupplier],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.viewsupplier(long,long)
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/supplier/addsupplier],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.newsupplier()
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/supplier/addsupplier],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.addsupplier(com.soft.pharmacy.model.Supplier)
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/supplier/listsupplier],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.supplierlist(long)
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/supplier/editsupplier],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.editsupplier(long,long)
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/producttype/addproducttype],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.addproducttype(com.soft.pharmacy.model.ProductType)
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/supplier/codecheck],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.soft.pharamacy.controller.ConfigController.processAJAXRequest(java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/supplier/upload],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.importsupplierdata(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile,long) throws java.io.IOException
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/supplier/editsupplier],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.updatesupplier(com.soft.pharmacy.model.Supplier)
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/supplier/deletesupplier],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.deletesupplier(long,long)
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/producttype/listproducttype],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.producttypelist(long)
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/producttype/addproducttype],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.newproducttype()
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/producttype/viewproducttype],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.viewproducttype(long,long)
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/producttype/editproducttype],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.editproducttype(long,long)
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/producttype/editproducttype],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.updateproducttype(com.soft.pharmacy.model.ProductType)
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/producttype/deleteproducttype],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.deleteproducttype(long,long)
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/producttype/upload],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.importproducttypedata(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile,long) throws java.io.IOException
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/customer/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.CustomerController.customerlist(long)
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/customer/add],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.CustomerController.newcustomer()
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/customer/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.CustomerController.addcustomer(com.soft.pharmacy.model.Customer)
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/customer/edit],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.CustomerController.editcustomer(long,long)
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/customer/view],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.CustomerController.viewcustomer(long,long)
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/customer/edit],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.CustomerController.updatecustomer(com.soft.pharmacy.model.Customer)
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/customer/delete],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.CustomerController.deletecustomer(long,long)
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/mainlogin],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.LoginController.showmain(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) throws java.sql.SQLException,java.lang.Exception
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.LoginController.loginpage()
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/test],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.LoginController.testpage()
+2017-08-11 16:03:10,429 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/addproduct],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ProductController.loginpage()
+2017-08-11 16:03:10,429 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,429 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+2017-08-11 16:03:10,429 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2017-08-11 16:03:10,429 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+2017-08-11 16:03:10,429 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0' to allow for resolving potential circular references
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#1f5e6b7'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#1f5e6b7'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#fe1a35'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#fe1a35'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#6aca9b'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#6aca9b'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#f73b32'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#f73b32'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#14f67b4'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#14f67b4'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#21906f'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#21906f'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#7462d0'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#7462d0'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] RequestMappingHandlerAdapter - Looking for controller advice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Aug 11 16:03:10 PKT 2017]; parent: Root WebApplicationContext
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+2017-08-11 16:03:10,444 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'mvcUriComponentsContributor'
+2017-08-11 16:03:10,460 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'mvcUriComponentsContributor' to allow for resolving potential circular references
+2017-08-11 16:03:10,460 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#1036be0'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#936fc4'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#1'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#936fc4'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#18ec6cc'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#18ec6cc'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#9db345'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#9db345'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#139d5db'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#139d5db'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#72eee'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#72eee'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#18261f6'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#18261f6'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#5b2860'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#5b2860'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Invoking afterPropertiesSet() on bean with name '(inner bean)#1036be0'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] RequestMappingHandlerAdapter - Looking for controller advice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Aug 11 16:03:10 PKT 2017]; parent: Root WebApplicationContext
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning eagerly cached instance of singleton bean 'mvcUriComponentsContributor' that is not fully initialized yet - a consequence of a circular reference
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#1036be0'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#1'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Invoking afterPropertiesSet() on bean with name 'mvcUriComponentsContributor'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'mvcUriComponentsContributor'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2017-08-11 16:03:10,466 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2017-08-11 16:03:10,482 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0' to allow for resolving potential circular references
+2017-08-11 16:03:10,482 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2017-08-11 16:03:10,482 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#fe1a35#1'
+2017-08-11 16:03:10,482 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,482 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#fe1a35#1'
+2017-08-11 16:03:10,482 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#6aca9b#1'
+2017-08-11 16:03:10,482 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,482 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#6aca9b#1'
+2017-08-11 16:03:10,482 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#f73b32#1'
+2017-08-11 16:03:10,482 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,482 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#f73b32#1'
+2017-08-11 16:03:10,482 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#14f67b4#1'
+2017-08-11 16:03:10,482 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,482 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#14f67b4#1'
+2017-08-11 16:03:10,482 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#21906f#1'
+2017-08-11 16:03:10,482 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,482 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#21906f#1'
+2017-08-11 16:03:10,482 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#7462d0#1'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#7462d0#1'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] ExceptionHandlerExceptionResolver - Looking for exception mappings: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Aug 11 16:03:10 PKT 2017]; parent: Root WebApplicationContext
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0' to allow for resolving potential circular references
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0' to allow for resolving potential circular references
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping' to allow for resolving potential circular references
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Looking for URL mappings in application context: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Aug 11 16:03:10 PKT 2017]; parent: Root WebApplicationContext
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'mvcContentNegotiationManager': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#0': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'mvcUriComponentsContributor': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#0': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'configController': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'customerController': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'loginController': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'productController': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalRequiredAnnotationProcessor': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.context.annotation.internalCommonAnnotationProcessor': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'LoginDAO': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'CustomerDAO': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'ConfigDAO': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'dataSource': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'viewResolver': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.aop.config.internalAutoProxyCreator': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.transaction.interceptor.TransactionInterceptor#0': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.transaction.config.internalTransactionAdvisor': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'transactionManager': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#1': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.format.support.FormattingConversionServiceFactoryBean#1': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.web.servlet.handler.MappedInterceptor#1': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#1': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#1': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#1': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'multipartResolver': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'environment': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'systemProperties': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'systemEnvironment': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'servletConfig': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importRegistry': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'messageSource': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractDetectingUrlHandlerMapping - Rejected bean name 'applicationEventMulticaster': no URL paths identified
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter' to allow for resolving potential circular references
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter' to allow for resolving potential circular references
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'configController'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'configController'
+2017-08-11 16:03:10,498 DEBUG [localhost-startStop-1] InjectionMetadata - Registered injected element on class [com.soft.pharamacy.controller.ConfigController]: AutowiredFieldElement for com.soft.pharmacy.dao.ConfigDAO com.soft.pharamacy.controller.ConfigController.configdao
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'configController' to allow for resolving potential circular references
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] InjectionMetadata - Processing injected method of bean 'configController': AutowiredFieldElement for com.soft.pharmacy.dao.ConfigDAO com.soft.pharamacy.controller.ConfigController.configdao
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'ConfigDAO'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'ConfigDAO'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'dataSource'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'dataSource'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'dataSource' to allow for resolving potential circular references
+2017-08-11 16:03:10,513 INFO [localhost-startStop-1] DriverManagerDataSource - Loaded JDBC driver: com.microsoft.sqlserver.jdbc.SQLServerDriver
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'dataSource'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] ConstructorResolver - Autowiring by type from bean name 'ConfigDAO' via constructor to bean named 'dataSource'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'ConfigDAO' to allow for resolving potential circular references
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'transactionManager'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'transactionManager'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'transactionManager' to allow for resolving potential circular references
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'dataSource'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Invoking afterPropertiesSet() on bean with name 'transactionManager'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'transactionManager'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Invoking afterPropertiesSet() on bean with name 'ConfigDAO'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'ConfigDAO'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'configController' to bean named 'ConfigDAO'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'configController'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'customerController'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'customerController'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] InjectionMetadata - Registered injected element on class [com.soft.pharamacy.controller.CustomerController]: AutowiredFieldElement for com.soft.pharmacy.dao.CustomerDAO com.soft.pharamacy.controller.CustomerController.customerdao
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'customerController' to allow for resolving potential circular references
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] InjectionMetadata - Processing injected method of bean 'customerController': AutowiredFieldElement for com.soft.pharmacy.dao.CustomerDAO com.soft.pharamacy.controller.CustomerController.customerdao
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'CustomerDAO'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'CustomerDAO'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'dataSource'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] ConstructorResolver - Autowiring by type from bean name 'CustomerDAO' via constructor to bean named 'dataSource'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'CustomerDAO' to allow for resolving potential circular references
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Invoking afterPropertiesSet() on bean with name 'CustomerDAO'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'CustomerDAO'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'customerController' to bean named 'CustomerDAO'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'customerController'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'loginController'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'loginController'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] InjectionMetadata - Registered injected element on class [com.soft.pharamacy.controller.LoginController]: AutowiredFieldElement for com.soft.pharmacy.dao.LoginDAO com.soft.pharamacy.controller.LoginController.dao
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'loginController' to allow for resolving potential circular references
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] InjectionMetadata - Processing injected method of bean 'loginController': AutowiredFieldElement for com.soft.pharmacy.dao.LoginDAO com.soft.pharamacy.controller.LoginController.dao
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'LoginDAO'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'LoginDAO'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'dataSource'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] ConstructorResolver - Autowiring by type from bean name 'LoginDAO' via constructor to bean named 'dataSource'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'LoginDAO' to allow for resolving potential circular references
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Invoking afterPropertiesSet() on bean with name 'LoginDAO'
+2017-08-11 16:03:10,513 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'LoginDAO'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AutowiredAnnotationBeanPostProcessor - Autowiring by type from bean name 'loginController' to bean named 'LoginDAO'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'loginController'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'productController'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'productController'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'productController' to allow for resolving potential circular references
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'productController'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalRequiredAnnotationProcessor'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'LoginDAO'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'CustomerDAO'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'ConfigDAO'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'dataSource'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'viewResolver'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'viewResolver'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'viewResolver' to allow for resolving potential circular references
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'viewResolver'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.aop.config.internalAutoProxyCreator'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0' to allow for resolving potential circular references
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.annotation.AnnotationTransactionAttributeSource#0'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Invoking afterPropertiesSet() on bean with name 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.transaction.interceptor.TransactionInterceptor#0'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'transactionManager'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0' to allow for resolving potential circular references
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0' to allow for resolving potential circular references
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2017-08-11 16:03:10,529 INFO [localhost-startStop-1] AbstractUrlHandlerMapping - Mapped URL path [/resources/**] onto handler 'org.springframework.web.servlet.resource.ResourceHttpRequestHandler#0'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#1'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#1'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#1' to allow for resolving potential circular references
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#0'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#1'
+2017-08-11 16:03:10,529 DEBUG [localhost-startStop-1] AbstractHandlerMethodMapping - Looking for request mappings in application context: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Aug 11 16:03:10 PKT 2017]; parent: Root WebApplicationContext
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/supplier/viewsupplier],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.viewsupplier(long,long)
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/supplier/addsupplier],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.newsupplier()
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/supplier/addsupplier],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.addsupplier(com.soft.pharmacy.model.Supplier)
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/supplier/listsupplier],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.supplierlist(long)
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/supplier/editsupplier],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.editsupplier(long,long)
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/producttype/addproducttype],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.addproducttype(com.soft.pharmacy.model.ProductType)
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/supplier/codecheck],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String com.soft.pharamacy.controller.ConfigController.processAJAXRequest(java.lang.String,javax.servlet.http.HttpServletRequest)
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/supplier/upload],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.importsupplierdata(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile,long) throws java.io.IOException
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/supplier/editsupplier],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.updatesupplier(com.soft.pharmacy.model.Supplier)
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/supplier/deletesupplier],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.deletesupplier(long,long)
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/producttype/listproducttype],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.producttypelist(long)
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/producttype/addproducttype],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.newproducttype()
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/producttype/viewproducttype],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.viewproducttype(long,long)
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/producttype/editproducttype],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.editproducttype(long,long)
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/producttype/editproducttype],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.updateproducttype(com.soft.pharmacy.model.ProductType)
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/producttype/deleteproducttype],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.deleteproducttype(long,long)
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/config/producttype/upload],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.importproducttypedata(javax.servlet.http.HttpServletRequest,org.springframework.web.multipart.MultipartFile,long) throws java.io.IOException
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/customer/list],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.CustomerController.customerlist(long)
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/customer/add],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.CustomerController.newcustomer()
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/customer/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.CustomerController.addcustomer(com.soft.pharmacy.model.Customer)
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/customer/edit],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.CustomerController.editcustomer(long,long)
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/customer/view],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.CustomerController.viewcustomer(long,long)
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/customer/edit],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.CustomerController.updatecustomer(com.soft.pharmacy.model.Customer)
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/customer/delete],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.CustomerController.deletecustomer(long,long)
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/mainlogin],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.LoginController.showmain(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) throws java.sql.SQLException,java.lang.Exception
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/login],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.LoginController.loginpage()
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/test],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.LoginController.testpage()
+2017-08-11 16:03:10,545 INFO [localhost-startStop-1] AbstractHandlerMethodMapping - Mapped "{[/addproduct],methods=[GET],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ProductController.loginpage()
+2017-08-11 16:03:10,545 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,545 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#1'
+2017-08-11 16:03:10,545 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#1'
+2017-08-11 16:03:10,545 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1'
+2017-08-11 16:03:10,545 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1'
+2017-08-11 16:03:10,545 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1' to allow for resolving potential circular references
+2017-08-11 16:03:10,545 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2017-08-11 16:03:10,545 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#936fc4#1'
+2017-08-11 16:03:10,545 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.format.support.FormattingConversionServiceFactoryBean#1'
+2017-08-11 16:03:10,545 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,545 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#936fc4#1'
+2017-08-11 16:03:10,545 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#18ec6cc#1'
+2017-08-11 16:03:10,545 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,545 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#18ec6cc#1'
+2017-08-11 16:03:10,545 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#9db345#1'
+2017-08-11 16:03:10,562 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,563 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#9db345#1'
+2017-08-11 16:03:10,563 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#139d5db#1'
+2017-08-11 16:03:10,566 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#139d5db#1'
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#72eee#1'
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#72eee#1'
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#18261f6#1'
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#18261f6#1'
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#5b2860#1'
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#5b2860#1'
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1'
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] RequestMappingHandlerAdapter - Looking for controller advice: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Aug 11 16:03:10 PKT 2017]; parent: Root WebApplicationContext
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1'
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.MappedInterceptor#1'
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#1'
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#1'
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#1' to allow for resolving potential circular references
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'mvcContentNegotiationManager'
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#18ec6cc#2'
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#18ec6cc#2'
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#9db345#2'
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#9db345#2'
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#139d5db#2'
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#139d5db#2'
+2017-08-11 16:03:10,567 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#72eee#2'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#72eee#2'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#18261f6#2'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#18261f6#2'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean '(inner bean)#5b2860#2'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean '(inner bean)#5b2860#2'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Invoking afterPropertiesSet() on bean with name 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#1'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] ExceptionHandlerExceptionResolver - Looking for exception mappings: WebApplicationContext for namespace 'spring-servlet': startup date [Fri Aug 11 16:03:10 PKT 2017]; parent: Root WebApplicationContext
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#1'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#1'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#1'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#1' to allow for resolving potential circular references
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#1'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#1'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#1'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#1' to allow for resolving potential circular references
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#1'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] DefaultSingletonBeanRegistry - Creating shared instance of singleton bean 'multipartResolver'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'multipartResolver'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Eagerly caching bean 'multipartResolver' to allow for resolving potential circular references
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'multipartResolver'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.importAwareProcessor'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.context.annotation.ConfigurationClassPostProcessor.enhancedConfigurationProcessor'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractApplicationContext - Unable to locate LifecycleProcessor with name 'lifecycleProcessor': using default [org.springframework.context.support.DefaultLifecycleProcessor@1ffa0e6]
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'lifecycleProcessor'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'multipartResolver'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] DispatcherServlet - Using MultipartResolver [org.springframework.web.multipart.commons.CommonsMultipartResolver@12f0b3c]
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] DispatcherServlet - Unable to locate LocaleResolver with name 'localeResolver': using default [org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@51ed7e]
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.theme.FixedThemeResolver'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] DispatcherServlet - Unable to locate ThemeResolver with name 'themeResolver': using default [org.springframework.web.servlet.theme.FixedThemeResolver@6df1db]
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#1'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#0'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.handler.SimpleUrlHandlerMapping#0'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping#1'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2017-08-11 16:03:10,582 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1'
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#0'
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter'
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter'
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter#1'
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#1'
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#1'
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#1'
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#0'
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#0'
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#0'
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver#1'
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver#1'
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver#1'
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator'
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] DispatcherServlet - Unable to locate RequestToViewNameTranslator with name 'viewNameTranslator': using default [org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1edd647]
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'viewResolver'
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'viewResolver'
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] AbstractAutowireCapableBeanFactory - Finished creating instance of bean 'org.springframework.web.servlet.support.SessionFlashMapManager'
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] DispatcherServlet - Unable to locate FlashMapManager with name 'flashMapManager': using default [org.springframework.web.servlet.support.SessionFlashMapManager@1ecb52f]
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [servletConfigInitParams]
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [servletContextInitParams]
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [jndiProperties]
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] JndiTemplate - Looking up JNDI object with name [java:comp/env/spring.liveBeansView.mbeanDomain]
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] JndiLocatorSupport - Converted JNDI name [java:comp/env/spring.liveBeansView.mbeanDomain] not found - trying original name [spring.liveBeansView.mbeanDomain]. javax.naming.NameNotFoundException: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] JndiTemplate - Looking up JNDI object with name [spring.liveBeansView.mbeanDomain]
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] JndiPropertySource - JNDI lookup for name [spring.liveBeansView.mbeanDomain] threw NamingException with message: Name [spring.liveBeansView.mbeanDomain] is not bound in this Context. Unable to find [spring.liveBeansView.mbeanDomain].. Returning null.
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemProperties]
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] PropertySourcesPropertyResolver - Searching for key 'spring.liveBeansView.mbeanDomain' in [systemEnvironment]
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] PropertySourcesPropertyResolver - Could not find key 'spring.liveBeansView.mbeanDomain' in any property source. Returning [null]
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] FrameworkServlet - Published WebApplicationContext of servlet 'spring' as ServletContext attribute with name [org.springframework.web.servlet.FrameworkServlet.CONTEXT.spring]
+2017-08-11 16:03:10,598 INFO [localhost-startStop-1] FrameworkServlet - FrameworkServlet 'spring': initialization completed in 265 ms
+2017-08-11 16:03:10,598 DEBUG [localhost-startStop-1] HttpServletBean - Servlet 'spring' configured successfully
+2017-08-11 16:03:16,643 DEBUG [http-bio-8787-exec-9] DispatcherServlet - DispatcherServlet with name 'spring' processing POST request for [/POS/mainlogin]
+2017-08-11 16:03:16,647 DEBUG [http-bio-8787-exec-9] AbstractHandlerMethodMapping - Looking up handler method for path /mainlogin
+2017-08-11 16:03:16,650 DEBUG [http-bio-8787-exec-9] AbstractHandlerMethodMapping - Returning handler method [public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.LoginController.showmain(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) throws java.sql.SQLException,java.lang.Exception]
+2017-08-11 16:03:16,650 DEBUG [http-bio-8787-exec-9] AbstractBeanFactory - Returning cached instance of singleton bean 'loginController'
+2017-08-11 16:03:16,668 DEBUG [http-bio-8787-exec-9] LoginDAOImpl -  SELECT *  FROM SS_TBLSYSUSERS  WHERE lower(SU_SYSLOGIN) = 'taimoor' and lower(SU_SYSPASSWORD) = 'taimoor'
+2017-08-11 16:03:16,670 DEBUG [http-bio-8787-exec-9] JdbcTemplate - Executing SQL query [ SELECT *  FROM SS_TBLSYSUSERS  WHERE lower(SU_SYSLOGIN) = 'taimoor' and lower(SU_SYSPASSWORD) = 'taimoor']
+2017-08-11 16:03:16,675 DEBUG [http-bio-8787-exec-9] DataSourceUtils - Fetching JDBC Connection from DataSource
+2017-08-11 16:03:16,675 DEBUG [http-bio-8787-exec-9] DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:sqlserver://HIIG-TKHAWAR;DatabaseName=POS;integratedSecurity=true]
+2017-08-11 16:03:16,877 DEBUG [http-bio-8787-exec-9] LoginDAOImpl$1 - 1
+2017-08-11 16:03:16,880 DEBUG [http-bio-8787-exec-9] DataSourceUtils - Returning JDBC Connection to DataSource
+2017-08-11 16:03:16,884 DEBUG [http-bio-8787-exec-9] AbstractAutowireCapableBeanFactory - Invoking afterPropertiesSet() on bean with name 'dashboard'
+2017-08-11 16:03:16,884 DEBUG [http-bio-8787-exec-9] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:16,884 DEBUG [http-bio-8787-exec-9] DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'dashboard'; URL [/WEB-INF/pages/dashboard.jsp]] in DispatcherServlet with name 'spring'
+2017-08-11 16:03:16,885 DEBUG [http-bio-8787-exec-9] AbstractView - Added model object 'Message' of type [java.lang.String] to request in view with name 'dashboard'
+2017-08-11 16:03:16,889 DEBUG [http-bio-8787-exec-9] InternalResourceView - Forwarding to resource [/WEB-INF/pages/dashboard.jsp] in InternalResourceView 'dashboard'
+2017-08-11 16:03:16,895 DEBUG [http-bio-8787-exec-9] FrameworkServlet - Successfully completed request
+2017-08-11 16:03:19,242 DEBUG [http-bio-8787-exec-10] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/POS/config/producttype/listproducttype]
+2017-08-11 16:03:19,242 DEBUG [http-bio-8787-exec-10] AbstractHandlerMethodMapping - Looking up handler method for path /config/producttype/listproducttype
+2017-08-11 16:03:19,243 DEBUG [http-bio-8787-exec-10] AbstractHandlerMethodMapping - Returning handler method [public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.producttypelist(long)]
+2017-08-11 16:03:19,243 DEBUG [http-bio-8787-exec-10] AbstractBeanFactory - Returning cached instance of singleton bean 'configController'
+2017-08-11 16:03:19,244 DEBUG [http-bio-8787-exec-10] DispatcherServlet - Last-Modified value for [/POS/config/producttype/listproducttype] is: -1
+2017-08-11 16:03:19,250 DEBUG [http-bio-8787-exec-10] JdbcTemplate - Executing SQL query [ SELECT [PT_ID],[ENTERPRISEID],[PT_NAME],[PT_INSERTDATE],[PT_MODIFYDATE]  FROM [POS_TBLPRODUCTTYPE] WHERE [ENTERPRISEID] = 1 ORDER BY [PT_ID] ASC ]
+2017-08-11 16:03:19,250 DEBUG [http-bio-8787-exec-10] DataSourceUtils - Fetching JDBC Connection from DataSource
+2017-08-11 16:03:19,251 DEBUG [http-bio-8787-exec-10] DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:sqlserver://HIIG-TKHAWAR;DatabaseName=POS;integratedSecurity=true]
+2017-08-11 16:03:19,272 DEBUG [http-bio-8787-exec-10] DataSourceUtils - Returning JDBC Connection to DataSource
+2017-08-11 16:03:19,272 DEBUG [http-bio-8787-exec-10] AbstractAutowireCapableBeanFactory - Invoking afterPropertiesSet() on bean with name 'config/ProductTypeList'
+2017-08-11 16:03:19,272 DEBUG [http-bio-8787-exec-10] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:19,273 DEBUG [http-bio-8787-exec-10] DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'config/ProductTypeList'; URL [/WEB-INF/pages/config/ProductTypeList.jsp]] in DispatcherServlet with name 'spring'
+2017-08-11 16:03:19,273 DEBUG [http-bio-8787-exec-10] AbstractView - Added model object 'producttypeslist' of type [java.util.ArrayList] to request in view with name 'config/ProductTypeList'
+2017-08-11 16:03:19,273 DEBUG [http-bio-8787-exec-10] InternalResourceView - Forwarding to resource [/WEB-INF/pages/config/ProductTypeList.jsp] in InternalResourceView 'config/ProductTypeList'
+2017-08-11 16:03:19,278 DEBUG [http-bio-8787-exec-10] FrameworkServlet - Successfully completed request
+2017-08-11 16:03:20,572 DEBUG [http-bio-8787-exec-10] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/POS/config/producttype/viewproducttype]
+2017-08-11 16:03:20,572 DEBUG [http-bio-8787-exec-10] AbstractHandlerMethodMapping - Looking up handler method for path /config/producttype/viewproducttype
+2017-08-11 16:03:20,573 DEBUG [http-bio-8787-exec-10] AbstractHandlerMethodMapping - Returning handler method [public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.viewproducttype(long,long)]
+2017-08-11 16:03:20,573 DEBUG [http-bio-8787-exec-10] AbstractBeanFactory - Returning cached instance of singleton bean 'configController'
+2017-08-11 16:03:20,573 DEBUG [http-bio-8787-exec-10] DispatcherServlet - Last-Modified value for [/POS/config/producttype/viewproducttype] is: -1
+2017-08-11 16:03:20,576 DEBUG [http-bio-8787-exec-10] JdbcTemplate - Executing SQL query [ SELECT [PT_ID],[ENTERPRISEID],[PT_NAME],[PT_INSERTDATE],[PT_MODIFYDATE]  FROM [POS_TBLPRODUCTTYPE] WHERE [ENTERPRISEID] = 1 AND  [PT_ID] = 3 ORDER BY [PT_ID] DESC ]
+2017-08-11 16:03:20,576 DEBUG [http-bio-8787-exec-10] DataSourceUtils - Fetching JDBC Connection from DataSource
+2017-08-11 16:03:20,576 DEBUG [http-bio-8787-exec-10] DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:sqlserver://HIIG-TKHAWAR;DatabaseName=POS;integratedSecurity=true]
+2017-08-11 16:03:20,597 DEBUG [http-bio-8787-exec-10] DataSourceUtils - Returning JDBC Connection to DataSource
+2017-08-11 16:03:20,600 DEBUG [http-bio-8787-exec-10] AbstractAutowireCapableBeanFactory - Invoking afterPropertiesSet() on bean with name 'config/ViewProductType'
+2017-08-11 16:03:20,600 DEBUG [http-bio-8787-exec-10] AbstractBeanFactory - Returning cached instance of singleton bean 'org.springframework.transaction.config.internalTransactionAdvisor'
+2017-08-11 16:03:20,601 DEBUG [http-bio-8787-exec-10] DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'config/ViewProductType'; URL [/WEB-INF/pages/config/ViewProductType.jsp]] in DispatcherServlet with name 'spring'
+2017-08-11 16:03:20,601 DEBUG [http-bio-8787-exec-10] AbstractView - Added model object 'producttype' of type [com.soft.pharmacy.model.ProductType] to request in view with name 'config/ViewProductType'
+2017-08-11 16:03:20,601 DEBUG [http-bio-8787-exec-10] AbstractView - Added model object 'org.springframework.validation.BindingResult.producttype' of type [org.springframework.validation.BeanPropertyBindingResult] to request in view with name 'config/ViewProductType'
+2017-08-11 16:03:20,601 DEBUG [http-bio-8787-exec-10] InternalResourceView - Forwarding to resource [/WEB-INF/pages/config/ViewProductType.jsp] in InternalResourceView 'config/ViewProductType'
+2017-08-11 16:03:20,604 DEBUG [http-bio-8787-exec-10] FrameworkServlet - Successfully completed request
+2017-08-11 16:03:24,230 DEBUG [http-bio-8787-exec-10] DispatcherServlet - DispatcherServlet with name 'spring' processing GET request for [/POS/config/producttype/viewproducttype]
+2017-08-11 16:03:24,230 DEBUG [http-bio-8787-exec-10] AbstractHandlerMethodMapping - Looking up handler method for path /config/producttype/viewproducttype
+2017-08-11 16:03:24,230 DEBUG [http-bio-8787-exec-10] AbstractHandlerMethodMapping - Returning handler method [public org.springframework.web.servlet.ModelAndView com.soft.pharamacy.controller.ConfigController.viewproducttype(long,long)]
+2017-08-11 16:03:24,230 DEBUG [http-bio-8787-exec-10] AbstractBeanFactory - Returning cached instance of singleton bean 'configController'
+2017-08-11 16:03:24,230 DEBUG [http-bio-8787-exec-10] DispatcherServlet - Last-Modified value for [/POS/config/producttype/viewproducttype] is: -1
+2017-08-11 16:03:24,231 DEBUG [http-bio-8787-exec-10] JdbcTemplate - Executing SQL query [ SELECT [PT_ID],[ENTERPRISEID],[PT_NAME],[PT_INSERTDATE],[PT_MODIFYDATE]  FROM [POS_TBLPRODUCTTYPE] WHERE [ENTERPRISEID] = 1 AND  [PT_ID] = 2 ORDER BY [PT_ID] DESC ]
+2017-08-11 16:03:24,231 DEBUG [http-bio-8787-exec-10] DataSourceUtils - Fetching JDBC Connection from DataSource
+2017-08-11 16:03:24,231 DEBUG [http-bio-8787-exec-10] DriverManagerDataSource - Creating new JDBC DriverManager Connection to [jdbc:sqlserver://HIIG-TKHAWAR;DatabaseName=POS;integratedSecurity=true]
+2017-08-11 16:03:24,251 DEBUG [http-bio-8787-exec-10] DataSourceUtils - Returning JDBC Connection to DataSource
+2017-08-11 16:03:24,251 DEBUG [http-bio-8787-exec-10] DispatcherServlet - Rendering view [org.springframework.web.servlet.view.JstlView: name 'config/ViewProductType'; URL [/WEB-INF/pages/config/ViewProductType.jsp]] in DispatcherServlet with name 'spring'
+2017-08-11 16:03:24,251 DEBUG [http-bio-8787-exec-10] AbstractView - Added model object 'producttype' of type [com.soft.pharmacy.model.ProductType] to request in view with name 'config/ViewProductType'
+2017-08-11 16:03:24,252 DEBUG [http-bio-8787-exec-10] AbstractView - Added model object 'org.springframework.validation.BindingResult.producttype' of type [org.springframework.validation.BeanPropertyBindingResult] to request in view with name 'config/ViewProductType'
+2017-08-11 16:03:24,252 DEBUG [http-bio-8787-exec-10] InternalResourceView - Forwarding to resource [/WEB-INF/pages/config/ViewProductType.jsp] in InternalResourceView 'config/ViewProductType'
+2017-08-11 16:03:24,252 DEBUG [http-bio-8787-exec-10] FrameworkServlet - Successfully completed request
