@@ -1,4 +1,4 @@
-<%@page import="com.soft.pharmacy.model.ProductType"%>
+<%@page import="com.soft.pharmacy.model.Product"%>
 <%@page import="com.soft.pharmacy.model.Supplier"%>
 <%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -75,8 +75,8 @@ href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataT
 							Result = 0;
 						}
 						
-						ArrayList producttypeslist = null;
-						producttypeslist = (ArrayList)request.getAttribute("producttypeslist");
+						ArrayList productslist = null;
+						productslist = (ArrayList)request.getAttribute("productslist");
 												
 %>
 	<div id="wrapper">
@@ -84,7 +84,7 @@ href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataT
 		<div id="page-wrapper">
 			<div class="row">
 				<div class="col-lg-12">
-					<h1 class="page-header">Product Type</h1>
+					<h1 class="page-header">Product</h1>
 				</div>
 				<!-- /.col-lg-12 -->
 			</div>
@@ -95,10 +95,10 @@ href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataT
 						<div class="panel-heading">
 							<table>
 								<tr width="100%">
-									<td width="74%">Product Type List</td>
-									<td><a href="/POS/config/producttype/addproducttype"
-										class="btn btn-primary" style="float: right;"
-										>Add Product Type</a> 
+									<td width="78%">Products List</td>
+									<td><a class="btn btn-primary" style="float: right;"
+										href="/POS/product/addproduct?EnterprisedID=<%=us.getSysuser().getsysUserID()%>">Add Product</a> 
+										
 										<a data-target="#edit" data-toggle="modal"
 										class="btn btn-primary"
 										> <span
@@ -106,7 +106,13 @@ href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataT
 									</a></td>
 								</tr>
 							</table>
-							
+							<!-- <div>
+							Supplier List </div>
+							<div> <a class="btn btn-primary"
+								href="/POS/config/supplier/add">Add Supplier</a>
+							<a class="btn btn-primary" data-title="Edit" data-toggle="modal" data-target="#edit" >
+							<span class="glyphicon glyphicon-pencil"></span> Import File</a></div>
+						</div> -->
 						</div>
 						<%if(Result==1 && message.length() > 0){ %>
 						<div class="panel-body">
@@ -131,25 +137,31 @@ href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataT
 								<thead>
 									<tr>
 										<th>Product Name</th>
+										<th>Product Code</th>
+										<th>Type</th>
+										<th>Supplier</th>
+										<th>Price (Included Mark Up)</th>
 										<th>Edit</th>
 										<th>Delete</th>
 									</tr>
 								</thead>
 								<tbody>
-									<%if (producttypeslist != null && producttypeslist.size() > 0){  %>
-									<%for(int count=0;count<producttypeslist.size();count++){
-							      	ProductType pt=(ProductType)producttypeslist.get(count);%>
+									<%if (productslist != null && productslist.size() > 0){  %>
+									<%for(int count=0;count<productslist.size();count++){
+							      	Product pr=(Product)productslist.get(count);%>
 									<tr class="odd gradeX">
 										<td><a
-											href="/POS/config/producttype/viewproducttype?EnterprisedID=<%=pt.getEnterprisedID()%>&ProductTypeID=<%=pt.getProductTypeID() %>"><%=pt.getProductTypeName()%></a></td>
-										
-										
+											href="/POS/product/viewproduct?EnterprisedID=<%=pr.getEnterprisedID()%>&ProductID=<%=pr.getProductID()%>"><%=pr.getProductName()%></a></td>
+										<td><%=pr.getProductCode()%></td>
+										<td><%=pr.getProducTypeName()%></td>
+										<td><%=pr.getSupplierName()%></td>
+										<td><%=pr.getRetailPrice() %></td>
 										<td align="center"><a
-											href="/POS/config/producttype/editproducttype?EnterprisedID=<%=pt.getEnterprisedID()%>&ProductTypeID=<%=pt.getProductTypeID() %>"
+											href="/POS/product/editproduct?EnterprisedID=<%=pr.getEnterprisedID()%>&ProductID=<%=pr.getProductID() %>"
 											class="btn btn-primary btn-xs"><span
 												class="glyphicon glyphicon-pencil"></span></a></td>
 										<td align="center"><a
-											href="/POS/config/producttype/deleteproducttype?EnterprisedID=<%=pt.getEnterprisedID()%>&ProductTypeID=<%=pt.getProductTypeID() %>"
+											href="/POS/product/deleteproduct?EnterprisedID=<%=pr.getEnterprisedID()%>&ProductID=<%=pr.getProductID() %>"
 											class="btn btn-danger btn-xs"><span
 												class="glyphicon glyphicon-trash"></span></a></td>
 									</tr>
@@ -185,7 +197,7 @@ href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataT
 					<h4 class="modal-title custom_align" id="Heading">Upload File</h4>
 				</div>
 				<div class="modal-body">
-					<form name="productypefile" role="form" method="POST" action="/POS/config/producttype/upload"
+					<form name="supplierfile" role="form" method="POST" action="/POS/product/upload"
 						style="padding: 10px 10px" enctype="multipart/form-data">
 						<input type="hidden" name="EnterprisedID" id="EnterprisedID" value="<%=uss.getSysuser().getsysUserID()%>">
 						<table>

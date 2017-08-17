@@ -3,59 +3,95 @@ package com.soft.pharmacy.model;
 public class Product {
 	
 	long ProductID;
+	long EnterprisedID;
 	String ProductName;
-	int CategoryID;
-	String Magnitude;
-	String Nomenclature;
-	String CriticalUnit;
-	String Manufacture;
-	Double TradePrice;
-	Double RetailPrice;
+	String ProductCode;
+	long ProductTypeID;
+	long SupplierID;
+	double SupplyPrice;
+	int ProductQuantity;
+	double ProductMarkUp;
+	double RetailPrice;
 	String InsertionDate;
+	String ModificationDate;
+	
+	String SupplierName;
+	String ProducTypeName;
 	
 	public Product(){
 		
 		this.ProductID=0;
+		this.EnterprisedID=0;
 		this.ProductName="";
-		this.CategoryID=0;
-		this.Magnitude="";
-		this.Nomenclature="";
-		this.CriticalUnit="";
-		this.Manufacture="";
-		this.TradePrice=0.0;
+		this.ProductCode = "";
+		this.ProductTypeID=0;
+		this.SupplierID=0;
+		this.SupplyPrice=0.0;
+		this.ProductQuantity=0;
+		this.ProductMarkUp=0;
 		this.RetailPrice=0.0;
 		this.InsertionDate="";
+		this.ModificationDate="";
+		this.SupplierName="";
+		this.ProducTypeName="";
 		
 	}
 	
-	public Product(long ProductID,String ProductName,int CategoryID,String Magnitude,String Nomenclature,
-	String CriticalUnit,String Manufacture,Double TradePrice,Double RetailPrice,String InsertionDate){
+	public Product(long ProductID,long EnterprisedID,String ProductName,String ProductCode,long ProductTypeID,long SupplierID,
+				   double SupplyPrice,int ProductQuantity,double ProductMarkUp,double RetailPrice,
+				   String InsertionDate,String ModificationDate){
 		
 		this.ProductID=ProductID;
+		this.EnterprisedID = EnterprisedID;
 		
 		if(ProductName==null)ProductName="";
 		this.ProductName=ProductName;
 		
-		this.CategoryID=CategoryID;
+		if(ProductCode==null)ProductCode="";
+		this.ProductCode=ProductCode;
 		
-		if(Magnitude==null)Magnitude="";
-		this.Magnitude=Magnitude;
+		this.ProductTypeID=ProductTypeID;
+		this.SupplierID=SupplierID;
 		
-		if(Nomenclature==null)Nomenclature="";
-		this.Nomenclature=Nomenclature;
 		
-		if(CriticalUnit==null)CriticalUnit="";
-		this.CriticalUnit=CriticalUnit;
-		
-		if(Manufacture==null)Manufacture="";
-		this.Manufacture=Manufacture;
-		
-		this.TradePrice=TradePrice;
+		this.SupplyPrice=SupplyPrice;
+		this.ProductQuantity=ProductQuantity;
+		this.ProductMarkUp=ProductMarkUp;
 		this.RetailPrice=RetailPrice;
 		
 		if(InsertionDate==null)InsertionDate="";
 		this.InsertionDate=InsertionDate;
 		
+		if(ModificationDate==null)ModificationDate="";
+		this.ModificationDate=ModificationDate;
+		
+		this.SupplierName="";
+		this.ProducTypeName="";
+		
+	}
+
+	public String getSupplierName() {
+		return SupplierName;
+	}
+
+	public void setSupplierName(String supplierName) {
+		SupplierName = supplierName;
+	}
+
+	public String getProducTypeName() {
+		return ProducTypeName;
+	}
+
+	public void setProducTypeName(String producTypeName) {
+		ProducTypeName = producTypeName;
+	}
+
+	public long getEnterprisedID() {
+		return EnterprisedID;
+	}
+
+	public void setEnterprisedID(long enterprisedID) {
+		EnterprisedID = enterprisedID;
 	}
 
 	public long getProductID() {
@@ -75,58 +111,6 @@ public class Product {
 		ProductName = productName;
 	}
 
-	public int getCategoryID() {
-		return CategoryID;
-	}
-
-	public void setCategoryID(int categoryID) {
-		CategoryID = categoryID;
-	}
-
-	public String getMagnitude() {
-		return Magnitude;
-	}
-
-	public void setMagnitude(String magnitude) {
-		if(magnitude==null)magnitude="";
-		Magnitude = magnitude;
-	}
-
-	public String getNomenclature() {
-		return Nomenclature;
-	}
-
-	public void setNomenclature(String nomenclature) {
-		if(nomenclature==null)nomenclature="";
-		Nomenclature = nomenclature;
-	}
-
-	public String getCriticalUnit() {
-		return CriticalUnit;
-	}
-
-	public void setCriticalUnit(String criticalUnit) {
-		if(criticalUnit==null)criticalUnit="";
-		CriticalUnit = criticalUnit;
-	}
-
-	public String getManufacture() {
-		return Manufacture;
-	}
-
-	public void setManufacture(String manufacture) {
-		if(manufacture==null)manufacture="";
-		Manufacture = manufacture;
-	}
-
-	public Double getTradePrice() {
-		return TradePrice;
-	}
-
-	public void setTradePrice(Double tradePrice) {
-		TradePrice = tradePrice;
-	}
-
 	public Double getRetailPrice() {
 		return RetailPrice;
 	}
@@ -142,6 +126,68 @@ public class Product {
 	public void setInsertionDate(String insertionDate) {
 		if(insertionDate==null)insertionDate="";
 		InsertionDate = insertionDate;
+	}
+
+	public String getProductCode() {
+		return ProductCode;
+	}
+
+	public void setProductCode(String productCode) {
+		if(productCode==null)productCode="";
+		ProductCode = productCode;
+	}
+
+	public long getProductTypeID() {
+		return ProductTypeID;
+	}
+
+	public void setProductTypeID(int productTypeID) {
+		ProductTypeID = productTypeID;
+	}
+
+	public long getSupplierID() {
+		return SupplierID;
+	}
+
+	public void setSupplierID(int supplierID) {
+		SupplierID = supplierID;
+	}
+
+	public double getSupplyPrice() {
+		return SupplyPrice;
+	}
+
+	public void setSupplyPrice(double supplyPrice) {
+		SupplyPrice = supplyPrice;
+	}
+
+	public int getProductQuantity() {
+		return ProductQuantity;
+	}
+
+	public void setProductQuantity(int productQuantity) {
+		ProductQuantity = productQuantity;
+	}
+
+	public double getProductMarkUp() {
+		return ProductMarkUp;
+	}
+
+	public void setProductMarkUp(double productMarkUp) {
+		ProductMarkUp = productMarkUp;
+	}
+
+	public String getModificationDate() {
+		return ModificationDate;
+	}
+
+	public void setModificationDate(String modificationDate) {
+		if(modificationDate==null)modificationDate="";
+		ModificationDate = modificationDate;
+	}
+
+	public void setRetailPrice(double retailPrice) {
+		RetailPrice = retailPrice;
 	}
 	
 	

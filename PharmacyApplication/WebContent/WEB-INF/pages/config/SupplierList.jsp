@@ -15,13 +15,29 @@ if( uss != null){%>
 <meta name="author" content="">
 
 <title>POS</title>
+<script 
 
+src="https://code.jquery.com/jquery-1.11.1.min.js"></script> 
+
+<script 
+
+src="https://cdn.datatables.net/1.10.4/js/jquery.dataTables.min.js"></script>
+<script 
+
+src="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataTables.jqueryui.js">
+</script>
+<link rel="stylesheet" 
+
+href="https://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" 
+
+href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataTables.jqueryui.css">
 <!-- Bootstrap Core CSS -->
 <link href="/POS/resources/vendor/bootstrap/css/bootstrap.min.css"
 	rel="stylesheet">
 
 <!-- MetisMenu CSS -->
-<link href="/POS//resources/vendor/metisMenu/metisMenu.min.css"
+<link href="/POS/resources/vendor/metisMenu/metisMenu.min.css"
 	rel="stylesheet">
 
 <!-- Custom CSS -->
