@@ -39,14 +39,6 @@ if( uss != null){%>
 	src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.4.4.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css" />
 <script >
-function CalculateRetailPrice(){
-	var SupplyPrice = parseFloat(document.getElementById("SupplyPrice").value);
-	var ProductMarkUp = parseFloat(document.getElementById("ProductMarkUp").value / 100);
-	var RetailPrice = SupplyPrice + parseFloat(SupplyPrice * ProductMarkUp);
-	document.getElementById("RetailPricee").value = RetailPrice;
-	document.getElementById("RetailPrice").value = RetailPrice;
-}
-
 function checkproductcode(){
 	$("#Codeinfo").css('display','none')
 	if($("#ProductCode").val().length > 0){
@@ -110,7 +102,7 @@ function checkproductcode(){
 									<input type="hidden" name="EnterprisedID" id="EnterprisedID"
 										value="<%=us.getSysuser().getsysUserID()%>">
 										
-									<input type="hidden" name="RetailPrice" id="RetailPrice">
+									
 									<div class="col-lg-6">
 										<label>Product Code</label> <input type="text"
 											class="form-control" placeholder="Enter Code"
@@ -120,7 +112,8 @@ function checkproductcode(){
 									</div>
 									<div class="col-lg-6">
 										<label>Product Type</label> <select name="ProductTypeID"
-											id="ProductTypeID" class="selectpicker form-control" data-show-subtext="true" data-live-search="true">
+											id="ProductTypeID" class="selectpicker form-control" 
+											data-show-subtext="true" data-live-search="true" onchange="getproducttype()">
 											<option value="0">Select Product Type</option>
 											<% for(int count=0;count<producttypeslist.size();count++){
 							      				ProductType pt=(ProductType)producttypeslist.get(count);%>
@@ -141,25 +134,24 @@ function checkproductcode(){
 									</div>
 
 									<div class="col-lg-6">
-										<label>Supply Price</label> <input type="text"
-											class="form-control" placeholder="Enter Supply Price"
-											name="SupplyPrice" id="SupplyPrice" >
+										<label>Selling Price</label> <input type="text"
+											class="form-control" placeholder="Enter Selling Price"
+											name="SellingPrice" id="SellingPrice" onkeypress="onlynumbers(this)">
 									</div>
 									<div class="col-lg-6">
-										<label>Mark up</label> <input class="form-control" type="text"
-											name="ProductMarkUp" id="ProductMarkUp" onchange="CalculateRetailPrice()"
-											placeholder="Enter Mark Up">
-									</div>
-									<div class="col-lg-6">
-										<label>Retail Price</label> <input class="form-control"
-											type="text" name="RetailPricee" id="RetailPricee" 
-											placeholder="Enter Retail Price" disabled="disabled">
+										<label>Buying Price</label> <input class="form-control" type="text"
+											name="BuyingPrice" id="BuyingPrice"
+											placeholder="Enter Buying Price" onkeypress="onlynumbers(this)">
 									</div>
 									<div class="col-lg-6">
 										<label>Quantity</label> <input class="form-control"
 											type="text" name="ProductQuantity" id="ProductQuantity"
-											placeholder="Enter Quantity">
+											placeholder="Enter Quantity" onkeypress="onlynumbers(this)">
 									</div>
+									<div class="col-lg-6">
+										
+									</div>
+									
 									<div class="col-lg-6" style="margin-top: 10px;"></div>
 									<div class="col-lg-6" style="margin-top: 10px; float: right;">
 										<button type="submit" class="btn btn-primary"
@@ -220,10 +212,10 @@ $( document ).ready( function () {
 		    	  maxlength:2,
 		    	  required: true
 		      },
-		      RetailPricee:{
+		      SellingPrice:{
 		    	  required:true
 		      },
-		      SupplyPrice:{
+		      BuyingPrice:{
 		    	  required:true
 		      },
 		      Quantity:{
@@ -238,12 +230,8 @@ $( document ).ready( function () {
 		      },
 		      ProductTypeID: "Please Select Product Type",
 		      SupplierID: "Please Select Supplier",
-		      ProductMarkUp:{
-		    	  maxlength:"Enter upto 2 Values",
-		    	  required:"Enter Product MarkUp"
-		      },
-		      RetailPricee:"Calculate Retail Price",
-		      SupplyPrice:"Enter Supply Price",
+		      SellingPrice:"Enter Selling Price",
+		      BuyingPrice:"Enter Buying Price",
 		      Quantity:"Enter Quantity"
 		},
 		errorElement: "em",
@@ -283,7 +271,11 @@ $( document ).ready( function () {
 
 });
 
-
+function onlynumbers(field){
+	 if (!String.fromCharCode(event.keyCode).match('[0-9.]') || (field.value.match('[.]') && String.fromCharCode(event.keyCode) == '.'))
+        event.preventDefault();
+	 
+}
 </script>
 </body>
 

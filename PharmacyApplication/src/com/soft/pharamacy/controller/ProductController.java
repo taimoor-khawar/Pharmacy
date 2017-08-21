@@ -9,6 +9,8 @@ import javax.servlet.http.HttpSession;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -208,20 +210,18 @@ public class ProductController {
 				String SupplierCode = (String)row.getCell(3).getStringCellValue();
 				long SupplierID = prodao.getSupplierID(SupplierCode, EnterprisedID);
 				
-				String supplyprice = row.getCell(4).getStringCellValue();
-				supplyprice = supplyprice.replaceAll("[^\\d.]", "");
-				double SupplyPrice = Double.parseDouble(supplyprice);
+				String sellingprice = row.getCell(4).getStringCellValue();
+				sellingprice = sellingprice.replaceAll("[^\\d.]", "");
+				double SellingPrice = Double.parseDouble(sellingprice);
 				
-				String markup = row.getCell(6).getStringCellValue();
-				markup = markup.replaceAll("[^\\d.]", "");
-				double MarkUp = Double.parseDouble(markup) / 100;
-				
-				double RetailPrice = SupplyPrice + (SupplyPrice * MarkUp);
+				String buyingprice = row.getCell(6).getStringCellValue();
+				buyingprice = buyingprice.replaceAll("[^\\d.]", "");
+				double BuyingPrice = Double.parseDouble(buyingprice);
 				
 				if(SupplierID > 0 && ProductTypeID > 0){
 					Product pr = new Product(0,EnterprisedID,(String)row.getCell(0).getStringCellValue(),
 							(String)row.getCell(1).getStringCellValue(),ProductTypeID,SupplierID,
-							SupplyPrice,(int)row.getCell(5).getNumericCellValue(),MarkUp,RetailPrice,"","");
+							(int)row.getCell(5).getNumericCellValue(),SellingPrice,BuyingPrice,"","");
 					ProductList.add(pr);
 					worksheet.removeRow(row);
 				}
@@ -247,5 +247,29 @@ public class ProductController {
 		productmodelandview.setViewName("product/ProductList");
 		return productmodelandview;
     }
+	
+	@RequestMapping(value="/product/getproduct",method=RequestMethod.GET,
+			headers="Accept=*/*")
+	@ResponseBody
+	public String getproducttype(
+			@RequestParam(value="ProductID",defaultValue="0") long ProductID,
+			HttpServletRequest request) throws JSONException {
+		
+		JSONObject jo = new JSONObject();
+		
+		HttpSession session = request
+				.getSession(true);
+		SysUserSession uss = (SysUserSession)session.getAttribute(session.getId());
+		Product pr = prodao.getProduct(ProductID, uss.getSysuser().getsysUserID());
+	
+		jo.append("ProductID", pr.getProductID());
+		jo.append("ProductName", pr.getProductName());
+		jo.append("SellingPrice", pr.getSellingPrice());
+		jo.append("BuyingPrice", pr.getBuyingPrice());
+		jo.append("ProductQuantity", pr.getProductQuantity());
+		
+		
+	    return jo.toString();
+	}
 
 }

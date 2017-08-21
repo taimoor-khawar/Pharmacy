@@ -140,7 +140,8 @@ href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataT
 										<th>Product Code</th>
 										<th>Type</th>
 										<th>Supplier</th>
-										<th>Price (Included Mark Up)</th>
+										<th>Buying Price</th>
+										<th>Selling Price</th>
 										<th>Edit</th>
 										<th>Delete</th>
 									</tr>
@@ -155,7 +156,9 @@ href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataT
 										<td><%=pr.getProductCode()%></td>
 										<td><%=pr.getProducTypeName()%></td>
 										<td><%=pr.getSupplierName()%></td>
-										<td><%=pr.getRetailPrice() %></td>
+										<td><%=pr.getBuyingPrice() %></td>
+										<td><%=pr.getSellingPrice() %></td>
+										
 										<td align="center"><a
 											href="/POS/product/editproduct?EnterprisedID=<%=pr.getEnterprisedID()%>&ProductID=<%=pr.getProductID() %>"
 											class="btn btn-primary btn-xs"><span

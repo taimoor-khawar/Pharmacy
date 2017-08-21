@@ -23,7 +23,7 @@ import com.soft.pharmacy.model.Product;
 
 public class ProductDAOImpl extends JdbcDaoSupport implements ProductDAO {
 
-	private static final Logger logger = Logger.getLogger(CustomerDAOImpl.class);
+	private static final Logger logger = Logger.getLogger(ProductDAOImpl.class);
 	
 	private PlatformTransactionManager transactionManager;
 	
@@ -47,11 +47,11 @@ public class ProductDAOImpl extends JdbcDaoSupport implements ProductDAO {
 		int result = 0;
 		try {
 			String sql = "INSERT INTO [dbo].[POS_TBLPRODUCTS]([ENTERPRISEID],[PR_NAME],[PR_CODE],"
-					+    "[PR_PRODUCTTYPEID],[PR_SUPPLIERID],[PR_SUPPLYPRICE],[PR_PROQUANTITY],"
-					+    "[PR_MARKUP],[PR_RETAILPRICE],[PR_INSERTDATE],[PR_MODIFYDATE])"
+					+    "[PR_PRODUCTTYPEID],[PR_SUPPLIERID],[PR_SELLINGPRICE],[PR_PROQUANTITY],"
+					+    "[PR_BUYINGPRICE],[PR_INSERTDATE],[PR_MODIFYDATE])"
 					+    "values ("+product.getEnterprisedID()+",'"+product.getProductName()+"','"+product.getProductCode()+"',"+
-						 product.getProductTypeID()+","+product.getSupplierID()+","+product.getSupplyPrice()+","+
-						 product.getProductQuantity()+","+product.getProductMarkUp()+","+product.getRetailPrice()+","+
+						 product.getProductTypeID()+","+product.getSupplierID()+","+product.getSellingPrice()+","+
+						 product.getProductQuantity()+","+product.getBuyingPrice()+","+
 					     "GETDATE(),GETDATE())";
 			
 			result = this.getJdbcTemplate().update(sql);
@@ -78,8 +78,8 @@ public class ProductDAOImpl extends JdbcDaoSupport implements ProductDAO {
 		String sql = " UPDATE [dbo].[POS_TBLPRODUCTS] "
 				   + " SET [PR_NAME] = '"+product.getProductName()+"',PR_CODE = '" + product.getProductCode()+"',"
 				   + " [PR_PRODUCTTYPEID]="+product.getProductTypeID()+",[PR_SUPPLIERID]="+product.getSupplierID()+","
-				   + " [PR_PROQUANTITY]="+product.getProductQuantity()+",[PR_MARKUP]="+product.getProductMarkUp()+","
-				   + " [PR_RETAILPRICE]="+product.getRetailPrice()+","
+				   + " [PR_PROQUANTITY]="+product.getProductQuantity()+",[PR_SELLINGPRICE]="+product.getSellingPrice()+","
+				   + " [PR_BUYINGPRICE]="+product.getBuyingPrice()+","
 				   + " [PR_MODIFYDATE]=GETDATE()"
 				   + " WHERE [ENTERPRISEID] = "+product.getEnterprisedID()
 				   + " and [PR_ID] = " + product.getProductID();
@@ -122,8 +122,8 @@ public class ProductDAOImpl extends JdbcDaoSupport implements ProductDAO {
 	public ArrayList<Product> getProducts(long EnterprisedID) {
 		// TODO Auto-generated method stub
 		String sql= "SELECT [PR_ID],pr.[ENTERPRISEID],[PR_NAME],[PR_CODE],"
-					+ " [PR_PRODUCTTYPEID],[PR_SUPPLIERID],[PR_SUPPLYPRICE],[PR_PROQUANTITY],"
-					+ " [PR_MARKUP],[PR_RETAILPRICE],[PR_INSERTDATE],[PR_MODIFYDATE], " 
+					+ " [PR_PRODUCTTYPEID],[PR_SUPPLIERID],[PR_SELLINGPRICE],[PR_PROQUANTITY],"
+					+ " [PR_BUYINGPRICE],[PR_INSERTDATE],[PR_MODIFYDATE], " 
 					+ " pt.[PT_NAME],sup.[SUP_FNAME],sup.[SUP_CODE] "
 					+ " FROM [POS_TBLPRODUCTS] pr "
 					+ " INNER JOIN [POS_TBLPRODUCTTYPE] pt ON pt.[PT_ID] = pr.PR_PRODUCTTYPEID "
@@ -137,8 +137,8 @@ public class ProductDAOImpl extends JdbcDaoSupport implements ProductDAO {
 					throws SQLException {
 				Product pr = new Product(rs.getLong("PR_ID"), rs.getLong("ENTERPRISEID"), 
 						rs.getString("PR_NAME"), rs.getString("PR_CODE"), rs.getLong("PR_PRODUCTTYPEID"), 
-						rs.getLong("PR_SUPPLIERID"), rs.getDouble("PR_SUPPLYPRICE"), rs.getInt("PR_PROQUANTITY"), 
-						rs.getDouble("PR_MARKUP"), rs.getDouble("PR_RETAILPRICE"),
+						rs.getLong("PR_SUPPLIERID"), rs.getInt("PR_PROQUANTITY"), 
+						rs.getDouble("PR_SELLINGPRICE"), rs.getDouble("PR_BUYINGPRICE"),
 						rs.getString("PR_INSERTDATE"), rs.getString("PR_MODIFYDATE"));
 				pr.setProducTypeName(rs.getString("PT_NAME"));
 				pr.setSupplierName(rs.getString("SUP_FNAME")+"-"+rs.getString("SUP_CODE"));
@@ -152,14 +152,15 @@ public class ProductDAOImpl extends JdbcDaoSupport implements ProductDAO {
 	public Product getProduct(long productid, long EnterprisedID) {
 		// TODO Auto-generated method stub
 		String sql= "SELECT [PR_ID],pr.[ENTERPRISEID],[PR_NAME],[PR_CODE],"
-				+ " [PR_PRODUCTTYPEID],[PR_SUPPLIERID],[PR_SUPPLYPRICE],[PR_PROQUANTITY],"
-				+ " [PR_MARKUP],[PR_RETAILPRICE],[PR_INSERTDATE],[PR_MODIFYDATE], " 
+				+ " [PR_PRODUCTTYPEID],[PR_SUPPLIERID],[PR_SELLINGPRICE],[PR_PROQUANTITY],"
+				+ " [PR_BUYINGPRICE],[PR_INSERTDATE],[PR_MODIFYDATE], " 
 				+ " pt.[PT_NAME],sup.[SUP_FNAME],sup.[SUP_CODE] "
 				+ " FROM [POS_TBLPRODUCTS] pr "
 				+ " INNER JOIN [POS_TBLPRODUCTTYPE] pt ON pt.[PT_ID] = pr.PR_PRODUCTTYPEID "
 				+ " INNER JOIN [POS_TBLSUPPLIERS] sup ON sup.[SUP_ID] = pr.PR_SUPPLIERID "
 				+ " WHERE pr.[ENTERPRISEID] = " + EnterprisedID
-				+ " AND [PR_ID] = " + productid;
+				+ " AND [PR_ID] = " + productid
+				+ " ORDER BY [PR_ID] ASC ";
 		System.out.println(sql);
 		return this.getJdbcTemplate().query(sql, new ResultSetExtractor<Product>() {
 			@Override
@@ -169,8 +170,8 @@ public class ProductDAOImpl extends JdbcDaoSupport implements ProductDAO {
 				if(rs.next()){
 					pr = new Product(rs.getLong("PR_ID"), rs.getLong("ENTERPRISEID"), 
 							rs.getString("PR_NAME"), rs.getString("PR_CODE"), rs.getLong("PR_PRODUCTTYPEID"), 
-							rs.getLong("PR_SUPPLIERID"), rs.getDouble("PR_SUPPLYPRICE"), rs.getInt("PR_PROQUANTITY"), 
-							rs.getDouble("PR_MARKUP"), rs.getDouble("PR_RETAILPRICE"),
+							rs.getLong("PR_SUPPLIERID"), rs.getInt("PR_PROQUANTITY"), 
+							rs.getDouble("PR_SELLINGPRICE"), rs.getDouble("PR_BUYINGPRICE"),
 							rs.getString("PR_INSERTDATE"), rs.getString("PR_MODIFYDATE"));
 					pr.setProducTypeName(rs.getString("PT_NAME"));
 					pr.setSupplierName(rs.getString("SUP_FNAME")+"-"+rs.getString("SUP_CODE"));
@@ -200,8 +201,8 @@ public class ProductDAOImpl extends JdbcDaoSupport implements ProductDAO {
 				if(rs.next()){
 					pr = new Product(rs.getLong("PR_ID"), rs.getLong("ENTERPRISEID"), 
 							rs.getString("PR_NAME"), rs.getString("PR_CODE"), rs.getLong("PR_PRODUCTTYPEID"), 
-							rs.getLong("PR_SUPPLIERID"), rs.getDouble("PR_SUPPLYPRICE"), rs.getInt("PR_PROQUANTITY"), 
-							rs.getDouble("PR_MARKUP"), rs.getDouble("PR_RETAILPRICE"),
+							rs.getLong("PR_SUPPLIERID"), rs.getInt("PR_PROQUANTITY"), 
+							rs.getDouble("PR_SELLINGPRICE"), rs.getDouble("PR_BUYINGPRICE"),
 							rs.getString("PR_INSERTDATE"), rs.getString("PR_MODIFYDATE"));
 				}else{
 					return null;
@@ -258,11 +259,11 @@ public class ProductDAOImpl extends JdbcDaoSupport implements ProductDAO {
 			for(int i=0;i<ProductList.size();i++){
 				Product product = (Product)ProductList.get(i);
 				String sql = "INSERT INTO [dbo].[POS_TBLPRODUCTS]([ENTERPRISEID],[PR_NAME],[PR_CODE],"
-						+    "[PR_PRODUCTTYPEID],[PR_SUPPLIERID],[PR_SUPPLYPRICE],[PR_PROQUANTITY],"
-						+    "[PR_MARKUP],[PR_RETAILPRICE],[PR_INSERTDATE],[PR_MODIFYDATE])"
+						+    "[PR_PRODUCTTYPEID],[PR_SUPPLIERID],[PR_SELLINGPRICE],[PR_PROQUANTITY],"
+						+    "[PR_BUYINGPRICE],[PR_INSERTDATE],[PR_MODIFYDATE])"
 						+    "values ("+product.getEnterprisedID()+",'"+product.getProductName()+"','"+product.getProductCode()+"',"+
-							 product.getProductTypeID()+","+product.getSupplierID()+","+product.getSupplyPrice()+","+
-							 product.getProductQuantity()+","+product.getProductMarkUp()+","+product.getRetailPrice()+","+
+							 product.getProductTypeID()+","+product.getSupplierID()+","+product.getSellingPrice()+","+
+							 product.getProductQuantity()+","+product.getBuyingPrice()+","+
 						     "GETDATE(),GETDATE())";
 				
 				result = this.getJdbcTemplate().update(sql);

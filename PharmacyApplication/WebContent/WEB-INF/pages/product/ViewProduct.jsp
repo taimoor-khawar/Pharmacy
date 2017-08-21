@@ -96,26 +96,24 @@ if( uss != null){%>
 									</div>
 
 									<div class="col-lg-6">
-										<label>Supply Price</label> <input type="text"
+										<label>Selling Price</label> <input type="text"
 											class="form-control" placeholder="Enter Supply Price"
-											name="SupplyPrice" id="SupplyPrice" value="<%=product.getSupplyPrice()%>" disabled="disabled">
+											name="SupplyPrice" id="SupplyPrice" value="<%=product.getSellingPrice()%>" disabled="disabled">
 									</div>
 									<div class="col-lg-6">
-										<label>Mark up</label> <input class="form-control" type="text"
-											name="ProductMarkUp" id="ProductMarkUp" value="<%=product.getProductMarkUp()%>"
+										<label>Buying Price</label> <input class="form-control" type="text"
+											name="ProductMarkUp" id="ProductMarkUp" value="<%=product.getBuyingPrice()%>"
 											placeholder="Enter Mark Up" disabled="disabled">
 									</div>
-									<div class="col-lg-6">
-										<label>Retail Price</label> <input class="form-control"
-											type="text" name="RetailPrice" id="RetailPrice" value="<%=product.getRetailPrice()%>"
-											placeholder="Enter Retail Price" disabled="disabled">
-									</div>
+									
 									<div class="col-lg-6">
 										<label>Quantity</label> <input class="form-control"
 											type="text" name="ProductQuantity" id="ProductQuantity" value="<%=product.getProductQuantity()%>"
 											placeholder="Enter Quantity" disabled="disabled">
 									</div>
-									
+									<div class="col-lg-6">
+										
+									</div>
 								</form>
 							</div>
 						</div>

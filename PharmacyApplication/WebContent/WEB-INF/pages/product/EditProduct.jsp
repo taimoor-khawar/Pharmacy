@@ -84,8 +84,6 @@ if( uss != null){%>
 									<input type="hidden" name="ProductID" id="ProductID"
 										value="<%=product.getProductID()%>">
 									
-									<input type="hidden" name="RetailPrice" id="RetailPrice" value=<%=product.getRetailPrice() %>>
-									
 									<div class="col-lg-6">
 										<label>Product Code</label> <input type="text"
 											class="form-control" placeholder="Enter Code"
@@ -115,24 +113,23 @@ if( uss != null){%>
 									</div>
 
 									<div class="col-lg-6">
-										<label>Supply Price</label> <input type="text"
-											class="form-control" placeholder="Enter Supply Price"
-											name="SupplyPrice" id="SupplyPrice" value="<%=product.getSupplyPrice()%>">
+										<label>Selling Price</label> <input type="text"
+											class="form-control" placeholder="Enter Selling Price"
+											name="SellingPrice" id="SellingPrice" value="<%=product.getSellingPrice()%>" onkeypress="onlynumbers(this)">
 									</div>
 									<div class="col-lg-6">
-										<label>Mark up</label> <input class="form-control" type="text"
-											name="ProductMarkUp" id="ProductMarkUp" value="<%=product.getProductMarkUp()%>" onchange="CalculateRetailPrice()"
-											placeholder="Enter Mark Up">
+										<label>Buying Price</label> <input class="form-control" type="text"
+											name="BuyingPrice" id="BuyingPrice" value="<%=product.getBuyingPrice()%>"
+											placeholder="Enter Buying Price" onkeypress="onlynumbers(this)">
 									</div>
-									<div class="col-lg-6">
-										<label>Retail Price</label> <input class="form-control"
-											type="text" name="RetailPricee" id="RetailPricee" value="<%=product.getRetailPrice()%>"
-											placeholder="Enter Retail Price" disabled="disabled">
-									</div>
+									
 									<div class="col-lg-6">
 										<label>Quantity</label> <input class="form-control"
 											type="text" name="ProductQuantity" id="ProductQuantity" value="<%=product.getProductQuantity()%>"
-											placeholder="Enter Quantity">
+											placeholder="Enter Quantity" onkeypress="onlynumbers(this)">
+									</div>
+									<div class="col-lg-6">
+										
 									</div>
 									<div class="col-lg-6" style="margin-top: 10px;"></div>
 									<div class="col-lg-6" style="margin-top: 10px; float: right;">
@@ -177,7 +174,7 @@ if( uss != null){%>
 	<!-- Page-Level Demo Scripts - Tables - Use for reference -->
 	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/js/bootstrap-select.min.js"></script>
-	<script>
+		<script>
 $( document ).ready( function () {
 	$( "#productedit" ).validate( {
 		rules: {
@@ -191,12 +188,12 @@ $( document ).ready( function () {
 		      SupplierID:{selectsupplier:true},
 		      ProductMarkUp:{
 		    	  maxlength:2,
+		    	  required: true
+		      },
+		      SellingPrice:{
 		    	  required:true
 		      },
-		      RetailPrice:{
-		    	  required:true
-		      },
-		      SupplyPrice:{
+		      BuyingPrice:{
 		    	  required:true
 		      },
 		      Quantity:{
@@ -211,12 +208,8 @@ $( document ).ready( function () {
 		      },
 		      ProductTypeID: "Please Select Product Type",
 		      SupplierID: "Please Select Supplier",
-		      ProductMarkUp:{
-		    	  maxlength:"Enter upto 2 Values",
-		    	  required:"Enter Product MarkUp"
-		      },
-		      RetailPrice:"Calculate Retail Price",
-		      SupplyPrice:"Enter Supply Price",
+		      SellingPrice:"Enter Selling Price",
+		      BuyingPrice:"Enter Buying Price",
 		      Quantity:"Enter Quantity"
 		},
 		errorElement: "em",
@@ -237,10 +230,12 @@ $( document ).ready( function () {
 		 highlight: function ( element, errorClass, validClass ) {
 			 $( element ).parents( ".col-lg-6" ).addClass( "has-error" ).removeClass( "has-success" );
 			 $( element ).next( "span" ).addClass( "glyphicon-remove" ).removeClass( "glyphicon-ok" );
+			 
 		},
 		unhighlight: function (element, errorClass, validClass) {
 			$( element ).parents( ".col-lg-6" ).addClass( "has-success" ).removeClass( "has-error" );
 			$( element ).next( "span" ).addClass( "glyphicon-ok" ).removeClass( "glyphicon-remove" );
+			
 		}
 	});
 	
@@ -254,13 +249,6 @@ $( document ).ready( function () {
 
 });
 
-function CalculateRetailPrice(){
-	var SupplyPrice = parseFloat(document.getElementById("SupplyPrice").value);
-	var ProductMarkUp = parseFloat(document.getElementById("ProductMarkUp").value / 100);
-	var RetailPrice = SupplyPrice + parseFloat(SupplyPrice * ProductMarkUp);
-	document.getElementById("RetailPricee").value = RetailPrice;
-	document.getElementById("RetailPrice").value = RetailPrice;
-}
 
 function checkproductcode(){
 	$("#Codeinfo").css('display','none')
@@ -284,6 +272,12 @@ function checkproductcode(){
 		});
 	}
 	
+}
+
+function onlynumbers(field){
+	 if (!String.fromCharCode(event.keyCode).match('[0-9.]') || (field.value.match('[.]') && String.fromCharCode(event.keyCode) == '.'))
+        event.preventDefault();
+	 
 }
 </script>
 </body>

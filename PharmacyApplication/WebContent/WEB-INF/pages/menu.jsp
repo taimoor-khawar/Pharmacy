@@ -276,7 +276,7 @@ if( us != null){%>
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                            <a href="/POS/order/orderlist?EnterprisedID=<%=us.getSysuser().getsysUserID()%>"><i class="fa fa-edit fa-fw"></i> Orders</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>

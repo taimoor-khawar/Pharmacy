@@ -8,10 +8,9 @@ public class Product {
 	String ProductCode;
 	long ProductTypeID;
 	long SupplierID;
-	double SupplyPrice;
 	int ProductQuantity;
-	double ProductMarkUp;
-	double RetailPrice;
+	double SellingPrice;
+	double BuyingPrice;
 	String InsertionDate;
 	String ModificationDate;
 	
@@ -26,10 +25,10 @@ public class Product {
 		this.ProductCode = "";
 		this.ProductTypeID=0;
 		this.SupplierID=0;
-		this.SupplyPrice=0.0;
+		
 		this.ProductQuantity=0;
-		this.ProductMarkUp=0;
-		this.RetailPrice=0.0;
+		this.SellingPrice=0;
+		this.BuyingPrice=0.0;
 		this.InsertionDate="";
 		this.ModificationDate="";
 		this.SupplierName="";
@@ -38,7 +37,7 @@ public class Product {
 	}
 	
 	public Product(long ProductID,long EnterprisedID,String ProductName,String ProductCode,long ProductTypeID,long SupplierID,
-				   double SupplyPrice,int ProductQuantity,double ProductMarkUp,double RetailPrice,
+				   int ProductQuantity,double SellingPrice,double BuyingPrice,
 				   String InsertionDate,String ModificationDate){
 		
 		this.ProductID=ProductID;
@@ -54,10 +53,10 @@ public class Product {
 		this.SupplierID=SupplierID;
 		
 		
-		this.SupplyPrice=SupplyPrice;
+		
 		this.ProductQuantity=ProductQuantity;
-		this.ProductMarkUp=ProductMarkUp;
-		this.RetailPrice=RetailPrice;
+		this.SellingPrice=SellingPrice;
+		this.BuyingPrice=BuyingPrice;
 		
 		if(InsertionDate==null)InsertionDate="";
 		this.InsertionDate=InsertionDate;
@@ -68,6 +67,94 @@ public class Product {
 		this.SupplierName="";
 		this.ProducTypeName="";
 		
+	}
+
+	public long getProductID() {
+		return ProductID;
+	}
+
+	public void setProductID(long productID) {
+		ProductID = productID;
+	}
+
+	public long getEnterprisedID() {
+		return EnterprisedID;
+	}
+
+	public void setEnterprisedID(long enterprisedID) {
+		EnterprisedID = enterprisedID;
+	}
+
+	public String getProductName() {
+		return ProductName;
+	}
+
+	public void setProductName(String productName) {
+		ProductName = productName;
+	}
+
+	public String getProductCode() {
+		return ProductCode;
+	}
+
+	public void setProductCode(String productCode) {
+		ProductCode = productCode;
+	}
+
+	public long getProductTypeID() {
+		return ProductTypeID;
+	}
+
+	public void setProductTypeID(long productTypeID) {
+		ProductTypeID = productTypeID;
+	}
+
+	public long getSupplierID() {
+		return SupplierID;
+	}
+
+	public void setSupplierID(long supplierID) {
+		SupplierID = supplierID;
+	}
+	
+	public int getProductQuantity() {
+		return ProductQuantity;
+	}
+
+	public void setProductQuantity(int productQuantity) {
+		ProductQuantity = productQuantity;
+	}
+
+	public double getSellingPrice() {
+		return SellingPrice;
+	}
+
+	public void setSellingPrice(double sellingPrice) {
+		SellingPrice = sellingPrice;
+	}
+
+	public double getBuyingPrice() {
+		return BuyingPrice;
+	}
+
+	public void setBuyingPrice(double buyingPrice) {
+		BuyingPrice = buyingPrice;
+	}
+
+	public String getInsertionDate() {
+		return InsertionDate;
+	}
+
+	public void setInsertionDate(String insertionDate) {
+		InsertionDate = insertionDate;
+	}
+
+	public String getModificationDate() {
+		return ModificationDate;
+	}
+
+	public void setModificationDate(String modificationDate) {
+		ModificationDate = modificationDate;
 	}
 
 	public String getSupplierName() {
@@ -86,109 +173,7 @@ public class Product {
 		ProducTypeName = producTypeName;
 	}
 
-	public long getEnterprisedID() {
-		return EnterprisedID;
-	}
-
-	public void setEnterprisedID(long enterprisedID) {
-		EnterprisedID = enterprisedID;
-	}
-
-	public long getProductID() {
-		return ProductID;
-	}
-
-	public void setProductID(long productID) {
-		ProductID = productID;
-	}
-
-	public String getProductName() {
-		return ProductName;
-	}
-
-	public void setProductName(String productName) {
-		if(productName==null)productName="";
-		ProductName = productName;
-	}
-
-	public Double getRetailPrice() {
-		return RetailPrice;
-	}
-
-	public void setRetailPrice(Double retailPrice) {
-		RetailPrice = retailPrice;
-	}
-
-	public String getInsertionDate() {
-		return InsertionDate;
-	}
-
-	public void setInsertionDate(String insertionDate) {
-		if(insertionDate==null)insertionDate="";
-		InsertionDate = insertionDate;
-	}
-
-	public String getProductCode() {
-		return ProductCode;
-	}
-
-	public void setProductCode(String productCode) {
-		if(productCode==null)productCode="";
-		ProductCode = productCode;
-	}
-
-	public long getProductTypeID() {
-		return ProductTypeID;
-	}
-
-	public void setProductTypeID(int productTypeID) {
-		ProductTypeID = productTypeID;
-	}
-
-	public long getSupplierID() {
-		return SupplierID;
-	}
-
-	public void setSupplierID(int supplierID) {
-		SupplierID = supplierID;
-	}
-
-	public double getSupplyPrice() {
-		return SupplyPrice;
-	}
-
-	public void setSupplyPrice(double supplyPrice) {
-		SupplyPrice = supplyPrice;
-	}
-
-	public int getProductQuantity() {
-		return ProductQuantity;
-	}
-
-	public void setProductQuantity(int productQuantity) {
-		ProductQuantity = productQuantity;
-	}
-
-	public double getProductMarkUp() {
-		return ProductMarkUp;
-	}
-
-	public void setProductMarkUp(double productMarkUp) {
-		ProductMarkUp = productMarkUp;
-	}
-
-	public String getModificationDate() {
-		return ModificationDate;
-	}
-
-	public void setModificationDate(String modificationDate) {
-		if(modificationDate==null)modificationDate="";
-		ModificationDate = modificationDate;
-	}
-
-	public void setRetailPrice(double retailPrice) {
-		RetailPrice = retailPrice;
-	}
+	
 	
 	
 	
