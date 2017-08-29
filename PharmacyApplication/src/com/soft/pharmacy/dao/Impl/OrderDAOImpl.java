@@ -21,7 +21,7 @@ import org.springframework.transaction.support.DefaultTransactionDefinition;
 import com.soft.pharmacy.dao.OrderDAO;
 import com.soft.pharmacy.model.Bill;
 import com.soft.pharmacy.model.Billline;
-import com.soft.pharmacy.model.Customer;
+import com.soft.pharmacy.model.Purchase;
 
 public class OrderDAOImpl extends JdbcDaoSupport implements OrderDAO {
 
@@ -43,6 +43,8 @@ public class OrderDAOImpl extends JdbcDaoSupport implements OrderDAO {
 		this.transactionManager = transactionManager;
 	}
 	
+	
+	//------------------------------------------Bill-----------------------------------
 	@Override
 	public long getBillID() {
 		// TODO Auto-generated method stub
@@ -329,7 +331,9 @@ public class OrderDAOImpl extends JdbcDaoSupport implements OrderDAO {
 
 		});
 	}
-
+	
+	
+	//------------------------------------------Order-----------------------------------
 	@Override
 	public int createOrder(Bill bill, ArrayList<Billline> billines) {
 		// TODO Auto-generated method stub
@@ -463,6 +467,170 @@ public class OrderDAOImpl extends JdbcDaoSupport implements OrderDAO {
 				billline.setProductName(rs.getString("PR_NAME"));
 				return billline;
 			}
+
+		});
+	}
+	
+	
+	//------------------------------------------Purchase-----------------------------------
+	@Override
+	public int savePurchaseOrder(Purchase pr) {
+		// TODO Auto-generated method stub
+		TransactionDefinition def = new DefaultTransactionDefinition();
+		TransactionStatus status = transactionManager.getTransaction(def);
+		
+		int result = 0;
+		try {
+			double OldQuantity = 0;
+			if(pr.getOLDQuantity() == 0)
+				OldQuantity = pr.getQuantity();
+			else
+				OldQuantity = pr.getOLDQuantity();
+
+			String sql = " INSERT INTO [dbo].[POS_TBLPURCHASE] ([ENTERPRISEID],[PUR_PROID],"
+					   + " [PUR_SUPID],[PUR_Quantity],[PUR_OLDQuantity],[PUR_INSERTDATE],"
+					   + " [PUR_MODIFYDATE])"
+					   + " values ("+pr.getEnterprisedID()+","+pr.getProductID()+","+
+					   				pr.getSupplierID()+","+pr.getQuantity()+","+OldQuantity+","+
+					                "GETDATE(),GETDATE())";
+			
+			result = this.getJdbcTemplate().update(sql);
+			
+			sql = " UPDATE [dbo].[POS_TBLPRODUCTS] "
+					   + " SET [PR_PROQUANTITY]= [PR_PROQUANTITY] + "+pr.getQuantity()+","
+					   + " [PR_MODIFYDATE] = GETDATE()"
+					   + " WHERE [ENTERPRISEID] = "+pr.getEnterprisedID()
+					   + " and [PR_ID] = " + pr.getProductID();
+			
+			result = this.getJdbcTemplate().update(sql);
+			logger.debug(sql);
+			transactionManager.commit(status);
+		} catch (DataAccessException e) {
+			logger.debug("Error in creating record, rolling back");
+			transactionManager.rollback(status);
+			throw e;
+		}
+		
+		return result;
+	}
+
+	@Override
+	public int updatePurchaseOrder(Purchase pr) {
+		// TODO Auto-generated method stub
+		int result = 0;
+		TransactionDefinition def = new DefaultTransactionDefinition();
+		TransactionStatus status = transactionManager.getTransaction(def);
+		
+		try {
+		String sql = " UPDATE [dbo].[POS_TBLPURCHASE] "
+				   + " SET [PUR_PROID] = " + pr.getProductID()+","
+				   + " [PUR_SUPID]="+pr.getSupplierID()+","
+				   + " [PUR_Quantity]="+pr.getQuantity()+","
+				   + " [PUR_OLDQuantity]="+pr.getOLDQuantity()+","
+				   + " [PUR_MODIFYDATE]=GETDATE()"
+				   + " WHERE [ENTERPRISEID] = "+pr.getEnterprisedID()
+				   + " and [PUR_ID] = " + pr.getPurchaseID();
+		
+		result = this.getJdbcTemplate().update(sql);
+		
+		sql = " UPDATE [dbo].[POS_TBLPRODUCTS] "
+				   + " SET [PR_PROQUANTITY] = [PR_PROQUANTITY] + "+pr.getQuantity()+" - "+pr.getOLDQuantity()+","
+				   + " [PR_MODIFYDATE] = GETDATE()"
+				   + " WHERE [ENTERPRISEID] = "+pr.getEnterprisedID()
+				   + " and [PR_ID] = " + pr.getProductID();
+		
+		result = this.getJdbcTemplate().update(sql);
+		
+		transactionManager.commit(status);
+		} catch (DataAccessException e) {
+			logger.debug("Error in creating record, rolling back");
+			transactionManager.rollback(status);
+			throw e;
+		}
+		
+		return result;
+	}
+
+	@Override
+	public int deletePurchaseOrder(long Purchaseid, long EnterprisedID) {
+		// TODO Auto-generated method stub
+		int result = 0;
+		TransactionDefinition def = new DefaultTransactionDefinition();
+		TransactionStatus status = transactionManager.getTransaction(def);
+		
+		try {
+		String sql = " DELETE FROM [dbo].[POS_TBLPURCHASE] "
+				 	+ " WHERE [ENTERPRISEID] = "+EnterprisedID
+				    + " and [PUR_ID] = " + Purchaseid;
+		
+		result = this.getJdbcTemplate().update(sql);
+		transactionManager.commit(status);
+		} catch (DataAccessException e) {
+			logger.debug("Error in creating record, rolling back");
+			transactionManager.rollback(status);
+			throw e;
+		}
+		
+		return result;
+	}
+
+	@Override
+	public ArrayList<Purchase> getPurchaseOrders(long EnterprisedID) {
+		// TODO Auto-generated method stub
+		String sql= " SELECT [PUR_ID],pr.[ENTERPRISEID],[PUR_PROID],[PUR_SUPID],[PUR_Quantity],"
+				  + " [PUR_OLDQuantity],[PUR_INSERTDATE],[PUR_MODIFYDATE],"
+				  + " pro.[PR_NAME],sup.[SUP_FNAME],sup.[SUP_LNAME]" 
+			      +	" FROM [POS_TBLPURCHASE] pr "
+			      +	" INNER JOIN [POS_TBLPRODUCTS] pro ON pro.[PR_ID] = pr.[PUR_PROID] "
+			      +	" INNER JOIN [POS_TBLSUPPLIERS] sup ON sup.[SUP_ID] = pr.[PUR_SUPID] "
+			      + " WHERE pr.[ENTERPRISEID] = " + EnterprisedID;
+		System.out.println(sql);
+		return (ArrayList<Purchase>) this.getJdbcTemplate().query(sql, new RowMapper<Purchase>(){
+			@Override
+			public Purchase mapRow(ResultSet rs, int row)
+					throws SQLException {
+				Purchase pr = new Purchase(rs.getLong("PUR_ID"),rs.getLong("ENTERPRISEID"),rs.getLong("PUR_PROID"),
+						rs.getLong("PUR_SUPID"),rs.getDouble("PUR_Quantity"),rs.getDouble("PUR_OLDQuantity"),
+						rs.getString("PUR_INSERTDATE"),rs.getString("PUR_MODIFYDATE"));
+				pr.setProductName(rs.getString("PR_NAME"));
+				pr.setSupplierName(rs.getString("SUP_FNAME")+ " "+rs.getString("SUP_LNAME"));
+				return pr;
+			}
+
+		});
+	}
+
+	@Override
+	public Purchase getPurchaseOrder(long Purchaseid, long EnterprisedID) {
+		// TODO Auto-generated method stub
+		String sql= " SELECT [PUR_ID],pr.[ENTERPRISEID],[PUR_PROID],[PUR_SUPID],[PUR_Quantity],"
+				  + " [PUR_OLDQuantity],[PUR_INSERTDATE],[PUR_MODIFYDATE],"
+				  + " pro.[PR_NAME],sup.[SUP_FNAME],sup.[SUP_LNAME]" 
+			      +	" FROM [POS_TBLPURCHASE] pr "
+			      +	" INNER JOIN [POS_TBLPRODUCTS] pro ON pro.[PR_ID] = pr.[PUR_PROID] "
+			      +	" INNER JOIN [POS_TBLSUPPLIERS] sup ON sup.[SUP_ID] = pr.[PUR_SUPID] "
+			      + " WHERE pr.[ENTERPRISEID] = " + EnterprisedID
+				  + " AND [PUR_ID] = " + Purchaseid;
+		System.out.println(sql);
+		return this.getJdbcTemplate().query(sql, new ResultSetExtractor<Purchase>() {
+			@Override
+			public Purchase extractData(ResultSet rs) throws SQLException,
+					DataAccessException {
+				Purchase pr = new Purchase();
+				if(rs.next()){
+					pr = new Purchase(rs.getLong("PUR_ID"),rs.getLong("ENTERPRISEID"),rs.getLong("PUR_PROID"),
+							rs.getLong("PUR_SUPID"),rs.getDouble("PUR_Quantity"),rs.getDouble("PUR_OLDQuantity"),
+							rs.getString("PUR_INSERTDATE"),rs.getString("PUR_MODIFYDATE"));
+					pr.setProductName(rs.getString("PR_NAME"));
+					pr.setSupplierName(rs.getString("SUP_FNAME")+ " "+rs.getString("SUP_LNAME"));
+					
+				}else{
+					return null;
+				}
+				
+				return pr;
+			}
+			
 
 		});
 	}

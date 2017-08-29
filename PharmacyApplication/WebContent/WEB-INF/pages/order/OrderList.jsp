@@ -39,12 +39,7 @@ href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataT
 <link href="../resources/vendor/font-awesome/css/font-awesome.min.css"
 	rel="stylesheet" type="text/css">
 
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <title>POS</title>
 </head>
@@ -113,6 +108,7 @@ href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataT
 										<th>Due Amount</th>
 										<th>Edit</th>
 										<th>Delete</th>
+										<th>PDF</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -125,8 +121,9 @@ href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataT
 										<td><%=bill.getBillAmount()%></td>
 										<td><%=bill.getBillDiscount()%></td>
 										<td><%=bill.getBillDueAmount()%></td>
-										<td align="center"><a href="/POS/order/editorder?EnterprisedID=<%=bill.getEnterprisedID()%>&BillID=<%=bill.getBillID()%>" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-pencil"></span></a></td>
-    									<td align="center"><a href="/POS/order/deleteorder?EnterprisedID=<%=bill.getEnterprisedID()%>&BillID=<%=bill.getBillID()%>" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></a></td>
+										<td align="center"><a href="/POS/order/editorder?EnterprisedID=<%=bill.getEnterprisedID()%>&BillID=<%=bill.getBillID()%>" class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-pencil" style="font-size: 14px;"></i></a></td>
+    									<td align="center"><a href="/POS/order/deleteorder?EnterprisedID=<%=bill.getEnterprisedID()%>&BillID=<%=bill.getBillID()%>" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash" style="font-size: 14px;"></i></a></td>
+    									<td align="center"><a href="/POS/order/orderpdf?EnterprisedID=<%=bill.getEnterprisedID()%>&BillID=<%=bill.getBillID()%>"><i class="fa fa-download" style="color: red;font-size: 18px;"></i></a></td>
 									</tr>
 									<%} %>
 									<%} %>

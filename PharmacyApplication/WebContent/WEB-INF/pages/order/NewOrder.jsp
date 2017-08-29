@@ -48,17 +48,20 @@ function getproduct(){
 			 			var row=
 			 			'<tr>'+
 			 			'<input type="hidden" name="ProductCartID" id="ProductCartID" value="'+data.ProductID+'" />'+
+			 			'<input type="hidden" name="HNetPrice' + data.ProductID + '" id="HNetPrice' + data.ProductID + '" />'+
+			 			'<input type="hidden" name="HTotalPrice' + data.ProductID + '" id="HTotalPrice' + data.ProductID + '" />'+
 			 			'<td>'+data.ProductName+'</td>'+
-			 			'<td><input type="text" style=width:120px; name="ProductPrice' + data.ProductID + '" onkeyup="calculateRow();" value="'+data.SellingPrice+'" class="ProductPrice form-control" onkeypress="onlynumbers(this)"/></td>'+
-			 			'<td><input style=width:120px; class="ProductQuantity form-control" type="text" name="ProductQuantity' + data.ProductID + '" value="'+data.ProductQuantity+'" onkeyup="calculateRow()" onkeypress="onlynumbers(this)"/></td>'+
-			 			'<td><input style=width:120px; class="NetPrice form-control" type="text" name="NetPrice' + data.ProductID + '" onkeypress="onlynumbers(this)"/></td>'+
-			 			'<td><input style=width:120px; class="Discount form-control" type="text" name="Discount' + data.ProductID + '" onkeyup="calculateRow()" value="0" onkeypress="onlynumbers(this)"/></td>'+
-			 			'<td><input style=width:120px; class="TotalPrice form-control" type="text" name="TotalPrice' + data.ProductID + '" onkeypress="onlynumbers(this)"/></td></tr>';
+			 			'<td><input type="text" style=width:120px; name="ProductPrice' + data.ProductID + '" id="ProductPrice' + data.ProductID + '" onkeyup="calculateRow('+data.ProductID+');" value="'+data.SellingPrice+'" class="ProductPrice form-control" onkeypress="onlynumbers(this)"/></td>'+
+			 			'<td><input style=width:120px; class="ProductQuantity form-control" type="text" name="ProductQuantity' + data.ProductID + '" id="ProductQuantity' + data.ProductID + '" value="'+data.ProductQuantity+'" onkeyup="calculateRow('+data.ProductID+')" onkeypress="onlynumbers(this)"/></td>'+
+			 			'<td><input style=width:120px; class="NetPrice form-control" type="text" name="NetPrice' + data.ProductID + '" id="NetPrice' + data.ProductID + '" onkeypress="onlynumbers(this)" disabled="disabled"/></td>'+
+			 			'<td><input style=width:120px; class="Discount form-control" type="text" name="Discount' + data.ProductID + '" id="Discount' + data.ProductID + '"onkeyup="calculateRow('+data.ProductID+')" value="0" onkeypress="onlynumbers(this)"/></td>'+
+			 			'<td><input style=width:120px; class="TotalPrice form-control" type="text" name="TotalPrice' + data.ProductID + '" id="TotalPrice' + data.ProductID + '" onkeypress="onlynumbers(this)" disabled="disabled"/></td></tr>';
 			 			
 			 			$("#ordertable").append(row);
 				        TotalRow = parseInt(TotalRow + 1);
 				        $("#TotalRow").val(TotalRow);
-				        CalculateTotaaal();
+				        CalculateTotaaal(data.ProductID);
+				        calculateRow(data.ProductID);
 			});
 	}
 }
@@ -66,37 +69,37 @@ function getproduct(){
   function CalculateTotaaal(ProductID){
 	 var NetPrice = 0;
 	    //iterate through each textboxes and add the values
-	    $(".ProductPrice").each(function () {
+	    //$("#ProductPrice"+data.ProductID).each(function () {
 	        //add only if the value is number
 	        if (!isNaN(this.value) && this.value.length != 0) {
-	        	NetPrice = parseFloat( $(".ProductPrice").val()) * parseFloat( $(".ProductQuantity").val());
-	        	$(".NetPrice").val(NetPrice);
-	        	$(".TotalPrice").val(NetPrice);
+	        	NetPrice = parseFloat( $("#ProductPrice"+ProductID).val()) * parseFloat( $("#ProductQuantity"+ProductID).val());
+	        	$("#NetPrice"+ProductID).val(NetPrice);
+	        	$("#TotalPrice"+ProductID).val(NetPrice);
+	        	$("#HNetPrice"+ProductID).val(NetPrice);
+	        	$("#HTotalPrice"+ProductID).val(NetPrice);
 	        }
-	    });
-	    calculateSum();
+	    //});
+	    //calculateRow()
+	    //calculateSum();
 }
- 
- function calculateRow() {
-		$('.ProductQuantity, .ProductPrice, .Discount').change(function () {
+function calculateRow(ProductID) {
 	        var cost = 0;
-	        var $row = $(this).closest("tr");
-	        var qty = parseFloat($row.find('.ProductQuantity').val());
-	        var rate = parseFloat($(".ProductPrice").val());
-	        var discount = parseFloat($row.find('.Discount').val());
+	        //var $row = $(this).closest("tr");
+	        var qty = parseFloat($('#ProductQuantity'+ProductID).val());
+	        alert("qty"+qty);
+	        var rate = parseFloat($("#ProductPrice"+ProductID).val());
+	        alert("rate+"+rate);
+	        var discount = parseFloat($('#Discount'+ProductID).val());
+	        alert("discount"+discount);
 	        cost = qty * rate;
 	        var totalPrice = cost - discount;
-	        //        alert($("#rate").val());
-
-	        if (isNaN(cost)) {
-	            $row.find('.NetPrice').val("Nix is");
-	        } else {
-	            $row.find('.NetPrice').val(cost);
-	            $row.find('.TotalPrice').val(totalPrice);
-	        }
+	        alert("totalPrice="+totalPrice);
+	        $("#NetPrice"+ProductID).val(cost);
+        	$("#TotalPrice"+ProductID).val(totalPrice);
+        	$("#HNetPrice"+ProductID).val(cost);
+        	$("#HTotalPrice"+ProductID).val(totalPrice);
 	        calculateSum();
-	    })
- }
+}
  
  function calculateSum() {
 

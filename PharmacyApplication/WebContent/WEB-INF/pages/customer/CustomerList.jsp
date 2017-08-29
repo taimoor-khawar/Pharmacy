@@ -129,8 +129,8 @@ href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataT
 										<td><%=cus.getEmail()%></td>
 										<td><%=cus.getPhoneNumber()%></td>
 										<td><%=cus.getCountry() %></td>
-										<td align="center"><a href="/POS/customer/edit?EnterprisedID=<%=cus.getEnterpriseID()%>&CustomerID=<%=cus.getCustomerID() %>" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-pencil"></span></a></td>
-    									<td align="center"><a href="/POS/customer/delete?EnterprisedID=<%=cus.getEnterpriseID()%>&CustomerID=<%=cus.getCustomerID() %>" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-trash"></span></a></td>
+										<td align="center"><a href="/POS/customer/edit?EnterprisedID=<%=cus.getEnterpriseID()%>&CustomerID=<%=cus.getCustomerID() %>" class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-pencil" style="font-size: 14px;"></i></a></td>
+    									<td align="center"><a href="/POS/customer/delete?EnterprisedID=<%=cus.getEnterpriseID()%>&CustomerID=<%=cus.getCustomerID() %>" class="btn btn-danger btn-xs"><i class="glyphicon glyphicon-trash" style="font-size: 14px;"></i></a></td>
 									</tr>
 									<%} %>
 									<%} %>

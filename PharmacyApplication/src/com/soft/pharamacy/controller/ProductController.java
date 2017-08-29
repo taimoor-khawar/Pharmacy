@@ -260,7 +260,8 @@ public class ProductController {
 		HttpSession session = request
 				.getSession(true);
 		SysUserSession uss = (SysUserSession)session.getAttribute(session.getId());
-		Product pr = prodao.getProduct(ProductID, uss.getSysuser().getsysUserID());
+		
+		Product pr = prodao.getProduct(ProductID,uss.getSysuser().getsysUserID());
 	
 		jo.append("ProductID", pr.getProductID());
 		jo.append("ProductName", pr.getProductName());

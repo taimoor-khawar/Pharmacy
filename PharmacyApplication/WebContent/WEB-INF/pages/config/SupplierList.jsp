@@ -157,12 +157,12 @@ href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataT
 										<td><%=sup.getCountry() %></td>
 										<td align="center"><a
 											href="/POS/config/supplier/editsupplier?EnterprisedID=<%=sup.getEnterpriseID()%>&SupplierID=<%=sup.getSupplierID() %>"
-											class="btn btn-primary btn-xs"><span
-												class="glyphicon glyphicon-pencil"></span></a></td>
+											class="btn btn-primary btn-xs"><i
+												class="glyphicon glyphicon-pencil" style="font-size: 14px;"></i></a></td>
 										<td align="center"><a
 											href="/POS/config/supplier/deletesupplier?EnterprisedID=<%=sup.getEnterpriseID()%>&SupplierID=<%=sup.getSupplierID() %>"
-											class="btn btn-danger btn-xs"><span
-												class="glyphicon glyphicon-trash"></span></a></td>
+											class="btn btn-danger btn-xs"><i
+												class="glyphicon glyphicon-trash" style="font-size: 14px;"></i></a></td>
 									</tr>
 									<%} %>
 									<%} %>

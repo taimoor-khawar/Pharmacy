@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import com.soft.pharmacy.model.Bill;
 import com.soft.pharmacy.model.Billline;
+import com.soft.pharmacy.model.Purchase;
 
 
 
@@ -31,5 +32,12 @@ public interface OrderDAO {
 	int deleteBillline(long Billlineid,long EnterprisedID);
 	ArrayList<Billline> getBilllines(long EnterprisedID);
 	Billline getBillline(long Billlineid,long EnterprisedID);
+	
+	//Purchase Order
+	int savePurchaseOrder(Purchase pr);
+	int updatePurchaseOrder(Purchase pr);
+	int deletePurchaseOrder(long Purchaseid,long EnterprisedID);
+	ArrayList<Purchase> getPurchaseOrders(long EnterprisedID);
+	Purchase getPurchaseOrder(long Purchaseid,long EnterprisedID);
 
 }

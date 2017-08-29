@@ -161,12 +161,11 @@ href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataT
 										
 										<td align="center"><a
 											href="/POS/product/editproduct?EnterprisedID=<%=pr.getEnterprisedID()%>&ProductID=<%=pr.getProductID() %>"
-											class="btn btn-primary btn-xs"><span
-												class="glyphicon glyphicon-pencil"></span></a></td>
+											class="btn btn-primary btn-xs"><i class="glyphicon glyphicon-pencil" style="font-size: 14px;"></i></a></td>
 										<td align="center"><a
 											href="/POS/product/deleteproduct?EnterprisedID=<%=pr.getEnterprisedID()%>&ProductID=<%=pr.getProductID() %>"
-											class="btn btn-danger btn-xs"><span
-												class="glyphicon glyphicon-trash"></span></a></td>
+											class="btn btn-danger btn-xs"><i
+												class="glyphicon glyphicon-trash" style="font-size: 14px;"></i></a></td>
 									</tr>
 									<%} %>
 									<%} %>

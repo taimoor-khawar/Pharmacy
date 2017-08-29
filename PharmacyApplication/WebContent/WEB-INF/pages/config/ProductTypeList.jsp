@@ -146,12 +146,12 @@ href="https://cdn.datatables.net/plug-ins/9dcbecd42ad/integration/jqueryui/dataT
 										
 										<td align="center"><a
 											href="/POS/config/producttype/editproducttype?EnterprisedID=<%=pt.getEnterprisedID()%>&ProductTypeID=<%=pt.getProductTypeID() %>"
-											class="btn btn-primary btn-xs"><span
-												class="glyphicon glyphicon-pencil"></span></a></td>
+											class="btn btn-primary btn-xs"><i
+												class="glyphicon glyphicon-pencil" style="font-size: 14px;"></i></a></td>
 										<td align="center"><a
 											href="/POS/config/producttype/deleteproducttype?EnterprisedID=<%=pt.getEnterprisedID()%>&ProductTypeID=<%=pt.getProductTypeID() %>"
-											class="btn btn-danger btn-xs"><span
-												class="glyphicon glyphicon-trash"></span></a></td>
+											class="btn btn-danger btn-xs"><i
+												class="glyphicon glyphicon-trash" style="font-size: 14px;"></i></a></td>
 									</tr>
 									<%} %>
 									<%} %>

@@ -1,26 +1,49 @@
 package com.soft.pharamacy.controller;
 
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
+import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+
+
+
+
+import com.soft.pharmacy.dao.ConfigDAO;
 import com.soft.pharmacy.dao.CustomerDAO;
 import com.soft.pharmacy.dao.OrderDAO;
 import com.soft.pharmacy.dao.ProductDAO;
+import com.soft.pharmacy.excel.CreatePDF;
 import com.soft.pharmacy.model.Bill;
 import com.soft.pharmacy.model.Billline;
 import com.soft.pharmacy.model.Customer;
 import com.soft.pharmacy.model.Product;
+import com.soft.pharmacy.model.Purchase;
+import com.soft.pharmacy.model.Supplier;
+import com.soft.pharmacy.model.SysUserSession;
 
 
 @Controller
@@ -34,6 +57,9 @@ public class OrderController {
 	
 	@Autowired
 	OrderDAO orderdao;
+	
+	@Autowired
+	ConfigDAO configdao;
 	
 	
 	@RequestMapping(value="/order/orderlist",method=RequestMethod.GET)  
@@ -87,8 +113,9 @@ public class OrderController {
 		}
 		
 		String[] productIDs = request.getParameterValues("ProductCartID");
+		
 		for(int i=0;i<productIDs.length;i++){
-			
+			System.out.println("ProductID="+productIDs[i]);
 			long ProductID = 0;
 			try{
 				ProductID = Long.parseLong(productIDs[i]);
@@ -104,6 +131,7 @@ public class OrderController {
 			}catch(Exception e){
 				ProductPrice = 0;
 			}
+			System.out.println("ProductPrice="+ProductPrice);
 			
 			String productquantity = request.getParameter("ProductQuantity"+productIDs[i]);
 			if(productquantity==null)productquantity="0";
@@ -113,8 +141,9 @@ public class OrderController {
 			}catch(Exception e){
 				ProductQuantity = 0;
 			}
+			System.out.println("ProductQuantity="+ProductQuantity);
 			
-			String netprice = request.getParameter("NetPrice"+productIDs[i]);
+			String netprice = request.getParameter("HNetPrice"+productIDs[i]);
 			if(netprice==null)netprice="0";
 			double NetPrice = 0;
 			try{
@@ -122,6 +151,7 @@ public class OrderController {
 			}catch(Exception e){
 				NetPrice = 0;
 			}
+			System.out.println("NetPrice="+NetPrice);
 			BillNetPrice += NetPrice;
 			
 			String discount = request.getParameter("Discount"+productIDs[i]);
@@ -132,9 +162,10 @@ public class OrderController {
 			}catch(Exception e){
 				Discount = 0;
 			}
+			System.out.println("Discount="+Discount);
 			BillDiscount += Discount;
 			
-			String totalprice = request.getParameter("TotalPrice"+productIDs[i]);
+			String totalprice = request.getParameter("HTotalPrice"+productIDs[i]);
 			if(totalprice==null)totalprice="0";
 			double TotalPrice = 0;
 			try{
@@ -142,7 +173,7 @@ public class OrderController {
 			}catch(Exception e){
 				TotalPrice = 0;
 			}
-			
+			System.out.println("TotalPrice="+TotalPrice);
 			Billline bl = new Billline(0, EnterprisedID, Bill_ID, ProductID, ProductQuantity, 
 				ProductPrice,NetPrice, Discount, TotalPrice, "", "");
 			billineslist.add(bl);
@@ -347,5 +378,226 @@ public class OrderController {
 		ordermodelview.addObject("orderslist",billslist);
 		ordermodelview.setViewName("/order/OrderList");
 		return ordermodelview;
+	}
+	
+	//--------------------------------------------------Purchase----------------------------
+	
+	@RequestMapping(value="/order/purhaselist",method=RequestMethod.GET)  
+    public ModelAndView purchaselist(@RequestParam(value="EnterprisedID",defaultValue="") 
+    					long EnterprisedID){
+		ModelAndView purhasemodelandview = new ModelAndView();
+		ArrayList<Purchase> purhaseorderlist = orderdao.getPurchaseOrders(EnterprisedID);
+		purhasemodelandview.addObject("purhaseorderlist", purhaseorderlist);
+		purhasemodelandview.setViewName("order/PurchaseList");
+		return purhasemodelandview;
+    }
+	
+	
+	@RequestMapping(value="/order/newpurchase",method=RequestMethod.GET)  
+    public ModelAndView newpurchase(@RequestParam(value="EnterprisedID",defaultValue="")long EnterprisedID){
+		ModelAndView purhasemodelandview = new ModelAndView();
+		ArrayList<Product> productslist = prodao.getProducts(EnterprisedID);
+		ArrayList<Supplier> supplierslist = configdao.getSuppliers(EnterprisedID);
+		purhasemodelandview.addObject("productslist", productslist);
+		purhasemodelandview.addObject("supplierslist", supplierslist);
+		purhasemodelandview.addObject("command", new Purchase());
+		purhasemodelandview.setViewName("order/AddPurchase");
+		return purhasemodelandview;
+    }
+	
+
+	@RequestMapping(value="/order/newpurchase",method=RequestMethod.POST)  
+    public ModelAndView addpurchase(@ModelAttribute("purchase") Purchase purchase){
+		
+		ModelAndView purhasemodelandview = new ModelAndView();
+		int result = 0;
+		String Message="";
+		if(purchase != null)
+			result = orderdao.savePurchaseOrder(purchase);
+		
+		
+		if(result ==1)
+			Message =  "Product Added Successfully";
+		else if(result==0)
+			Message =  "Product not Added Successfully";
+		
+		ArrayList<Purchase> purhaseorderlist = orderdao.getPurchaseOrders(purchase.getEnterprisedID());
+		
+		
+		purhasemodelandview.addObject("Message", Message);
+		purhasemodelandview.addObject("result", result);
+		purhasemodelandview.addObject("purhaseorderlist", purhaseorderlist);
+		purhasemodelandview.setViewName("order/PurchaseList");
+		return purhasemodelandview;
+    }
+	
+	
+	@RequestMapping(value="/order/editpurchase",method=RequestMethod.GET)  
+    public ModelAndView editpurchase(@RequestParam(value="EnterprisedID",defaultValue="")long EnterprisedID,
+    		@RequestParam(value="PurchaseID",defaultValue="")long PurchaseID){
+		ModelAndView purhasemodelandview = new ModelAndView();
+		ArrayList<Product> productslist = prodao.getProducts(EnterprisedID);
+		ArrayList<Supplier> supplierslist = configdao.getSuppliers(EnterprisedID);
+		Purchase pur = orderdao.getPurchaseOrder(PurchaseID, EnterprisedID);
+		purhasemodelandview.addObject("productslist", productslist);
+		purhasemodelandview.addObject("supplierslist", supplierslist);
+		purhasemodelandview.addObject("purchase", pur);
+		purhasemodelandview.setViewName("order/EditPurchase");
+		return purhasemodelandview;
+    }
+	
+	
+	@RequestMapping(value="/order/editpurchase",method=RequestMethod.POST)  
+    public ModelAndView updatepurchase(@ModelAttribute("purchase") Purchase purchase){
+		
+		ModelAndView purhasemodelandview = new ModelAndView();
+		int result = 0;
+		String Message="";
+		if(purchase != null)
+			result = orderdao.updatePurchaseOrder(purchase);
+		
+		
+		if(result ==1)
+			Message =  "Product Updated Successfully";
+		else if(result==0)
+			Message =  "Product not Updated Successfully";
+		
+		ArrayList<Purchase> purhaseorderlist = orderdao.getPurchaseOrders(purchase.getEnterprisedID());
+		
+		
+		purhasemodelandview.addObject("Message", Message);
+		purhasemodelandview.addObject("result", result);
+		purhasemodelandview.addObject("purhaseorderlist", purhaseorderlist);
+		purhasemodelandview.setViewName("order/PurchaseList");
+		return purhasemodelandview;
+    }
+	
+	
+	@RequestMapping(value="/order/deletepurchase",method=RequestMethod.GET)  
+    public ModelAndView deletepurchase(@RequestParam(value="EnterprisedID",defaultValue="")long EnterprisedID,
+    		@RequestParam(value="PurchaseID",defaultValue="")long PurchaseID){
+		
+		ModelAndView purhasemodelandview = new ModelAndView();
+		int result = 0;
+		String Message="";
+		if(PurchaseID > 0)
+			result = orderdao.deletePurchaseOrder(PurchaseID, EnterprisedID);
+		
+		
+		if(result ==1)
+			Message =  "Product Deleted Successfully";
+		else if(result==0)
+			Message =  "Product not Deleted Successfully";
+		
+		ArrayList<Purchase> purhaseorderlist = orderdao.getPurchaseOrders(EnterprisedID);
+		
+		
+		purhasemodelandview.addObject("Message", Message);
+		purhasemodelandview.addObject("result", result);
+		purhasemodelandview.addObject("purhaseorderlist", purhaseorderlist);
+		purhasemodelandview.setViewName("order/PurchaseList");
+		return purhasemodelandview;
+    }
+	
+	@RequestMapping(value="/order/getpurchase",method=RequestMethod.GET,
+			headers="Accept=*/*")
+	@ResponseBody
+	public String getproducttype(
+			@RequestParam(value="PurchaseID",defaultValue="0") long PurchaseID,
+			@RequestParam(value="EnterprisedID",defaultValue="0") long EnterprisedID
+			//HttpServletRequest request
+			) throws JSONException {
+		
+		JSONObject jo = new JSONObject();
+		
+		/*HttpSession session = request
+				.getSession(true);
+		SysUserSession uss = (SysUserSession)session.getAttribute(session.getId());*/
+		Purchase pur = orderdao.getPurchaseOrder(PurchaseID, EnterprisedID);
+	
+		jo.append("ProductID", pur.getProductID());
+		jo.append("ProductName", pur.getProductName());
+		jo.append("SupplierID", pur.getSupplierID());
+		jo.append("SupplierName", pur.getSupplierName());
+		jo.append("Quantity", pur.getQuantity());
+		jo.append("OLDQuantity", pur.getOLDQuantity());
+		
+		
+	    return jo.toString();
+	}
+	
+	@RequestMapping(value="/order/orderpdf",method=RequestMethod.GET
+			)  
+    public ModelAndView orderlistpdf(@RequestParam(value="EnterprisedID",defaultValue="0") long EnterprisedID,
+    		@RequestParam(value="BillID",defaultValue="0") long BillID,
+    		HttpServletRequest request,HttpServletResponse response
+    		) throws IOException{
+		
+		ModelAndView ordermodelview = new ModelAndView();
+		Bill bill = orderdao.getBill(BillID, EnterprisedID);
+		ArrayList<Billline> billlines = orderdao.getBilllines(BillID, EnterprisedID);
+		
+		ArrayList<Bill> billslist = orderdao.getBills(EnterprisedID);
+		
+		ordermodelview.addObject("orderslist",billslist);
+		ordermodelview.setViewName("/order/OrderList");
+		
+		if(billlines.size() > 0 && bill != null){
+			 String filepath = "E:/Repository/Pharmacy/PharmacyApplication/pdf/";
+			 String fileName = "Bill-Invoice-"+bill.getCustomerName()+".pdf";
+		     File tempDirectory = new File(filepath);
+		     if(!tempDirectory.exists())tempDirectory.mkdir();
+		     String temperotyFilePath = tempDirectory.getAbsolutePath();
+		     System.out.println(temperotyFilePath);
+		     
+		     
+			 response.setContentType("application/pdf");
+			 response.setHeader("Content-disposition", "attachment; filename="+ fileName);
+			 
+		     try {
+
+			        CreatePDF.createPDF(temperotyFilePath+"\\"+fileName,billlines,bill);
+			        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+			        baos = convertPDFToByteArrayOutputStream(temperotyFilePath+"\\"+fileName);
+			        OutputStream os = response.getOutputStream();
+			        baos.writeTo(os);
+			        os.flush();
+			    } catch (Exception e1) {
+			        e1.printStackTrace();
+			    }
+		   
+		}
+    	return ordermodelview;
+	}
+	
+	private ByteArrayOutputStream convertPDFToByteArrayOutputStream(String fileName) {
+
+		InputStream inputStream = null;
+		ByteArrayOutputStream baos = new ByteArrayOutputStream();
+		try {
+
+			inputStream = new FileInputStream(fileName);
+			byte[] buffer = new byte[1024];
+			baos = new ByteArrayOutputStream();
+
+			int bytesRead;
+			while ((bytesRead = inputStream.read(buffer)) != -1) {
+				baos.write(buffer, 0, bytesRead);
+			}
+
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			if (inputStream != null) {
+				try {
+					inputStream.close();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+		return baos;
 	}
 }
