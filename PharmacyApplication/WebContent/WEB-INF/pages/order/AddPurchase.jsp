@@ -100,7 +100,9 @@ if( uss != null){%>
 											placeholder="Enter Quantity" onkeypress="onlynumbers(this)">
 									</div>
 									<div class="col-lg-6">
-										
+										<label>Buying Price</label> <input class="form-control"
+											type="text" name="BuyingPrice" id="BuyingPrice"
+											placeholder="Enter Buying Price" onkeypress="onlynumbers(this)">
 									</div>
 									
 									<div class="col-lg-6">

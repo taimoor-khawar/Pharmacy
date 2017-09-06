@@ -3,7 +3,6 @@ package com.soft.pharmacy.dao;
 import java.util.ArrayList;
 
 import com.soft.pharmacy.model.Product;
-import com.soft.pharmacy.model.Supplier;
 
 
 public interface ProductDAO {

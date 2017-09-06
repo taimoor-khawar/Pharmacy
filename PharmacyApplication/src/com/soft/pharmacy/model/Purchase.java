@@ -8,6 +8,7 @@ public class Purchase {
 	long SupplierID;
 	double Quantity;
 	double OLDQuantity;
+	double BuyingPrice;
 	
 	String InsertionDate;
 	String ModificationDate;
@@ -23,6 +24,7 @@ public class Purchase {
 		this.SupplierID=0;
 		this.Quantity=0.0;
 		this.OLDQuantity = 0.0;
+		this.BuyingPrice = 0.0;
 		
 		this.InsertionDate="";
 		this.ModificationDate="";
@@ -34,7 +36,8 @@ public class Purchase {
 	}
 	
 	public Purchase(long PurchaseID,long EnterprisedID,long ProductID,long SupplierID,
-	double Quantity,double OLDQuantity, String InsertionDate,String ModificationDate){
+	double Quantity,double OLDQuantity,double BuyingPrice,
+			String InsertionDate,String ModificationDate){
 		
 		this.PurchaseID = PurchaseID;
 		this.EnterprisedID = EnterprisedID;
@@ -42,6 +45,7 @@ public class Purchase {
 		this.SupplierID = SupplierID;
 		this.Quantity = Quantity;
 		this.OLDQuantity = OLDQuantity;
+		this.BuyingPrice = BuyingPrice;
 		
 		if(InsertionDate==null)InsertionDate="";
 		this.InsertionDate=InsertionDate;
@@ -136,6 +140,11 @@ public class Purchase {
 		OLDQuantity = oLDQuantity;
 	}
 
-	
-	
+	public double getBuyingPrice() {
+		return BuyingPrice;
+	}
+
+	public void setBuyingPrice(double buyingPrice) {
+		BuyingPrice = buyingPrice;
+	}	
 }

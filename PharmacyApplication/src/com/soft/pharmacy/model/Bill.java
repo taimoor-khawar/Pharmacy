@@ -13,6 +13,7 @@ public class Bill {
 	String ModificationDate;
 	
 	String CustomerName;
+	String CustomerAddress;
 	
 	public Bill(){
 		
@@ -28,6 +29,7 @@ public class Bill {
 		this.ModificationDate="";
 		
 		this.CustomerName="";
+		this.CustomerAddress="";
 		
 		
 	}
@@ -52,6 +54,7 @@ public class Bill {
 		this.ModificationDate=ModificationDate;
 		
 		this.CustomerName="";
+		this.CustomerAddress="";
 		
 	}
 
@@ -135,5 +138,15 @@ public class Bill {
 	public void setBillName(String billName) {
 		BillName = billName;
 	}
+
+	public String getCustomerAddress() {
+		return CustomerAddress;
+	}
+
+	public void setCustomerAddress(String customerAddress) {
+		if(customerAddress==null)customerAddress="";
+		CustomerAddress = customerAddress;
+	}
+	
 	
 }

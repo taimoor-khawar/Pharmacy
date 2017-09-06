@@ -141,7 +141,7 @@ public class OrderDAOImpl extends JdbcDaoSupport implements OrderDAO {
 		// TODO Auto-generated method stub
 		String sql= " SELECT  [BILL_ID],bill.[ENTERPRISEID],[BILL_CUSID],[BILL_NAME],[BILL_AMOUNT],"
 				  + " [BILL_DISCOUNT],[BILL_DUEAMOUNT],[BILL_INSERTDATE],[BILL_MODIFYDATE],"
-				  + " cus.[CUS_FNAME],cus.[CUS_LNAME]" 
+				  + " cus.[CUS_FNAME],cus.[CUS_LNAME],cus.[CUS_ADDRESS1]" 
 			      +	" FROM [POS_TBLBILL] bill "
 			      +	" INNER JOIN [POS_TBLCUSTOMERS] cus ON cus.CUS_ID = bill.[BILL_CUSID] "
 			      + " WHERE bill.[ENTERPRISEID] = " + EnterprisedID
@@ -155,6 +155,7 @@ public class OrderDAOImpl extends JdbcDaoSupport implements OrderDAO {
 						,rs.getDouble("BILL_AMOUNT"),rs.getDouble("BILL_DISCOUNT"),rs.getDouble("BILL_DUEAMOUNT"),
 						rs.getString("BILL_INSERTDATE"),rs.getString("BILL_MODIFYDATE"));
 				bill.setCustomerName(rs.getString("CUS_FNAME")+rs.getString("CUS_LNAME"));
+				bill.setCustomerAddress(rs.getString("CUS_ADDRESS1"));
 				return bill;
 			}
 
@@ -166,7 +167,7 @@ public class OrderDAOImpl extends JdbcDaoSupport implements OrderDAO {
 		// TODO Auto-generated method stub
 		String sql= " SELECT  [BILL_ID],bill.[ENTERPRISEID],[BILL_CUSID],[BILL_NAME],[BILL_AMOUNT],"
 				  + " [BILL_DISCOUNT],[BILL_DUEAMOUNT],[BILL_INSERTDATE],[BILL_MODIFYDATE],"
-				  + " cus.[CUS_FNAME],cus.[CUS_LNAME]" 
+				  + " cus.[CUS_FNAME],cus.[CUS_LNAME],cus.[CUS_ADDRESS1]" 
 			      +	" FROM [POS_TBLBILL] bill "
 			      +	" INNER JOIN [POS_TBLCUSTOMERS] cus ON cus.CUS_ID = bill.[BILL_CUSID] "
 			      + " WHERE bill.[ENTERPRISEID] = " + EnterprisedID
@@ -182,6 +183,8 @@ public class OrderDAOImpl extends JdbcDaoSupport implements OrderDAO {
 							,rs.getDouble("BILL_AMOUNT"),rs.getDouble("BILL_DISCOUNT"),rs.getDouble("BILL_DUEAMOUNT"),
 							rs.getString("BILL_INSERTDATE"),rs.getString("BILL_MODIFYDATE"));
 					bill.setCustomerName(rs.getString("CUS_FNAME")+rs.getString("CUS_LNAME"));
+					bill.setCustomerAddress(rs.getString("CUS_ADDRESS1"));
+					
 				}else{
 					return null;
 				}
@@ -489,10 +492,10 @@ public class OrderDAOImpl extends JdbcDaoSupport implements OrderDAO {
 
 			String sql = " INSERT INTO [dbo].[POS_TBLPURCHASE] ([ENTERPRISEID],[PUR_PROID],"
 					   + " [PUR_SUPID],[PUR_Quantity],[PUR_OLDQuantity],[PUR_INSERTDATE],"
-					   + " [PUR_MODIFYDATE])"
+					   + " [PUR_MODIFYDATE],[PUR_BUYINGPRICE])"
 					   + " values ("+pr.getEnterprisedID()+","+pr.getProductID()+","+
 					   				pr.getSupplierID()+","+pr.getQuantity()+","+OldQuantity+","+
-					                "GETDATE(),GETDATE())";
+					                "GETDATE(),GETDATE(),"+pr.getBuyingPrice()+")";
 			
 			result = this.getJdbcTemplate().update(sql);
 			
@@ -527,6 +530,7 @@ public class OrderDAOImpl extends JdbcDaoSupport implements OrderDAO {
 				   + " [PUR_SUPID]="+pr.getSupplierID()+","
 				   + " [PUR_Quantity]="+pr.getQuantity()+","
 				   + " [PUR_OLDQuantity]="+pr.getOLDQuantity()+","
+				   + " [PUR_BUYINGPRICE]="+pr.getBuyingPrice()+","
 				   + " [PUR_MODIFYDATE]=GETDATE()"
 				   + " WHERE [ENTERPRISEID] = "+pr.getEnterprisedID()
 				   + " and [PUR_ID] = " + pr.getPurchaseID();
@@ -578,7 +582,7 @@ public class OrderDAOImpl extends JdbcDaoSupport implements OrderDAO {
 	public ArrayList<Purchase> getPurchaseOrders(long EnterprisedID) {
 		// TODO Auto-generated method stub
 		String sql= " SELECT [PUR_ID],pr.[ENTERPRISEID],[PUR_PROID],[PUR_SUPID],[PUR_Quantity],"
-				  + " [PUR_OLDQuantity],[PUR_INSERTDATE],[PUR_MODIFYDATE],"
+				  + " [PUR_OLDQuantity],[PUR_INSERTDATE],[PUR_MODIFYDATE],[PUR_BUYINGPRICE],"
 				  + " pro.[PR_NAME],sup.[SUP_FNAME],sup.[SUP_LNAME]" 
 			      +	" FROM [POS_TBLPURCHASE] pr "
 			      +	" INNER JOIN [POS_TBLPRODUCTS] pro ON pro.[PR_ID] = pr.[PUR_PROID] "
@@ -591,7 +595,7 @@ public class OrderDAOImpl extends JdbcDaoSupport implements OrderDAO {
 					throws SQLException {
 				Purchase pr = new Purchase(rs.getLong("PUR_ID"),rs.getLong("ENTERPRISEID"),rs.getLong("PUR_PROID"),
 						rs.getLong("PUR_SUPID"),rs.getDouble("PUR_Quantity"),rs.getDouble("PUR_OLDQuantity"),
-						rs.getString("PUR_INSERTDATE"),rs.getString("PUR_MODIFYDATE"));
+						rs.getDouble("PUR_BUYINGPRICE"),rs.getString("PUR_INSERTDATE"),rs.getString("PUR_MODIFYDATE"));
 				pr.setProductName(rs.getString("PR_NAME"));
 				pr.setSupplierName(rs.getString("SUP_FNAME")+ " "+rs.getString("SUP_LNAME"));
 				return pr;
@@ -604,7 +608,7 @@ public class OrderDAOImpl extends JdbcDaoSupport implements OrderDAO {
 	public Purchase getPurchaseOrder(long Purchaseid, long EnterprisedID) {
 		// TODO Auto-generated method stub
 		String sql= " SELECT [PUR_ID],pr.[ENTERPRISEID],[PUR_PROID],[PUR_SUPID],[PUR_Quantity],"
-				  + " [PUR_OLDQuantity],[PUR_INSERTDATE],[PUR_MODIFYDATE],"
+				  + " [PUR_OLDQuantity],[PUR_INSERTDATE],[PUR_MODIFYDATE],[PUR_BUYINGPRICE],"
 				  + " pro.[PR_NAME],sup.[SUP_FNAME],sup.[SUP_LNAME]" 
 			      +	" FROM [POS_TBLPURCHASE] pr "
 			      +	" INNER JOIN [POS_TBLPRODUCTS] pro ON pro.[PR_ID] = pr.[PUR_PROID] "
@@ -620,7 +624,7 @@ public class OrderDAOImpl extends JdbcDaoSupport implements OrderDAO {
 				if(rs.next()){
 					pr = new Purchase(rs.getLong("PUR_ID"),rs.getLong("ENTERPRISEID"),rs.getLong("PUR_PROID"),
 							rs.getLong("PUR_SUPID"),rs.getDouble("PUR_Quantity"),rs.getDouble("PUR_OLDQuantity"),
-							rs.getString("PUR_INSERTDATE"),rs.getString("PUR_MODIFYDATE"));
+							rs.getDouble("PUR_BUYINGPRICE"),rs.getString("PUR_INSERTDATE"),rs.getString("PUR_MODIFYDATE"));
 					pr.setProductName(rs.getString("PR_NAME"));
 					pr.setSupplierName(rs.getString("SUP_FNAME")+ " "+rs.getString("SUP_LNAME"));
 					

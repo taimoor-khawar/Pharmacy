@@ -12,10 +12,8 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 
-import javax.servlet.ServletContext;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -28,10 +26,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-
-
-
-
 import com.soft.pharmacy.dao.ConfigDAO;
 import com.soft.pharmacy.dao.CustomerDAO;
 import com.soft.pharmacy.dao.OrderDAO;
@@ -43,7 +37,6 @@ import com.soft.pharmacy.model.Customer;
 import com.soft.pharmacy.model.Product;
 import com.soft.pharmacy.model.Purchase;
 import com.soft.pharmacy.model.Supplier;
-import com.soft.pharmacy.model.SysUserSession;
 
 
 @Controller
@@ -555,8 +548,8 @@ public class OrderController {
 			 response.setHeader("Content-disposition", "attachment; filename="+ fileName);
 			 
 		     try {
-
-			        CreatePDF.createPDF(temperotyFilePath+"\\"+fileName,billlines,bill);
+		    	 	response.flushBuffer();
+			        CreatePDF.createPDFBill(temperotyFilePath+"\\"+fileName,billlines,bill,request);
 			        ByteArrayOutputStream baos = new ByteArrayOutputStream();
 			        baos = convertPDFToByteArrayOutputStream(temperotyFilePath+"\\"+fileName);
 			        OutputStream os = response.getOutputStream();

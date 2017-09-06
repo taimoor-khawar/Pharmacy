@@ -18,7 +18,9 @@ import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.support.DefaultTransactionDefinition;
 
 import com.soft.pharmacy.dao.LoginDAO;
-import com.soft.pharmacy.model.*;
+import com.soft.pharmacy.model.Department;
+import com.soft.pharmacy.model.SysUser;
+import com.soft.pharmacy.model.SysUserSession;
 
 public class LoginDAOImpl extends JdbcDaoSupport implements LoginDAO {
 

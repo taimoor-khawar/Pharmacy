@@ -252,7 +252,7 @@ if( us != null){%>
                             <a href="#"><i class="fa fa-user fa-fw"></i> Customers<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="/POS/customer/list?EnterprisedID=<%=us.getSysuser().getsysUserID()%>"> <i class="glyphicon glyphicon-th-list fa-fw"></i> Customer List</a>
+                                    <a href="/POS/customer/list?EnterprisedID=<%=us.getSysuser().getsysUserID()%>"> <i class="fa fa-bar-chart fa-fw"></i> Customer List</a>
                                 </li>
                                 <li>
                                     <a href="/POS/customer/add"> <i class="fa fa-user fa-fw"></i> Add Customer</a>
@@ -264,25 +264,25 @@ if( us != null){%>
                             <a href="/POS/product/list/?EnterprisedID=<%=us.getSysuser().getsysUserID()%>"><i class="fa fa-shopping-bag fa-fw"></i> Product</a>
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-wrench fa-fw"></i> Configuration<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-cogs fa-fw"></i> Configuration<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="/POS/config/supplier/listsupplier?EnterprisedID=<%=us.getSysuser().getsysUserID()%>"> <i class="fa fa-table fa-fw"></i> Suppliers</a>
+                                    <a href="/POS/config/supplier/listsupplier?EnterprisedID=<%=us.getSysuser().getsysUserID()%>"> <i class="fa fa-user fa-fw"></i> Suppliers</a>
                                 </li>
                                 <li>
-                                    <a href="/POS/config/producttype/listproducttype?EnterprisedID=<%=us.getSysuser().getsysUserID()%>"> <i class="fa fa-table fa-fw"></i> Product Type</a>
+                                    <a href="/POS/config/producttype/listproducttype?EnterprisedID=<%=us.getSysuser().getsysUserID()%>"> <i class="fa fa-bar-chart fa-fw"></i> Product Type</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
                          <li>
-                            <a href="#"><i class="fa fa-wrench fa-fw"></i> Orders<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-shopping-cart fa-fw"></i> Orders<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="/POS/order/orderlist?EnterprisedID=<%=us.getSysuser().getsysUserID()%>"> <i class="fa fa-table fa-fw"></i> Sale</a>
+                                    <a href="/POS/order/orderlist?EnterprisedID=<%=us.getSysuser().getsysUserID()%>"> <i class="fa fa-shopping-cart fa-fw"></i> Sale</a>
                                 </li>
                                 <li>
-                                    <a href="/POS/order/purhaselist?EnterprisedID=<%=us.getSysuser().getsysUserID()%>"> <i class="fa fa-table fa-fw"></i> Purchase</a>
+                                    <a href="/POS/order/purhaselist?EnterprisedID=<%=us.getSysuser().getsysUserID()%>"> <i class="fa fa-shopping-cart fa-fw"></i> Purchase</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -291,10 +291,16 @@ if( us != null){%>
                             <a href="/POS/order/orderlist?EnterprisedID=<%=us.getSysuser().getsysUserID()%>"><i class="fa fa-edit fa-fw"></i> Orders</a>
                         </li> --%>
                          <li>
-                            <a href="#"><i class="fa fa-user fa-fw"></i> Reporting<span class="fa arrow"></span></a>
+                            <a href="#"><i class="fa fa-bar-chart fa-fw"></i> Reporting<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
+                            	<li>
+                                    <a href="/POS/report/customerreport?EnterprisedID=<%=us.getSysuser().getsysUserID()%>"> <i class="fa fa-bar-chart fa-fw"></i> Customer Report</a>
+                                </li>
                                 <li>
-                                    <a href="/POS/report/orderbycustomer?EnterprisedID=<%=us.getSysuser().getsysUserID()%>"> <i class="glyphicon glyphicon-th-list fa-fw"></i> Order Report (Customer)</a>
+                                    <a href="/POS/report/orderbycustomer?EnterprisedID=<%=us.getSysuser().getsysUserID()%>"> <i class="fa fa-bar-chart fa-fw"></i> Order Report</a>
+                                </li>
+                                 <li>
+                                    <a href="/POS/report/purchasereport?EnterprisedID=<%=us.getSysuser().getsysUserID()%>"> <i class="fa fa-bar-chart fa-fw"></i> Purchase Report</a>
                                 </li>
                                 
                             </ul>

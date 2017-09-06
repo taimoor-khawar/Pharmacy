@@ -14,6 +14,7 @@ import org.springframework.transaction.PlatformTransactionManager;
 
 import com.soft.pharmacy.dao.ReportDAO;
 import com.soft.pharmacy.model.Bill;
+import com.soft.pharmacy.model.Purchase;
 
 public class ReportDAOImpl extends JdbcDaoSupport implements ReportDAO {
 
@@ -65,6 +66,45 @@ public class ReportDAOImpl extends JdbcDaoSupport implements ReportDAO {
 						rs.getString("BILL_INSERTDATE"),rs.getString("BILL_MODIFYDATE"));
 				bill.setCustomerName(rs.getString("CUS_FNAME")+rs.getString("CUS_LNAME"));
 				return bill;
+			}
+
+		});
+	}
+
+	@Override
+	public ArrayList<Purchase> getPurchasesByProduct(long ProductID,
+			long EnterprisedID, String FromDate, String ToDate) {
+		// TODO Auto-generated method stub
+		String sql= " SELECT [PUR_ID],pr.[ENTERPRISEID],[PUR_PROID],[PUR_SUPID],[PUR_Quantity],"
+				  + " [PUR_OLDQuantity],[PUR_INSERTDATE],[PUR_MODIFYDATE],[PUR_BUYINGPRICE],"
+				  + " pro.[PR_NAME],sup.[SUP_FNAME],sup.[SUP_LNAME]" 
+			      +	" FROM [POS_TBLPURCHASE] pr "
+			      +	" INNER JOIN [POS_TBLPRODUCTS] pro ON pro.[PR_ID] = pr.[PUR_PROID] "
+			      +	" INNER JOIN [POS_TBLSUPPLIERS] sup ON sup.[SUP_ID] = pr.[PUR_SUPID] "
+			      + " WHERE 1 = 1 ";
+		
+		if(ProductID > 0)
+			sql+=" and pr.[PUR_PROID]="+ProductID;
+		if(EnterprisedID > 0)
+			sql+=" and pr.[ENTERPRISEID] = " + EnterprisedID;
+		if(FromDate.length() > 0)
+			sql+=" and pr.[PUR_INSERTDATE] >= CONVERT(Date,'" + FromDate+"')";
+		if(ToDate.length() > 0)
+			sql+=" and pr.[PUR_INSERTDATE] < CONVERT(Date,'" + ToDate+"')";
+			  
+		sql+= " ORDER BY [PUR_ID] ASC ";
+		
+		System.out.println(sql);
+		return (ArrayList<Purchase>) this.getJdbcTemplate().query(sql, new RowMapper<Purchase>(){
+			@Override
+			public Purchase mapRow(ResultSet rs, int row)
+					throws SQLException {
+				Purchase pr = new Purchase(rs.getLong("PUR_ID"),rs.getLong("ENTERPRISEID"),rs.getLong("PUR_PROID"),
+						rs.getLong("PUR_SUPID"),rs.getDouble("PUR_Quantity"),rs.getDouble("PUR_OLDQuantity"),
+						rs.getDouble("PUR_BUYINGPRICE"),rs.getString("PUR_INSERTDATE"),rs.getString("PUR_MODIFYDATE"));
+				pr.setProductName(rs.getString("PR_NAME"));
+				pr.setSupplierName(rs.getString("SUP_FNAME")+ " "+rs.getString("SUP_LNAME"));
+				return pr;
 			}
 
 		});
